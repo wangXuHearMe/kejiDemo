@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC12282577926B00C64F6B /* AppDelegate.m */; };
+		FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC122B2577926B00C64F6B /* SceneDelegate.m */; };
+		FBAC12322577926B00C64F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAC12302577926B00C64F6B /* Main.storyboard */; };
+		FBAC12342577926E00C64F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAC12332577926E00C64F6B /* Assets.xcassets */; };
+		FBAC12372577926E00C64F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAC12352577926E00C64F6B /* LaunchScreen.storyboard */; };
+		FBAC123A2577926E00C64F6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC12392577926E00C64F6B /* main.m */; };
+		FBAC12442577926E00C64F6B /* kejiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC12432577926E00C64F6B /* kejiTests.m */; };
+		FBAC124F2577926E00C64F6B /* kejiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC124E2577926E00C64F6B /* kejiUITests.m */; };
+		FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACE6257BE1A500DCF19C /* MainModel.m */; };
+		FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACEC257BE1B800DCF19C /* MainView.m */; };
+		FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACF2257BE1C700DCF19C /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBAC12402577926E00C64F6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBAC121C2577926B00C64F6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBAC12232577926B00C64F6B;
+			remoteInfo = keji;
+		};
+		FBAC124B2577926E00C64F6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBAC121C2577926B00C64F6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBAC12232577926B00C64F6B;
+			remoteInfo = keji;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBAC12242577926B00C64F6B /* keji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAC12272577926B00C64F6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBAC12282577926B00C64F6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBAC122A2577926B00C64F6B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FBAC122B2577926B00C64F6B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FBAC12312577926B00C64F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBAC12332577926E00C64F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBAC12362577926E00C64F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBAC12382577926E00C64F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBAC12392577926E00C64F6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBAC123F2577926E00C64F6B /* kejiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kejiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAC12432577926E00C64F6B /* kejiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kejiTests.m; sourceTree = "<group>"; };
+		FBAC12452577926E00C64F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBAC124A2577926E00C64F6B /* kejiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kejiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAC124E2577926E00C64F6B /* kejiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kejiUITests.m; sourceTree = "<group>"; };
+		FBAC12502577926E00C64F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC8ACE5257BE1A500DCF19C /* MainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
+		FBC8ACE6257BE1A500DCF19C /* MainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
+		FBC8ACEB257BE1B800DCF19C /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		FBC8ACEC257BE1B800DCF19C /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		FBC8ACF1257BE1C700DCF19C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FBC8ACF2257BE1C700DCF19C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBAC12212577926B00C64F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC123C2577926E00C64F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC12472577926E00C64F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBAC121B2577926B00C64F6B = {
+			isa = PBXGroup;
+			children = (
+				FBAC12262577926B00C64F6B /* keji */,
+				FBAC12422577926E00C64F6B /* kejiTests */,
+				FBAC124D2577926E00C64F6B /* kejiUITests */,
+				FBAC12252577926B00C64F6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBAC12252577926B00C64F6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC12242577926B00C64F6B /* keji.app */,
+				FBAC123F2577926E00C64F6B /* kejiTests.xctest */,
+				FBAC124A2577926E00C64F6B /* kejiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBAC12262577926B00C64F6B /* keji */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC12272577926B00C64F6B /* AppDelegate.h */,
+				FBAC12282577926B00C64F6B /* AppDelegate.m */,
+				FBAC122A2577926B00C64F6B /* SceneDelegate.h */,
+				FBAC122B2577926B00C64F6B /* SceneDelegate.m */,
+				FBC8ACF7257BE1CB00DCF19C /* MainMVC */,
+				FBAC12302577926B00C64F6B /* Main.storyboard */,
+				FBAC12332577926E00C64F6B /* Assets.xcassets */,
+				FBAC12352577926E00C64F6B /* LaunchScreen.storyboard */,
+				FBAC12382577926E00C64F6B /* Info.plist */,
+				FBAC12392577926E00C64F6B /* main.m */,
+			);
+			path = keji;
+			sourceTree = "<group>";
+		};
+		FBAC12422577926E00C64F6B /* kejiTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC12432577926E00C64F6B /* kejiTests.m */,
+				FBAC12452577926E00C64F6B /* Info.plist */,
+			);
+			path = kejiTests;
+			sourceTree = "<group>";
+		};
+		FBAC124D2577926E00C64F6B /* kejiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBAC124E2577926E00C64F6B /* kejiUITests.m */,
+				FBAC12502577926E00C64F6B /* Info.plist */,
+			);
+			path = kejiUITests;
+			sourceTree = "<group>";
+		};
+		FBC8ACF7257BE1CB00DCF19C /* MainMVC */ = {
+			isa = PBXGroup;
+			children = (
+				FBC8ACE5257BE1A500DCF19C /* MainModel.h */,
+				FBC8ACE6257BE1A500DCF19C /* MainModel.m */,
+				FBC8ACEB257BE1B800DCF19C /* MainView.h */,
+				FBC8ACEC257BE1B800DCF19C /* MainView.m */,
+				FBC8ACF1257BE1C700DCF19C /* MainViewController.h */,
+				FBC8ACF2257BE1C700DCF19C /* MainViewController.m */,
+			);
+			path = MainMVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBAC12232577926B00C64F6B /* keji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAC12532577926E00C64F6B /* Build configuration list for PBXNativeTarget "keji" */;
+			buildPhases = (
+				FBAC12202577926B00C64F6B /* Sources */,
+				FBAC12212577926B00C64F6B /* Frameworks */,
+				FBAC12222577926B00C64F6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = keji;
+			productName = keji;
+			productReference = FBAC12242577926B00C64F6B /* keji.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBAC123E2577926E00C64F6B /* kejiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAC12562577926E00C64F6B /* Build configuration list for PBXNativeTarget "kejiTests" */;
+			buildPhases = (
+				FBAC123B2577926E00C64F6B /* Sources */,
+				FBAC123C2577926E00C64F6B /* Frameworks */,
+				FBAC123D2577926E00C64F6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBAC12412577926E00C64F6B /* PBXTargetDependency */,
+			);
+			name = kejiTests;
+			productName = kejiTests;
+			productReference = FBAC123F2577926E00C64F6B /* kejiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBAC12492577926E00C64F6B /* kejiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAC12592577926E00C64F6B /* Build configuration list for PBXNativeTarget "kejiUITests" */;
+			buildPhases = (
+				FBAC12462577926E00C64F6B /* Sources */,
+				FBAC12472577926E00C64F6B /* Frameworks */,
+				FBAC12482577926E00C64F6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBAC124C2577926E00C64F6B /* PBXTargetDependency */,
+			);
+			name = kejiUITests;
+			productName = kejiUITests;
+			productReference = FBAC124A2577926E00C64F6B /* kejiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBAC121C2577926B00C64F6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					FBAC12232577926B00C64F6B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					FBAC123E2577926E00C64F6B = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = FBAC12232577926B00C64F6B;
+					};
+					FBAC12492577926E00C64F6B = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = FBAC12232577926B00C64F6B;
+					};
+				};
+			};
+			buildConfigurationList = FBAC121F2577926B00C64F6B /* Build configuration list for PBXProject "keji" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBAC121B2577926B00C64F6B;
+			productRefGroup = FBAC12252577926B00C64F6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBAC12232577926B00C64F6B /* keji */,
+				FBAC123E2577926E00C64F6B /* kejiTests */,
+				FBAC12492577926E00C64F6B /* kejiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBAC12222577926B00C64F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAC12372577926E00C64F6B /* LaunchScreen.storyboard in Resources */,
+				FBAC12342577926E00C64F6B /* Assets.xcassets in Resources */,
+				FBAC12322577926B00C64F6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC123D2577926E00C64F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC12482577926E00C64F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBAC12202577926B00C64F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */,
+				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
+				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
+				FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */,
+				FBAC123A2577926E00C64F6B /* main.m in Sources */,
+				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC123B2577926E00C64F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAC12442577926E00C64F6B /* kejiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAC12462577926E00C64F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBAC124F2577926E00C64F6B /* kejiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBAC12412577926E00C64F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBAC12232577926B00C64F6B /* keji */;
+			targetProxy = FBAC12402577926E00C64F6B /* PBXContainerItemProxy */;
+		};
+		FBAC124C2577926E00C64F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBAC12232577926B00C64F6B /* keji */;
+			targetProxy = FBAC124B2577926E00C64F6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBAC12302577926B00C64F6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBAC12312577926B00C64F6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBAC12352577926E00C64F6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBAC12362577926E00C64F6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBAC12512577926E00C64F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBAC12522577926E00C64F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBAC12542577926E00C64F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RUGX655P7;
+				INFOPLIST_FILE = keji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.keji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBAC12552577926E00C64F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RUGX655P7;
+				INFOPLIST_FILE = keji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.keji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBAC12572577926E00C64F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RUGX655P7;
+				INFOPLIST_FILE = kejiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.kejiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/keji.app/keji";
+			};
+			name = Debug;
+		};
+		FBAC12582577926E00C64F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RUGX655P7;
+				INFOPLIST_FILE = kejiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.kejiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/keji.app/keji";
+			};
+			name = Release;
+		};
+		FBAC125A2577926E00C64F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RUGX655P7;
+				INFOPLIST_FILE = kejiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.kejiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = keji;
+			};
+			name = Debug;
+		};
+		FBAC125B2577926E00C64F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RUGX655P7;
+				INFOPLIST_FILE = kejiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.kejiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = keji;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBAC121F2577926B00C64F6B /* Build configuration list for PBXProject "keji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAC12512577926E00C64F6B /* Debug */,
+				FBAC12522577926E00C64F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAC12532577926E00C64F6B /* Build configuration list for PBXNativeTarget "keji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAC12542577926E00C64F6B /* Debug */,
+				FBAC12552577926E00C64F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAC12562577926E00C64F6B /* Build configuration list for PBXNativeTarget "kejiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAC12572577926E00C64F6B /* Debug */,
+				FBAC12582577926E00C64F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAC12592577926E00C64F6B /* Build configuration list for PBXNativeTarget "kejiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBAC125A2577926E00C64F6B /* Debug */,
+				FBAC125B2577926E00C64F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBAC121C2577926B00C64F6B /* Project object */;
+}
