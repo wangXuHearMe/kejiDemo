@@ -1,23 +1,21 @@
 //
-//  MainViewController.m
+//  MidViewController.m
 //  keji
 //
-//  Created by 王旭 on 2020/12/5.
+//  Created by 王旭 on 2020/12/8.
 //
 
-#import "MainViewController.h"
+#import "MidViewController.h"
 
-@interface MainViewController ()
+@interface MidViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation MidViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.mainView = [[MainView alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:self.mainView];
 }
 
 /*

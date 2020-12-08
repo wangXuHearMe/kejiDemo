@@ -8,13 +8,15 @@
 #import "MainView.h"
 
 @implementation MainView
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        UIImageView *backimageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"B5EF1C3FD90C49A7706DF3C6C1C73031.png"]];
+        self.tableView.backgroundView = backimageView;
+        [self addSubview:self.tableView];
+    }
+    return self;
 }
-*/
-
 @end

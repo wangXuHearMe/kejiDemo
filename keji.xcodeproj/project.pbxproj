@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA117D8257F9B1F008C3920 /* MidViewController.m */; };
+		FBA117E5257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */; };
+		FBA117E6257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBA117E4257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg */; };
 		FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC12282577926B00C64F6B /* AppDelegate.m */; };
 		FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC122B2577926B00C64F6B /* SceneDelegate.m */; };
 		FBAC12322577926B00C64F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAC12302577926B00C64F6B /* Main.storyboard */; };
@@ -38,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FBA117D7257F9B1F008C3920 /* MidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidViewController.h; sourceTree = "<group>"; };
+		FBA117D8257F9B1F008C3920 /* MidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidViewController.m; sourceTree = "<group>"; };
+		FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B5EF1C3FD90C49A7706DF3C6C1C73031.png; sourceTree = "<group>"; };
+		FBA117E4257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0D9C918FEDB6C5E1D135675607A118D6.jpg; sourceTree = "<group>"; };
+		FBA117EA257F9F3B008C3920 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		FBAC12242577926B00C64F6B /* keji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAC12272577926B00C64F6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBAC12282577926B00C64F6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,9 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FBA117D6257F9B09008C3920 /* MidMVC */ = {
+			isa = PBXGroup;
+			children = (
+				FBA117D7257F9B1F008C3920 /* MidViewController.h */,
+				FBA117D8257F9B1F008C3920 /* MidViewController.m */,
+			);
+			path = MidMVC;
+			sourceTree = "<group>";
+		};
 		FBAC121B2577926B00C64F6B = {
 			isa = PBXGroup;
 			children = (
+				FBA117EA257F9F3B008C3920 /* iconfont.ttf */,
+				FBA117E4257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg */,
+				FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */,
 				FBAC12262577926B00C64F6B /* keji */,
 				FBAC12422577926E00C64F6B /* kejiTests */,
 				FBAC124D2577926E00C64F6B /* kejiUITests */,
@@ -114,6 +134,7 @@
 				FBAC12282577926B00C64F6B /* AppDelegate.m */,
 				FBAC122A2577926B00C64F6B /* SceneDelegate.h */,
 				FBAC122B2577926B00C64F6B /* SceneDelegate.m */,
+				FBA117D6257F9B09008C3920 /* MidMVC */,
 				FBC8ACF7257BE1CB00DCF19C /* MainMVC */,
 				FBAC12302577926B00C64F6B /* Main.storyboard */,
 				FBAC12332577926E00C64F6B /* Assets.xcassets */,
@@ -260,6 +281,8 @@
 				FBAC12372577926E00C64F6B /* LaunchScreen.storyboard in Resources */,
 				FBAC12342577926E00C64F6B /* Assets.xcassets in Resources */,
 				FBAC12322577926B00C64F6B /* Main.storyboard in Resources */,
+				FBA117E5257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png in Resources */,
+				FBA117E6257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +311,7 @@
 				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
 				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
 				FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */,
+				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
 				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
 			);

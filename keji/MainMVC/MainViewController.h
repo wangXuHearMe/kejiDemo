@@ -6,11 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MainView.h"
+#import "MainModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MainViewController : UIViewController
-
+@property MainView *mainView;
 @end
 
 NS_ASSUME_NONNULL_END
