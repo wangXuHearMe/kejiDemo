@@ -6,7 +6,7 @@
 //
 
 #import "MainView.h"
-
+#import "Masonry.h"
 @implementation MainView
 - (instancetype)initWithFrame:(CGRect)frame
 {

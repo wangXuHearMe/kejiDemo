@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463FB3BA2C2CDD4AA0CC2751 /* libPods-keji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9F3EE6001500A28D024DC6 /* libPods-keji.a */; };
 		FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA117D8257F9B1F008C3920 /* MidViewController.m */; };
 		FBA117E5257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */; };
 		FBA117E6257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBA117E4257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg */; };
@@ -41,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07F93F78CDD4F382DC93180D /* Pods-keji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keji.debug.xcconfig"; path = "Target Support Files/Pods-keji/Pods-keji.debug.xcconfig"; sourceTree = "<group>"; };
+		7C9F3EE6001500A28D024DC6 /* libPods-keji.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keji.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB04DA88873703FB928DE0FC /* Pods-keji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keji.release.xcconfig"; path = "Target Support Files/Pods-keji/Pods-keji.release.xcconfig"; sourceTree = "<group>"; };
 		FBA117D7257F9B1F008C3920 /* MidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidViewController.h; sourceTree = "<group>"; };
 		FBA117D8257F9B1F008C3920 /* MidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidViewController.m; sourceTree = "<group>"; };
 		FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B5EF1C3FD90C49A7706DF3C6C1C73031.png; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463FB3BA2C2CDD4AA0CC2751 /* libPods-keji.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92D2C4DC9FE745E123E80616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C9F3EE6001500A28D024DC6 /* libPods-keji.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B04C9B9B4BB917F0D2360606 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07F93F78CDD4F382DC93180D /* Pods-keji.debug.xcconfig */,
+				DB04DA88873703FB928DE0FC /* Pods-keji.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FBA117D6257F9B09008C3920 /* MidMVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +137,8 @@
 				FBAC12422577926E00C64F6B /* kejiTests */,
 				FBAC124D2577926E00C64F6B /* kejiUITests */,
 				FBAC12252577926B00C64F6B /* Products */,
+				B04C9B9B4BB917F0D2360606 /* Pods */,
+				92D2C4DC9FE745E123E80616 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBAC12532577926E00C64F6B /* Build configuration list for PBXNativeTarget "keji" */;
 			buildPhases = (
+				72852151749146DB5D3CE6FA /* [CP] Check Pods Manifest.lock */,
 				FBAC12202577926B00C64F6B /* Sources */,
 				FBAC12212577926B00C64F6B /* Frameworks */,
 				FBAC12222577926B00C64F6B /* Resources */,
@@ -301,6 +327,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72852151749146DB5D3CE6FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-keji-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FBAC12202577926B00C64F6B /* Sources */ = {
@@ -482,6 +533,7 @@
 		};
 		FBAC12542577926E00C64F6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F93F78CDD4F382DC93180D /* Pods-keji.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,6 +552,7 @@
 		};
 		FBAC12552577926E00C64F6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB04DA88873703FB928DE0FC /* Pods-keji.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
