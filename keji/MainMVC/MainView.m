@@ -16,7 +16,6 @@
         UIImageView *backimageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"B5EF1C3FD90C49A7706DF3C6C1C73031.png"]];
         self.tableView.backgroundView = backimageView;
         [self addSubview:self.tableView];
-        
         self.addButton = [[UIButton alloc] init];
         self.leftMoreButton = [[UIButton alloc] init];
         self.rightMoreButton = [[UIButton alloc] init];
@@ -33,11 +32,20 @@
         self.underTimeLabel = [[UILabel alloc] init];
         
         [self.addButton setImage:[UIImage imageNamed:@"jia.png"] forState:UIControlStateNormal];
-        [self.leftMoreButton setImage:[UIImage imageNamed:@"gengduo-2.png"] forState:UIControlStateNormal];
+        [self.leftMoreButton setImage:[UIImage imageNamed:@"更多.png"] forState:UIControlStateNormal];
         [self.downloadButton setImage:[UIImage imageNamed:@"xiazai.png"] forState:UIControlStateNormal];
         [self.shareButton setImage:[UIImage imageNamed:@"share_icon.png"] forState:UIControlStateNormal];
         [self.rightMoreButton setImage:[UIImage imageNamed:@"gengduo.png"] forState:UIControlStateNormal];
+        self.timeLabel.text = @"11月30日";
+        [_timeLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:20]];
+        self.timeLabel.textColor = [UIColor blackColor];
         
+        [self.addButton setTintColor:[UIColor blackColor]];
+        [self.leftMoreButton setTintColor:[UIColor blackColor]];
+        [self.downloadButton setTintColor:[UIColor blackColor]];
+        [self.shareButton setTintColor:[UIColor blackColor]];
+        [self.rightMoreButton setTintColor:[UIColor blackColor]];
+
         [self addSubview:self.leftMoreButton];
         [self addSubview:self.timeLabel];
         [self addSubview:self.addButton];
@@ -45,6 +53,37 @@
         [self addSubview:self.shareButton];
         [self addSubview:self.rightMoreButton];
         [self addSubview:self.underTimeLabel];
+        
+        [_leftMoreButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.tableView.mas_top).offset(40);
+            make.left.equalTo(self.tableView.mas_left).offset(self.frame.size.width * 0.02);
+            make.size.mas_equalTo(CGSizeMake(self.frame.size.height * 0.01, self.frame.size.height * 0.02));
+        }];
+        [_addButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.tableView.mas_top).offset(40);
+            make.left.equalTo(self.tableView.mas_left).offset(self.frame.size.width * 0.68);
+            make.size.mas_equalTo(CGSizeMake(self.frame.size.height * 0.02, self.frame.size.height * 0.02));
+        }];
+        [_downloadButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.tableView.mas_top).offset(40);
+            make.left.equalTo(self.tableView.mas_left).offset(self.frame.size.width * 0.76);
+            make.size.mas_equalTo(CGSizeMake(self.frame.size.height * 0.02, self.frame.size.height * 0.02));
+        }];
+        [_shareButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.tableView.mas_top).offset(42);
+            make.left.equalTo(self.tableView.mas_left).offset(self.frame.size.width * 0.84);
+            make.size.mas_equalTo(CGSizeMake(self.frame.size.height * 0.02, self.frame.size.height * 0.02));
+        }];
+        [_rightMoreButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.tableView.mas_top).offset(40);
+            make.left.equalTo(self.tableView.mas_left).offset(self.frame.size.width * 0.92);
+            make.size.mas_equalTo(CGSizeMake(self.frame.size.height * 0.02, self.frame.size.height * 0.024));
+        }];
+        [_timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.tableView.mas_top).offset(40);
+            make.left.equalTo(self.tableView.mas_left).offset(self.frame.size.width * 0.08);
+            make.size.mas_equalTo(CGSizeMake(self.frame.size.width * 0.25, self.frame.size.height * 0.025));
+        }];
     }
     return self;
 }
