@@ -16,6 +16,9 @@
 		FBA117F92580BE0E008C3920 /* share_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA117F42580BE0E008C3920 /* share_icon.png */; };
 		FBA117FA2580BE0E008C3920 /* jia.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA117F52580BE0E008C3920 /* jia.png */; };
 		FBA1180D2580C2A3008C3920 /* 更多.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA1180C2580C2A3008C3920 /* 更多.png */; };
+		FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA118122580FCEB008C3920 /* MoreViewController.m */; };
+		FBA118212581031C008C3920 /* 头视图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBA118202581031C008C3920 /* 头视图.jpg */; };
+		FBA1182725810742008C3920 /* MoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1182625810741008C3920 /* MoreTableViewCell.m */; };
 		FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC12282577926B00C64F6B /* AppDelegate.m */; };
 		FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC122B2577926B00C64F6B /* SceneDelegate.m */; };
 		FBAC12322577926B00C64F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAC12302577926B00C64F6B /* Main.storyboard */; };
@@ -60,6 +63,11 @@
 		FBA117F42580BE0E008C3920 /* share_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share_icon.png; sourceTree = "<group>"; };
 		FBA117F52580BE0E008C3920 /* jia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jia.png; sourceTree = "<group>"; };
 		FBA1180C2580C2A3008C3920 /* 更多.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多.png"; sourceTree = "<group>"; };
+		FBA118112580FCEB008C3920 /* MoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		FBA118122580FCEB008C3920 /* MoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		FBA118202581031C008C3920 /* 头视图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "头视图.jpg"; sourceTree = "<group>"; };
+		FBA1182525810741008C3920 /* MoreTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreTableViewCell.h; sourceTree = "<group>"; };
+		FBA1182625810741008C3920 /* MoreTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewCell.m; sourceTree = "<group>"; };
 		FBAC12242577926B00C64F6B /* keji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAC12272577926B00C64F6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBAC12282577926B00C64F6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 		FBAC121B2577926B00C64F6B = {
 			isa = PBXGroup;
 			children = (
+				FBA118202581031C008C3920 /* 头视图.jpg */,
 				FBA1180C2580C2A3008C3920 /* 更多.png */,
 				FBA117F32580BE0E008C3920 /* gengduo.png */,
 				FBA117F52580BE0E008C3920 /* jia.png */,
@@ -211,6 +220,10 @@
 				FBC8ACEC257BE1B800DCF19C /* MainView.m */,
 				FBC8ACF1257BE1C700DCF19C /* MainViewController.h */,
 				FBC8ACF2257BE1C700DCF19C /* MainViewController.m */,
+				FBA118112580FCEB008C3920 /* MoreViewController.h */,
+				FBA118122580FCEB008C3920 /* MoreViewController.m */,
+				FBA1182525810741008C3920 /* MoreTableViewCell.h */,
+				FBA1182625810741008C3920 /* MoreTableViewCell.m */,
 			);
 			path = MainMVC;
 			sourceTree = "<group>";
@@ -319,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA117FA2580BE0E008C3920 /* jia.png in Resources */,
+				FBA118212581031C008C3920 /* 头视图.jpg in Resources */,
 				FBAC12372577926E00C64F6B /* LaunchScreen.storyboard in Resources */,
 				FBAC12342577926E00C64F6B /* Assets.xcassets in Resources */,
 				FBAC12322577926B00C64F6B /* Main.storyboard in Resources */,
@@ -378,8 +392,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */,
+				FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */,
 				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
 				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
+				FBA1182725810742008C3920 /* MoreTableViewCell.m in Sources */,
 				FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */,
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
