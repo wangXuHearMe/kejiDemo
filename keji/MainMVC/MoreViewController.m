@@ -16,13 +16,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.backgroundColor = [UIColor whiteColor];
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 45, self.view.frame.size.width * 0.75, self.view.frame.size.height) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * 0.74, self.view.frame.size.height) style:UITableViewStyleGrouped];
     [self.tableView registerClass:[MoreTableViewCell class] forCellReuseIdentifier:@"cell1"];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
-    UIView *aView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * 0.75, self.view.frame.size.height * 0.22)];
-    UIImageView *headImgaeView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * 0.75, self.view.frame.size.height * 0.22)];
+    UIView *aView = [[UIView alloc]initWithFrame:CGRectMake(0, -14, self.view.frame.size.width * 0.74, self.view.frame.size.height * 0.22)];
+    UIImageView *headImgaeView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -14, self.view.frame.size.width * 0.74, self.view.frame.size.height * 0.22)];
     headImgaeView.image = [UIImage imageNamed:@"头视图.jpg"];
     [aView addSubview:headImgaeView];
     self.tableView.tableHeaderView = aView;
