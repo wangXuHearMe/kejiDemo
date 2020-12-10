@@ -19,6 +19,7 @@
 		FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA118122580FCEB008C3920 /* MoreViewController.m */; };
 		FBA118212581031C008C3920 /* 头视图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBA118202581031C008C3920 /* 头视图.jpg */; };
 		FBA1182725810742008C3920 /* MoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1182625810741008C3920 /* MoreTableViewCell.m */; };
+		FBA1182D258208DB008C3920 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1182C258208DB008C3920 /* WeekViewController.m */; };
 		FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC12282577926B00C64F6B /* AppDelegate.m */; };
 		FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC122B2577926B00C64F6B /* SceneDelegate.m */; };
 		FBAC12322577926B00C64F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAC12302577926B00C64F6B /* Main.storyboard */; };
@@ -68,6 +69,8 @@
 		FBA118202581031C008C3920 /* 头视图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "头视图.jpg"; sourceTree = "<group>"; };
 		FBA1182525810741008C3920 /* MoreTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreTableViewCell.h; sourceTree = "<group>"; };
 		FBA1182625810741008C3920 /* MoreTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewCell.m; sourceTree = "<group>"; };
+		FBA1182B258208DB008C3920 /* WeekViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
+		FBA1182C258208DB008C3920 /* WeekViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
 		FBAC12242577926B00C64F6B /* keji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAC12272577926B00C64F6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBAC12282577926B00C64F6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -216,14 +219,16 @@
 			children = (
 				FBC8ACE5257BE1A500DCF19C /* MainModel.h */,
 				FBC8ACE6257BE1A500DCF19C /* MainModel.m */,
+				FBA1182525810741008C3920 /* MoreTableViewCell.h */,
+				FBA1182625810741008C3920 /* MoreTableViewCell.m */,
 				FBC8ACEB257BE1B800DCF19C /* MainView.h */,
 				FBC8ACEC257BE1B800DCF19C /* MainView.m */,
 				FBC8ACF1257BE1C700DCF19C /* MainViewController.h */,
 				FBC8ACF2257BE1C700DCF19C /* MainViewController.m */,
 				FBA118112580FCEB008C3920 /* MoreViewController.h */,
 				FBA118122580FCEB008C3920 /* MoreViewController.m */,
-				FBA1182525810741008C3920 /* MoreTableViewCell.h */,
-				FBA1182625810741008C3920 /* MoreTableViewCell.m */,
+				FBA1182B258208DB008C3920 /* WeekViewController.h */,
+				FBA1182C258208DB008C3920 /* WeekViewController.m */,
 			);
 			path = MainMVC;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 				FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */,
 				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
 				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
+				FBA1182D258208DB008C3920 /* WeekViewController.m in Sources */,
 				FBA1182725810742008C3920 /* MoreTableViewCell.m in Sources */,
 				FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */,
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,

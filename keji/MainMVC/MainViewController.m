@@ -7,6 +7,7 @@
 
 #import "MainViewController.h"
 #import "MoreViewController.h"
+#import "WeekViewController.h"
 @interface MainViewController ()
 
 @end
@@ -19,11 +20,17 @@
     self.mainView = [[MainView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:self.mainView];
     [self.mainView.leftMoreButton addTarget:self action:@selector(pressLeft) forControlEvents:UIControlEventTouchUpInside];
+    [self.mainView.rightMoreButton addTarget:self action:@selector(pressRight) forControlEvents:UIControlEventTouchUpInside];
 }
 - (void)pressLeft {
     MoreViewController *moreViewController = [[MoreViewController alloc] init];
     moreViewController.modalPresentationStyle = UIModalPresentationCustom;
     [self presentViewController:moreViewController animated:YES completion:nil];
+}
+- (void)pressRight {
+    WeekViewController *weekViewController = [[WeekViewController alloc] init];
+    weekViewController.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:weekViewController animated:NO completion:nil];
 }
 /*
 #pragma mark - Navigation

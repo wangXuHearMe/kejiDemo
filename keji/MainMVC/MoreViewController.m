@@ -31,7 +31,7 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 6;
+    return 5;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 50;
@@ -63,19 +63,12 @@
         } else if (indexPath.row == 4) {
             cell.labelone.text = @"设置";
             return cell;
-        } else if (indexPath.row == 5) {
-            cell.labelone.text = @"返回";
-            return cell;
         }
     }
     return 0;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        if (indexPath.row == 5) {
-            [self dismissViewControllerAnimated:NO completion:nil];
-        }
-    }
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 /*
 #pragma mark - Navigation
