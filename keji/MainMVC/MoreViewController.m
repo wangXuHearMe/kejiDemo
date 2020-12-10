@@ -26,13 +26,12 @@
     headImgaeView.image = [UIImage imageNamed:@"头视图.jpg"];
     [aView addSubview:headImgaeView];
     self.tableView.tableHeaderView = aView;
-
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 50;
@@ -43,8 +42,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 40;
 }
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     return @"通用";
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -65,9 +63,19 @@
         } else if (indexPath.row == 4) {
             cell.labelone.text = @"设置";
             return cell;
+        } else if (indexPath.row == 5) {
+            cell.labelone.text = @"返回";
+            return cell;
         }
     }
     return 0;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 5) {
+            [self dismissViewControllerAnimated:NO completion:nil];
+        }
+    }
 }
 /*
 #pragma mark - Navigation
