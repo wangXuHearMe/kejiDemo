@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIButton *shareButton;
 @property (nonatomic, strong) UIButton *rightMoreButton;
 @property (nonatomic, strong) UILabel *underTimeLabel;
+@property (nonatomic, strong) NSString *nowDate;
+@property (nonatomic, strong) NSString *weekDay;
 @end
 
 NS_ASSUME_NONNULL_END

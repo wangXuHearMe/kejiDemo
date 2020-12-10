@@ -17,6 +17,31 @@
         self.tableView.backgroundView = backimageView;
         self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
         [self addSubview:self.tableView];
+        
+        NSDateFormatter *df = [[NSDateFormatter alloc] init];
+        [df setDateFormat:@"MM月dd日"];
+        self.nowDate = [df stringFromDate:[NSDate date]];
+        
+        NSDateFormatter *ee = [[NSDateFormatter alloc] init];
+        [ee setDateFormat:@"EEEE"];
+        self.weekDay = [ee stringFromDate:[NSDate date]];
+        
+        if ([self.weekDay isEqualToString:@"Thursday"]) {
+            self.weekDay = @"第3周 周四";
+        } else if ([self.weekDay isEqualToString:@"Monday"]) {
+            self.weekDay = @"第3周 周一";
+        } else if ([self.weekDay isEqualToString:@"Tuesday"]) {
+            self.weekDay = @"第3周 周二";
+        } else if ([self.weekDay isEqualToString:@"Wednesday"]) {
+            self.weekDay = @"第3周 周三";
+        } else if ([self.weekDay isEqualToString:@"Friday"]) {
+            self.weekDay = @"第3周 周五";
+        } else if ([self.weekDay isEqualToString:@"Saturday"]) {
+            self.weekDay = @"第3周 周六";
+        } else if ([self.weekDay isEqualToString:@"Sunday"]) {
+            self.weekDay = @"第3周 周日";
+        }
+        
         self.addButton = [[UIButton alloc] init];
         self.leftMoreButton = [[UIButton alloc] init];
         self.rightMoreButton = [[UIButton alloc] init];
@@ -37,9 +62,14 @@
         [self.downloadButton setImage:[UIImage imageNamed:@"xiazai.png"] forState:UIControlStateNormal];
         [self.shareButton setImage:[UIImage imageNamed:@"share_icon.png"] forState:UIControlStateNormal];
         [self.rightMoreButton setImage:[UIImage imageNamed:@"gengduo.png"] forState:UIControlStateNormal];
-        self.timeLabel.text = @"11月30日";
+        
+        self.timeLabel.text = self.nowDate;
         [_timeLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:20]];
         self.timeLabel.textColor = [UIColor blackColor];
+        
+        self.underTimeLabel.text = self.weekDay;
+        self.underTimeLabel.textColor = [UIColor blackColor];
+        self.underTimeLabel.font = [UIFont systemFontOfSize:13];
         
         [self.addButton setTintColor:[UIColor blackColor]];
         [self.leftMoreButton setTintColor:[UIColor blackColor]];
@@ -83,6 +113,11 @@
         [_timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.tableView.mas_top).offset(40);
             make.left.equalTo(self.tableView.mas_left).offset(self.frame.size.width * 0.08);
+            make.size.mas_equalTo(CGSizeMake(self.frame.size.width * 0.25, self.frame.size.height * 0.025));
+        }];
+        [_underTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.tableView.mas_top).offset(40 + self.frame.size.height * 0.035);
+            make.left.equalTo(self.tableView.mas_left).offset(self.frame.size.width * 0.09);
             make.size.mas_equalTo(CGSizeMake(self.frame.size.width * 0.25, self.frame.size.height * 0.025));
         }];
     }
