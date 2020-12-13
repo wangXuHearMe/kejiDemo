@@ -6,11 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PersonalFirstTableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersonalView : UIView
-
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 NS_ASSUME_NONNULL_END

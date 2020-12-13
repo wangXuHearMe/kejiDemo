@@ -16,6 +16,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UITabBarItem* tabBarItem = [UITabBarItem new];
+//    tabBarItem.image = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    tabBarItem.selectedImage = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem.title = @"个人中心";
+    self.tabBarItem = tabBarItem;
+    
+    self.navigationItem.title = @"个人中心";
+    self.personalView = [[PersonalView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:self.personalView];
 }
 
 /*

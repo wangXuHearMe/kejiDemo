@@ -17,7 +17,7 @@
     [super viewDidLoad];
     
     self.tableView.backgroundColor = [UIColor whiteColor];
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(self.view.frame.size.width * 0.05, self.view.frame.size.height * 0.55, self.view.frame.size.width * 0.9, self.view.frame.size.height * 0.4) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(self.view.frame.size.width * 0.05, self.view.frame.size.height * 0.55, self.view.frame.size.width * 0.9, self.view.frame.size.height * 0.4 - 60) style:UITableViewStylePlain];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.layer.cornerRadius = 5;
     self.tableView.layer.masksToBounds = YES;

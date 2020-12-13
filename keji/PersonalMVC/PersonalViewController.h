@@ -6,11 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PersonalView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersonalViewController : UIViewController
-
+@property PersonalView *personalView;
 @end
 
 NS_ASSUME_NONNULL_END

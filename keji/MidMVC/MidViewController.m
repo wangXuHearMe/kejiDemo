@@ -15,6 +15,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UITabBarItem* tabBarItem = [UITabBarItem new];
+//    tabBarItem.image = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    tabBarItem.selectedImage = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem.title = @"签到";
+    self.tabBarItem = tabBarItem;
+    self.navigationItem.title = @"签到";
     // Do any additional setup after loading the view.
 }
 
