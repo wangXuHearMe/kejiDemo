@@ -9,15 +9,20 @@
 
 @implementation PersonalFirstTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        
+        self.headImgaeView = [[UIImageView alloc] init];
+        self.nameLabel = [[UILabel alloc] init];
+        self.collegeLabel = [[UILabel alloc] init];
+        
+        [self addSubview:self.headImgaeView];
+        [self addSubview:self.nameLabel];
+        [self addSubview:self.collegeLabel];
+        
+    }
+    return self;
 }
 
 @end

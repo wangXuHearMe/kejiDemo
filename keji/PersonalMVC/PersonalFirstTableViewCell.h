@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersonalFirstTableViewCell : UITableViewCell
-@property (nonatomic, strong)
+@property (nonatomic, strong) UIImageView *headImgaeView;
+@property (nonatomic, strong) UILabel *nameLabel;
+@property (nonatomic, strong) UILabel *collegeLabel;
 @end
 
 NS_ASSUME_NONNULL_END
