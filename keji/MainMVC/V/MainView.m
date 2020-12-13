@@ -27,20 +27,22 @@
         self.weekDay = [ee stringFromDate:[NSDate date]];
         
         if ([self.weekDay isEqualToString:@"Thursday"]) {
-            self.weekDay = @"第3周 周四";
+            self.weekDay = @" 周四";
         } else if ([self.weekDay isEqualToString:@"Monday"]) {
-            self.weekDay = @"第3周 周一";
+            self.weekDay = @"周一";
         } else if ([self.weekDay isEqualToString:@"Tuesday"]) {
-            self.weekDay = @"第3周 周二";
+            self.weekDay = @"周二";
         } else if ([self.weekDay isEqualToString:@"Wednesday"]) {
-            self.weekDay = @"第3周 周三";
+            self.weekDay = @"周三";
         } else if ([self.weekDay isEqualToString:@"Friday"]) {
-            self.weekDay = @"第3周 周五";
+            self.weekDay = @"周五";
         } else if ([self.weekDay isEqualToString:@"Saturday"]) {
-            self.weekDay = @"第3周 周六";
+            self.weekDay = @"周六";
         } else if ([self.weekDay isEqualToString:@"Sunday"]) {
-            self.weekDay = @"第3周 周日";
+            self.weekDay = @"周日";
         }
+        self.week = @"第三周";
+        self.forWeek = [self.week stringByAppendingString:self.weekDay];
         
         self.addButton = [[UIButton alloc] init];
         self.leftMoreButton = [[UIButton alloc] init];
@@ -67,7 +69,7 @@
         [_timeLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:20]];
         self.timeLabel.textColor = [UIColor blackColor];
         
-        self.underTimeLabel.text = self.weekDay;
+        self.underTimeLabel.text = self.forWeek;
         self.underTimeLabel.textColor = [UIColor blackColor];
         self.underTimeLabel.font = [UIFont systemFontOfSize:13];
         

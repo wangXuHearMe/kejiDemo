@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		463FB3BA2C2CDD4AA0CC2751 /* libPods-keji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9F3EE6001500A28D024DC6 /* libPods-keji.a */; };
+		FBA038222586156C003DD507 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038212586156C003DD507 /* PersonalViewController.m */; };
+		FBA038282586157F003DD507 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038272586157F003DD507 /* PersonalView.m */; };
+		FBA0382E25861596003DD507 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0382D25861596003DD507 /* PersonalModel.m */; };
+		FBA03837258615B5003DD507 /* PersonalFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA03836258615B5003DD507 /* PersonalFirstTableViewCell.m */; };
 		FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA117D8257F9B1F008C3920 /* MidViewController.m */; };
 		FBA117E5257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */; };
 		FBA117E6257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBA117E4257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg */; };
@@ -56,6 +60,14 @@
 		07F93F78CDD4F382DC93180D /* Pods-keji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keji.debug.xcconfig"; path = "Target Support Files/Pods-keji/Pods-keji.debug.xcconfig"; sourceTree = "<group>"; };
 		7C9F3EE6001500A28D024DC6 /* libPods-keji.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keji.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB04DA88873703FB928DE0FC /* Pods-keji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keji.release.xcconfig"; path = "Target Support Files/Pods-keji/Pods-keji.release.xcconfig"; sourceTree = "<group>"; };
+		FBA038202586156C003DD507 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
+		FBA038212586156C003DD507 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		FBA038262586157F003DD507 /* PersonalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalView.h; sourceTree = "<group>"; };
+		FBA038272586157F003DD507 /* PersonalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalView.m; sourceTree = "<group>"; };
+		FBA0382C25861596003DD507 /* PersonalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalModel.h; sourceTree = "<group>"; };
+		FBA0382D25861596003DD507 /* PersonalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalModel.m; sourceTree = "<group>"; };
+		FBA03835258615B5003DD507 /* PersonalFirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalFirstTableViewCell.h; sourceTree = "<group>"; };
+		FBA03836258615B5003DD507 /* PersonalFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalFirstTableViewCell.m; sourceTree = "<group>"; };
 		FBA117D7257F9B1F008C3920 /* MidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidViewController.h; sourceTree = "<group>"; };
 		FBA117D8257F9B1F008C3920 /* MidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidViewController.m; sourceTree = "<group>"; };
 		FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B5EF1C3FD90C49A7706DF3C6C1C73031.png; sourceTree = "<group>"; };
@@ -142,6 +154,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FBA0383E2586162B003DD507 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				FBA1182525810741008C3920 /* MoreTableViewCell.h */,
+				FBA1182625810741008C3920 /* MoreTableViewCell.m */,
+				FBC8ACE5257BE1A500DCF19C /* MainModel.h */,
+				FBC8ACE6257BE1A500DCF19C /* MainModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		FBA038482586163E003DD507 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				FBC8ACEB257BE1B800DCF19C /* MainView.h */,
+				FBC8ACEC257BE1B800DCF19C /* MainView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		FBA0384925861647003DD507 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FBC8ACF1257BE1C700DCF19C /* MainViewController.h */,
+				FBC8ACF2257BE1C700DCF19C /* MainViewController.m */,
+				FBA118112580FCEB008C3920 /* MoreViewController.h */,
+				FBA118122580FCEB008C3920 /* MoreViewController.m */,
+				FBA1182B258208DB008C3920 /* WeekViewController.h */,
+				FBA1182C258208DB008C3920 /* WeekViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		FBA117D6257F9B09008C3920 /* MidMVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +199,14 @@
 		FBA1183C25825E04008C3920 /* PersonalMVC */ = {
 			isa = PBXGroup;
 			children = (
+				FBA0382C25861596003DD507 /* PersonalModel.h */,
+				FBA0382D25861596003DD507 /* PersonalModel.m */,
+				FBA038262586157F003DD507 /* PersonalView.h */,
+				FBA038272586157F003DD507 /* PersonalView.m */,
+				FBA038202586156C003DD507 /* PersonalViewController.h */,
+				FBA038212586156C003DD507 /* PersonalViewController.m */,
+				FBA03835258615B5003DD507 /* PersonalFirstTableViewCell.h */,
+				FBA03836258615B5003DD507 /* PersonalFirstTableViewCell.m */,
 			);
 			path = PersonalMVC;
 			sourceTree = "<group>";
@@ -231,18 +284,9 @@
 		FBC8ACF7257BE1CB00DCF19C /* MainMVC */ = {
 			isa = PBXGroup;
 			children = (
-				FBC8ACE5257BE1A500DCF19C /* MainModel.h */,
-				FBC8ACE6257BE1A500DCF19C /* MainModel.m */,
-				FBA1182525810741008C3920 /* MoreTableViewCell.h */,
-				FBA1182625810741008C3920 /* MoreTableViewCell.m */,
-				FBC8ACEB257BE1B800DCF19C /* MainView.h */,
-				FBC8ACEC257BE1B800DCF19C /* MainView.m */,
-				FBC8ACF1257BE1C700DCF19C /* MainViewController.h */,
-				FBC8ACF2257BE1C700DCF19C /* MainViewController.m */,
-				FBA118112580FCEB008C3920 /* MoreViewController.h */,
-				FBA118122580FCEB008C3920 /* MoreViewController.m */,
-				FBA1182B258208DB008C3920 /* WeekViewController.h */,
-				FBA1182C258208DB008C3920 /* WeekViewController.m */,
+				FBA0383E2586162B003DD507 /* M */,
+				FBA038482586163E003DD507 /* V */,
+				FBA0384925861647003DD507 /* C */,
 			);
 			path = MainMVC;
 			sourceTree = "<group>";
@@ -414,14 +458,18 @@
 			files = (
 				FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */,
 				FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */,
+				FBA03837258615B5003DD507 /* PersonalFirstTableViewCell.m in Sources */,
 				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
 				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
 				FBA1182D258208DB008C3920 /* WeekViewController.m in Sources */,
 				FBA1182725810742008C3920 /* MoreTableViewCell.m in Sources */,
 				FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */,
+				FBA0382E25861596003DD507 /* PersonalModel.m in Sources */,
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
+				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
 				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
+				FBA038222586156C003DD507 /* PersonalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
