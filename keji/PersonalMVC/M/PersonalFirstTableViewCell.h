@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIImageView *headImgaeView;
 @property (nonatomic, strong) UILabel *nameLabel;
 @property (nonatomic, strong) UILabel *collegeLabel;
+@property (nonatomic, strong) UIImageView *rightImageView;
 @end
 
 NS_ASSUME_NONNULL_END

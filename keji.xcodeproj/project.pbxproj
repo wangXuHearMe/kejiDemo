@@ -12,6 +12,11 @@
 		FBA038282586157F003DD507 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038272586157F003DD507 /* PersonalView.m */; };
 		FBA0382E25861596003DD507 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0382D25861596003DD507 /* PersonalModel.m */; };
 		FBA03837258615B5003DD507 /* PersonalFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA03836258615B5003DD507 /* PersonalFirstTableViewCell.m */; };
+		FBA0385A258780D7003DD507 /* tx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBA03859258780D6003DD507 /* tx.jpg */; };
+		FBA0385F258784A0003DD507 /* youjiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA0385E2587849F003DD507 /* youjiantou.png */; };
+		FBA03865258784CD003DD507 /* PersonalSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA03864258784CD003DD507 /* PersonalSecondTableViewCell.m */; };
+		FBA0387425878C20003DD507 /* InformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0387325878C20003DD507 /* InformationTableViewController.m */; };
+		FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0387C25878C2C003DD507 /* AboutTableViewController.m */; };
 		FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA117D8257F9B1F008C3920 /* MidViewController.m */; };
 		FBA117E5257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */; };
 		FBA117E6257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBA117E4257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg */; };
@@ -68,6 +73,14 @@
 		FBA0382D25861596003DD507 /* PersonalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalModel.m; sourceTree = "<group>"; };
 		FBA03835258615B5003DD507 /* PersonalFirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalFirstTableViewCell.h; sourceTree = "<group>"; };
 		FBA03836258615B5003DD507 /* PersonalFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalFirstTableViewCell.m; sourceTree = "<group>"; };
+		FBA03859258780D6003DD507 /* tx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tx.jpg; sourceTree = "<group>"; };
+		FBA0385E2587849F003DD507 /* youjiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youjiantou.png; sourceTree = "<group>"; };
+		FBA03863258784CD003DD507 /* PersonalSecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalSecondTableViewCell.h; sourceTree = "<group>"; };
+		FBA03864258784CD003DD507 /* PersonalSecondTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalSecondTableViewCell.m; sourceTree = "<group>"; };
+		FBA0387225878C20003DD507 /* InformationTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InformationTableViewController.h; sourceTree = "<group>"; };
+		FBA0387325878C20003DD507 /* InformationTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InformationTableViewController.m; sourceTree = "<group>"; };
+		FBA0387B25878C2C003DD507 /* AboutTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutTableViewController.h; sourceTree = "<group>"; };
+		FBA0387C25878C2C003DD507 /* AboutTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutTableViewController.m; sourceTree = "<group>"; };
 		FBA117D7257F9B1F008C3920 /* MidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidViewController.h; sourceTree = "<group>"; };
 		FBA117D8257F9B1F008C3920 /* MidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidViewController.m; sourceTree = "<group>"; };
 		FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B5EF1C3FD90C49A7706DF3C6C1C73031.png; sourceTree = "<group>"; };
@@ -187,6 +200,41 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		FBA0386925878B71003DD507 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				FBA0382C25861596003DD507 /* PersonalModel.h */,
+				FBA0382D25861596003DD507 /* PersonalModel.m */,
+				FBA03835258615B5003DD507 /* PersonalFirstTableViewCell.h */,
+				FBA03836258615B5003DD507 /* PersonalFirstTableViewCell.m */,
+				FBA03863258784CD003DD507 /* PersonalSecondTableViewCell.h */,
+				FBA03864258784CD003DD507 /* PersonalSecondTableViewCell.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		FBA0387025878B8F003DD507 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				FBA038262586157F003DD507 /* PersonalView.h */,
+				FBA038272586157F003DD507 /* PersonalView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		FBA0387125878B96003DD507 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FBA038202586156C003DD507 /* PersonalViewController.h */,
+				FBA038212586156C003DD507 /* PersonalViewController.m */,
+				FBA0387225878C20003DD507 /* InformationTableViewController.h */,
+				FBA0387325878C20003DD507 /* InformationTableViewController.m */,
+				FBA0387B25878C2C003DD507 /* AboutTableViewController.h */,
+				FBA0387C25878C2C003DD507 /* AboutTableViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		FBA117D6257F9B09008C3920 /* MidMVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,14 +247,9 @@
 		FBA1183C25825E04008C3920 /* PersonalMVC */ = {
 			isa = PBXGroup;
 			children = (
-				FBA0382C25861596003DD507 /* PersonalModel.h */,
-				FBA0382D25861596003DD507 /* PersonalModel.m */,
-				FBA038262586157F003DD507 /* PersonalView.h */,
-				FBA038272586157F003DD507 /* PersonalView.m */,
-				FBA038202586156C003DD507 /* PersonalViewController.h */,
-				FBA038212586156C003DD507 /* PersonalViewController.m */,
-				FBA03835258615B5003DD507 /* PersonalFirstTableViewCell.h */,
-				FBA03836258615B5003DD507 /* PersonalFirstTableViewCell.m */,
+				FBA0386925878B71003DD507 /* M */,
+				FBA0387025878B8F003DD507 /* V */,
+				FBA0387125878B96003DD507 /* C */,
 			);
 			path = PersonalMVC;
 			sourceTree = "<group>";
@@ -214,6 +257,8 @@
 		FBAC121B2577926B00C64F6B = {
 			isa = PBXGroup;
 			children = (
+				FBA0385E2587849F003DD507 /* youjiantou.png */,
+				FBA03859258780D6003DD507 /* tx.jpg */,
 				FBA1183425825D44008C3920 /* 关于.png */,
 				FBA1183525825D44008C3920 /* 描述.png */,
 				FBA118202581031C008C3920 /* 头视图.jpg */,
@@ -399,6 +444,8 @@
 				FBA118212581031C008C3920 /* 头视图.jpg in Resources */,
 				FBA1183625825D44008C3920 /* 关于.png in Resources */,
 				FBAC12372577926E00C64F6B /* LaunchScreen.storyboard in Resources */,
+				FBA0385F258784A0003DD507 /* youjiantou.png in Resources */,
+				FBA0385A258780D7003DD507 /* tx.jpg in Resources */,
 				FBAC12342577926E00C64F6B /* Assets.xcassets in Resources */,
 				FBAC12322577926B00C64F6B /* Main.storyboard in Resources */,
 				FBA117E5257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png in Resources */,
@@ -456,11 +503,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA0387425878C20003DD507 /* InformationTableViewController.m in Sources */,
 				FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */,
 				FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */,
 				FBA03837258615B5003DD507 /* PersonalFirstTableViewCell.m in Sources */,
 				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
 				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
+				FBA03865258784CD003DD507 /* PersonalSecondTableViewCell.m in Sources */,
 				FBA1182D258208DB008C3920 /* WeekViewController.m in Sources */,
 				FBA1182725810742008C3920 /* MoreTableViewCell.m in Sources */,
 				FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */,
@@ -468,6 +517,7 @@
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
+				FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */,
 				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
 				FBA038222586156C003DD507 /* PersonalViewController.m in Sources */,
 			);
