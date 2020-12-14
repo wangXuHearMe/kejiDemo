@@ -24,5 +24,7 @@
     }
     return self;
 }
-
+- (void)layoutSubviews {
+    self.headImgaeView.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
+}
 @end
