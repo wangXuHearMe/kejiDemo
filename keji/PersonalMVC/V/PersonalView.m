@@ -6,7 +6,7 @@
 //
 
 #import "PersonalView.h"
-#import "Infor"
+#import "InformationTableViewController.h"
 @implementation PersonalView
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -60,13 +60,14 @@
     }
     return 0;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        
-    } else {
-        
-    }
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (indexPath.section == 0) {
+//        InformationTableViewController *viewController = [[InformationTableViewController alloc] init];
+//        viewController.modalPresentationStyle = 0;
+//    } else {
+//
+//    }
+//}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

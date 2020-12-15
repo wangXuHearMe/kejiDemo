@@ -6,7 +6,7 @@
 //
 
 #import "PersonalViewController.h"
-
+#import "InformationTableViewController.h"
 @interface PersonalViewController ()
 
 @end
@@ -26,7 +26,15 @@
     self.personalView = [[PersonalView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:self.personalView];
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        InformationTableViewController *viewController = [[InformationTableViewController alloc] init];
+        viewController.modalPresentationStyle = 0;
+        [self presentViewController:viewController animated:YES completion:nil];
+    } else {
 
+    }
+}
 /*
 #pragma mark - Navigation
 
