@@ -31,11 +31,13 @@
     if (indexPath.section == 0) {
         InformationTableViewController *viewController = [[InformationTableViewController alloc] init];
         viewController.modalPresentationStyle = 0;
-        [self presentViewController:viewController animated:YES completion:nil];
+//        [self presentViewController:viewController animated:YES completion:nil];
+        [self.navigationController presentViewController:viewController animated:YES completion:nil];
     } else {
         AboutTableViewController *viewController = [[AboutTableViewController alloc] init];
         viewController.modalPresentationStyle = 0;
-        [self presentViewController:viewController animated:YES completion:nil];
+//        [self presentViewController:viewController animated:YES completion:nil];
+        [self.navigationController presentViewController:viewController animated:YES completion:nil];
     }
 }
 /*
