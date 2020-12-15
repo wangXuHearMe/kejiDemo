@@ -7,6 +7,7 @@
 
 #import "PersonalViewController.h"
 #import "InformationTableViewController.h"
+#import "AboutTableViewController.h"
 @interface PersonalViewController ()
 
 @end
@@ -32,7 +33,9 @@
         viewController.modalPresentationStyle = 0;
         [self presentViewController:viewController animated:YES completion:nil];
     } else {
-
+        AboutTableViewController *viewController = [[AboutTableViewController alloc] init];
+        viewController.modalPresentationStyle = 0;
+        [self presentViewController:viewController animated:YES completion:nil];
     }
 }
 /*
