@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersonalViewController : UIViewController
+<UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 @property PersonalView *personalView;
 @end
 
