@@ -30,6 +30,7 @@
     [self.personalView.tableView registerClass:[PersonalSecondTableViewCell class] forCellReuseIdentifier:@"cell2"];
     self.personalView.tableView.delegate = self;
     self.personalView.tableView.dataSource = self;
+    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 0, CGFLOAT_MIN)];
     self.navigationController.delegate = self;
     
 }
@@ -62,10 +63,15 @@
     }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 0;
+    return 0.005;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0,0, 320,0.005)];
+    view.backgroundColor = [UIColor clearColor];
+    return view;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0;
+    return 0.005;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
