@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AboutTableViewController : UITableViewController
+<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableview;
 @end
 

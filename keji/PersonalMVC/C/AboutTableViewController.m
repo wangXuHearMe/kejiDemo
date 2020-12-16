@@ -6,7 +6,8 @@
 //
 
 #import "AboutTableViewController.h"
-
+#import "AboutFirstTableViewCell.h"
+#import "AboutSecondTableViewCell.h"
 @interface AboutTableViewController ()
 
 @end
@@ -25,21 +26,53 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
     backButton.tintColor = [UIColor blackColor];
     [self.navigationItem setLeftBarButtonItem:backButton];
-    self.tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.tableView registerClass:[AboutFirstTableViewCell class] forCellReuseIdentifier:@"cell1"];
+    [self.tableView registerClass:[AboutSecondTableViewCell class] forCellReuseIdentifier:@"cell2"];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 0, CGFLOAT_MIN)];
     [self.view addSubview:self.tableview];
 }
 - (void)pressBack {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-#pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 2;
 }
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+    return 1;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 35;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 5.0;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0,0, 320,5)];
+    view.backgroundColor = [UIColor clearColor];
+    return view;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.01;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        AboutFirstTableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
+        if (indexPath.row == 0) {
+//            cell1.selectionStyle = 0;
+            cell1.backgroundColor = [UIColor whiteColor];
+            return cell1;
+        }
+    } else if (indexPath.section == 1) {
+        AboutSecondTableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"cell2" forIndexPath:indexPath];
+        if (indexPath.row == 0) {
+            cell2.backgroundColor = [UIColor whiteColor];
+            return cell2;
+        }
+    }
     return 0;
 }
 

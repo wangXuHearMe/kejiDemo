@@ -31,6 +31,7 @@
     self.personalView.tableView.delegate = self;
     self.personalView.tableView.dataSource = self;
     self.navigationController.delegate = self;
+    
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {

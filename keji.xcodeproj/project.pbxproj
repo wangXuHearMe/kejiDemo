@@ -43,6 +43,8 @@
 		FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACEC257BE1B800DCF19C /* MainView.m */; };
 		FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACF2257BE1C700DCF19C /* MainViewController.m */; };
 		FBF5F724258A0D34005A3CFC /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5F723258A0D34005A3CFC /* zuojiantou.png */; };
+		FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */; };
+		FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,10 @@
 		FBC8ACF1257BE1C700DCF19C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		FBC8ACF2257BE1C700DCF19C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		FBF5F723258A0D34005A3CFC /* zuojiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuojiantou.png; sourceTree = "<group>"; };
+		FBF5F728258A4AFD005A3CFC /* AboutFirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutFirstTableViewCell.h; sourceTree = "<group>"; };
+		FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutFirstTableViewCell.m; sourceTree = "<group>"; };
+		FBF5F72E258A4FBA005A3CFC /* AboutSecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutSecondTableViewCell.h; sourceTree = "<group>"; };
+		FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutSecondTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +217,10 @@
 				FBA03836258615B5003DD507 /* PersonalFirstTableViewCell.m */,
 				FBA03863258784CD003DD507 /* PersonalSecondTableViewCell.h */,
 				FBA03864258784CD003DD507 /* PersonalSecondTableViewCell.m */,
+				FBF5F728258A4AFD005A3CFC /* AboutFirstTableViewCell.h */,
+				FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */,
+				FBF5F72E258A4FBA005A3CFC /* AboutSecondTableViewCell.h */,
+				FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -509,6 +519,7 @@
 			files = (
 				FBA0387425878C20003DD507 /* InformationTableViewController.m in Sources */,
 				FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */,
+				FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */,
 				FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */,
 				FBA03837258615B5003DD507 /* PersonalFirstTableViewCell.m in Sources */,
 				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
@@ -521,6 +532,7 @@
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
+				FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */,
 				FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */,
 				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
 				FBA038222586156C003DD507 /* PersonalViewController.m in Sources */,
