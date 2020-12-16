@@ -35,14 +35,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         InformationTableViewController *viewController = [[InformationTableViewController alloc] init];
-        viewController.modalPresentationStyle = 0;
-//        [self.navigationController presentViewController:viewController animated:YES completion:nil];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+        nav.title = @"学生信息";
+        nav.modalPresentationStyle = 0;
         [self presentViewController:nav animated:YES completion:nil];
     } else {
         AboutTableViewController *viewController = [[AboutTableViewController alloc] init];
-        viewController.modalPresentationStyle = 0;
-        [self.navigationController presentViewController:viewController animated:YES completion:nil];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+        nav.title = @"关于";
+        nav.modalPresentationStyle = 0;
+        [self presentViewController:nav animated:YES completion:nil];
     }
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

@@ -42,6 +42,7 @@
 		FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACE6257BE1A500DCF19C /* MainModel.m */; };
 		FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACEC257BE1B800DCF19C /* MainView.m */; };
 		FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACF2257BE1C700DCF19C /* MainViewController.m */; };
+		FBF5F724258A0D34005A3CFC /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5F723258A0D34005A3CFC /* zuojiantou.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		FBC8ACEC257BE1B800DCF19C /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		FBC8ACF1257BE1C700DCF19C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		FBC8ACF2257BE1C700DCF19C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FBF5F723258A0D34005A3CFC /* zuojiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuojiantou.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 		FBAC121B2577926B00C64F6B = {
 			isa = PBXGroup;
 			children = (
+				FBF5F723258A0D34005A3CFC /* zuojiantou.png */,
 				FBA0385E2587849F003DD507 /* youjiantou.png */,
 				FBA03859258780D6003DD507 /* tx.jpg */,
 				FBA1183425825D44008C3920 /* 关于.png */,
@@ -448,6 +451,7 @@
 				FBA0385A258780D7003DD507 /* tx.jpg in Resources */,
 				FBAC12342577926E00C64F6B /* Assets.xcassets in Resources */,
 				FBAC12322577926B00C64F6B /* Main.storyboard in Resources */,
+				FBF5F724258A0D34005A3CFC /* zuojiantou.png in Resources */,
 				FBA117E5257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png in Resources */,
 				FBA1180D2580C2A3008C3920 /* 更多.png in Resources */,
 				FBA117E6257F9E30008C3920 /* 0D9C918FEDB6C5E1D135675607A118D6.jpg in Resources */,
