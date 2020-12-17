@@ -45,6 +45,7 @@
 		FBF5F724258A0D34005A3CFC /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5F723258A0D34005A3CFC /* zuojiantou.png */; };
 		FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */; };
 		FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */; };
+		FBF5F736258B5F9C005A3CFC /* SuggestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F735258B5F9C005A3CFC /* SuggestTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,8 @@
 		FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutFirstTableViewCell.m; sourceTree = "<group>"; };
 		FBF5F72E258A4FBA005A3CFC /* AboutSecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutSecondTableViewCell.h; sourceTree = "<group>"; };
 		FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutSecondTableViewCell.m; sourceTree = "<group>"; };
+		FBF5F734258B5F9C005A3CFC /* SuggestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuggestTableViewController.h; sourceTree = "<group>"; };
+		FBF5F735258B5F9C005A3CFC /* SuggestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuggestTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +246,8 @@
 				FBA0387325878C20003DD507 /* InformationTableViewController.m */,
 				FBA0387B25878C2C003DD507 /* AboutTableViewController.h */,
 				FBA0387C25878C2C003DD507 /* AboutTableViewController.m */,
+				FBF5F734258B5F9C005A3CFC /* SuggestTableViewController.h */,
+				FBF5F735258B5F9C005A3CFC /* SuggestTableViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -533,6 +538,7 @@
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
 				FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */,
+				FBF5F736258B5F9C005A3CFC /* SuggestTableViewController.m in Sources */,
 				FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */,
 				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
 				FBA038222586156C003DD507 /* PersonalViewController.m in Sources */,

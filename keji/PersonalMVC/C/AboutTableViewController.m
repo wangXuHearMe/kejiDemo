@@ -62,20 +62,27 @@
     if (indexPath.section == 0) {
         AboutFirstTableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
         if (indexPath.row == 0) {
-//            cell1.selectionStyle = 0;
             cell1.backgroundColor = [UIColor whiteColor];
+            cell1.selectionStyle = 0;
             return cell1;
         }
     } else if (indexPath.section == 1) {
         AboutSecondTableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"cell2" forIndexPath:indexPath];
         if (indexPath.row == 0) {
             cell2.backgroundColor = [UIColor whiteColor];
+            cell2.selectionStyle = 0;
             return cell2;
         }
     }
     return 0;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            
+        }
+    }
+}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
