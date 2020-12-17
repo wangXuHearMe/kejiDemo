@@ -8,6 +8,7 @@
 #import "AboutTableViewController.h"
 #import "AboutFirstTableViewCell.h"
 #import "AboutSecondTableViewCell.h"
+#import "SuggestViewController.h"
 @interface AboutTableViewController ()
 
 @end
@@ -79,7 +80,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            
+            SuggestViewController *viewController = [[SuggestViewController alloc] init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+            nav.title = @"建议与反馈";
+            nav.modalPresentationStyle = 0;
+            [self presentViewController:nav animated:YES completion:nil];
         }
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		463FB3BA2C2CDD4AA0CC2751 /* libPods-keji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9F3EE6001500A28D024DC6 /* libPods-keji.a */; };
+		FB95C98D258B6C33005B7BF3 /* jiahao.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C98C258B6C33005B7BF3 /* jiahao.png */; };
 		FBA038222586156C003DD507 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038212586156C003DD507 /* PersonalViewController.m */; };
 		FBA038282586157F003DD507 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038272586157F003DD507 /* PersonalView.m */; };
 		FBA0382E25861596003DD507 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0382D25861596003DD507 /* PersonalModel.m */; };
@@ -45,7 +46,7 @@
 		FBF5F724258A0D34005A3CFC /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5F723258A0D34005A3CFC /* zuojiantou.png */; };
 		FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */; };
 		FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */; };
-		FBF5F736258B5F9C005A3CFC /* SuggestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F735258B5F9C005A3CFC /* SuggestTableViewController.m */; };
+		FBF5F73F258B658C005A3CFC /* SuggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F73E258B658C005A3CFC /* SuggestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		07F93F78CDD4F382DC93180D /* Pods-keji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keji.debug.xcconfig"; path = "Target Support Files/Pods-keji/Pods-keji.debug.xcconfig"; sourceTree = "<group>"; };
 		7C9F3EE6001500A28D024DC6 /* libPods-keji.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keji.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB04DA88873703FB928DE0FC /* Pods-keji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keji.release.xcconfig"; path = "Target Support Files/Pods-keji/Pods-keji.release.xcconfig"; sourceTree = "<group>"; };
+		FB95C98C258B6C33005B7BF3 /* jiahao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiahao.png; sourceTree = "<group>"; };
 		FBA038202586156C003DD507 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		FBA038212586156C003DD507 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		FBA038262586157F003DD507 /* PersonalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalView.h; sourceTree = "<group>"; };
@@ -131,8 +133,8 @@
 		FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutFirstTableViewCell.m; sourceTree = "<group>"; };
 		FBF5F72E258A4FBA005A3CFC /* AboutSecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutSecondTableViewCell.h; sourceTree = "<group>"; };
 		FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutSecondTableViewCell.m; sourceTree = "<group>"; };
-		FBF5F734258B5F9C005A3CFC /* SuggestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuggestTableViewController.h; sourceTree = "<group>"; };
-		FBF5F735258B5F9C005A3CFC /* SuggestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuggestTableViewController.m; sourceTree = "<group>"; };
+		FBF5F73D258B658C005A3CFC /* SuggestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuggestViewController.h; sourceTree = "<group>"; };
+		FBF5F73E258B658C005A3CFC /* SuggestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuggestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,8 +248,8 @@
 				FBA0387325878C20003DD507 /* InformationTableViewController.m */,
 				FBA0387B25878C2C003DD507 /* AboutTableViewController.h */,
 				FBA0387C25878C2C003DD507 /* AboutTableViewController.m */,
-				FBF5F734258B5F9C005A3CFC /* SuggestTableViewController.h */,
-				FBF5F735258B5F9C005A3CFC /* SuggestTableViewController.m */,
+				FBF5F73D258B658C005A3CFC /* SuggestViewController.h */,
+				FBF5F73E258B658C005A3CFC /* SuggestViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -274,6 +276,7 @@
 		FBAC121B2577926B00C64F6B = {
 			isa = PBXGroup;
 			children = (
+				FB95C98C258B6C33005B7BF3 /* jiahao.png */,
 				FBF5F723258A0D34005A3CFC /* zuojiantou.png */,
 				FBA0385E2587849F003DD507 /* youjiantou.png */,
 				FBA03859258780D6003DD507 /* tx.jpg */,
@@ -458,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA1183725825D44008C3920 /* 描述.png in Resources */,
+				FB95C98D258B6C33005B7BF3 /* jiahao.png in Resources */,
 				FBA117FA2580BE0E008C3920 /* jia.png in Resources */,
 				FBA118212581031C008C3920 /* 头视图.jpg in Resources */,
 				FBA1183625825D44008C3920 /* 关于.png in Resources */,
@@ -538,10 +542,10 @@
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
 				FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */,
-				FBF5F736258B5F9C005A3CFC /* SuggestTableViewController.m in Sources */,
 				FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */,
 				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
 				FBA038222586156C003DD507 /* PersonalViewController.m in Sources */,
+				FBF5F73F258B658C005A3CFC /* SuggestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
