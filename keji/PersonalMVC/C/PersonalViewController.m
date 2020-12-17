@@ -30,7 +30,7 @@
     [self.personalView.tableView registerClass:[PersonalSecondTableViewCell class] forCellReuseIdentifier:@"cell2"];
     self.personalView.tableView.delegate = self;
     self.personalView.tableView.dataSource = self;
-    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 0, CGFLOAT_MIN)];
+    self.personalView.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 0, CGFLOAT_MIN)];
     self.navigationController.delegate = self;
     
 }
