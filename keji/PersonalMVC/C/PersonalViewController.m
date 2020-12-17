@@ -6,7 +6,7 @@
 //
 
 #import "PersonalViewController.h"
-#import "InformationTableViewController.h"
+#import "InformationViewController.h"
 #import "AboutTableViewController.h"
 @interface PersonalViewController ()
 
@@ -36,7 +36,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        InformationTableViewController *viewController = [[InformationTableViewController alloc] init];
+        InformationViewController *viewController = [[InformationViewController alloc] init];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
         nav.title = @"学生信息";
         nav.modalPresentationStyle = 0;

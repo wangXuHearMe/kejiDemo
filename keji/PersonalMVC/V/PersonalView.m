@@ -6,7 +6,7 @@
 //
 
 #import "PersonalView.h"
-#import "InformationTableViewController.h"
+#import "InformationViewController.h"
 @implementation PersonalView
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

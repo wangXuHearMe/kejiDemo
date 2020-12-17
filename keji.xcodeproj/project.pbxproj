@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		463FB3BA2C2CDD4AA0CC2751 /* libPods-keji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9F3EE6001500A28D024DC6 /* libPods-keji.a */; };
 		FB95C98D258B6C33005B7BF3 /* jiahao.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C98C258B6C33005B7BF3 /* jiahao.png */; };
+		FB95C993258B9A6F005B7BF3 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C992258B9A6F005B7BF3 /* InformationViewController.m */; };
+		FB95C99C258B9DEF005B7BF3 /* InformationFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C99B258B9DEF005B7BF3 /* InformationFirstTableViewCell.m */; };
+		FB95C9A2258BA0F6005B7BF3 /* InformationSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9A1258BA0F6005B7BF3 /* InformationSecondTableViewCell.m */; };
 		FBA038222586156C003DD507 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038212586156C003DD507 /* PersonalViewController.m */; };
 		FBA038282586157F003DD507 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038272586157F003DD507 /* PersonalView.m */; };
 		FBA0382E25861596003DD507 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0382D25861596003DD507 /* PersonalModel.m */; };
@@ -16,7 +19,6 @@
 		FBA0385A258780D7003DD507 /* tx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBA03859258780D6003DD507 /* tx.jpg */; };
 		FBA0385F258784A0003DD507 /* youjiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA0385E2587849F003DD507 /* youjiantou.png */; };
 		FBA03865258784CD003DD507 /* PersonalSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA03864258784CD003DD507 /* PersonalSecondTableViewCell.m */; };
-		FBA0387425878C20003DD507 /* InformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0387325878C20003DD507 /* InformationTableViewController.m */; };
 		FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0387C25878C2C003DD507 /* AboutTableViewController.m */; };
 		FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA117D8257F9B1F008C3920 /* MidViewController.m */; };
 		FBA117E5257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */; };
@@ -71,6 +73,12 @@
 		7C9F3EE6001500A28D024DC6 /* libPods-keji.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keji.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB04DA88873703FB928DE0FC /* Pods-keji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keji.release.xcconfig"; path = "Target Support Files/Pods-keji/Pods-keji.release.xcconfig"; sourceTree = "<group>"; };
 		FB95C98C258B6C33005B7BF3 /* jiahao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiahao.png; sourceTree = "<group>"; };
+		FB95C991258B9A6F005B7BF3 /* InformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		FB95C992258B9A6F005B7BF3 /* InformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		FB95C99A258B9DEF005B7BF3 /* InformationFirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InformationFirstTableViewCell.h; sourceTree = "<group>"; };
+		FB95C99B258B9DEF005B7BF3 /* InformationFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InformationFirstTableViewCell.m; sourceTree = "<group>"; };
+		FB95C9A0258BA0F6005B7BF3 /* InformationSecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InformationSecondTableViewCell.h; sourceTree = "<group>"; };
+		FB95C9A1258BA0F6005B7BF3 /* InformationSecondTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InformationSecondTableViewCell.m; sourceTree = "<group>"; };
 		FBA038202586156C003DD507 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		FBA038212586156C003DD507 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		FBA038262586157F003DD507 /* PersonalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalView.h; sourceTree = "<group>"; };
@@ -83,8 +91,6 @@
 		FBA0385E2587849F003DD507 /* youjiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youjiantou.png; sourceTree = "<group>"; };
 		FBA03863258784CD003DD507 /* PersonalSecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalSecondTableViewCell.h; sourceTree = "<group>"; };
 		FBA03864258784CD003DD507 /* PersonalSecondTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalSecondTableViewCell.m; sourceTree = "<group>"; };
-		FBA0387225878C20003DD507 /* InformationTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InformationTableViewController.h; sourceTree = "<group>"; };
-		FBA0387325878C20003DD507 /* InformationTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InformationTableViewController.m; sourceTree = "<group>"; };
 		FBA0387B25878C2C003DD507 /* AboutTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutTableViewController.h; sourceTree = "<group>"; };
 		FBA0387C25878C2C003DD507 /* AboutTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutTableViewController.m; sourceTree = "<group>"; };
 		FBA117D7257F9B1F008C3920 /* MidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidViewController.h; sourceTree = "<group>"; };
@@ -226,6 +232,10 @@
 				FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */,
 				FBF5F72E258A4FBA005A3CFC /* AboutSecondTableViewCell.h */,
 				FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */,
+				FB95C99A258B9DEF005B7BF3 /* InformationFirstTableViewCell.h */,
+				FB95C99B258B9DEF005B7BF3 /* InformationFirstTableViewCell.m */,
+				FB95C9A0258BA0F6005B7BF3 /* InformationSecondTableViewCell.h */,
+				FB95C9A1258BA0F6005B7BF3 /* InformationSecondTableViewCell.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -244,8 +254,8 @@
 			children = (
 				FBA038202586156C003DD507 /* PersonalViewController.h */,
 				FBA038212586156C003DD507 /* PersonalViewController.m */,
-				FBA0387225878C20003DD507 /* InformationTableViewController.h */,
-				FBA0387325878C20003DD507 /* InformationTableViewController.m */,
+				FB95C991258B9A6F005B7BF3 /* InformationViewController.h */,
+				FB95C992258B9A6F005B7BF3 /* InformationViewController.m */,
 				FBA0387B25878C2C003DD507 /* AboutTableViewController.h */,
 				FBA0387C25878C2C003DD507 /* AboutTableViewController.m */,
 				FBF5F73D258B658C005A3CFC /* SuggestViewController.h */,
@@ -526,7 +536,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBA0387425878C20003DD507 /* InformationTableViewController.m in Sources */,
 				FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */,
 				FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */,
 				FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */,
@@ -535,9 +544,12 @@
 				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
 				FBA03865258784CD003DD507 /* PersonalSecondTableViewCell.m in Sources */,
 				FBA1182D258208DB008C3920 /* WeekViewController.m in Sources */,
+				FB95C99C258B9DEF005B7BF3 /* InformationFirstTableViewCell.m in Sources */,
 				FBA1182725810742008C3920 /* MoreTableViewCell.m in Sources */,
 				FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */,
 				FBA0382E25861596003DD507 /* PersonalModel.m in Sources */,
+				FB95C9A2258BA0F6005B7BF3 /* InformationSecondTableViewCell.m in Sources */,
+				FB95C993258B9A6F005B7BF3 /* InformationViewController.m in Sources */,
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,

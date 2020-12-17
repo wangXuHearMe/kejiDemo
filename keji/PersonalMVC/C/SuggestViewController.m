@@ -56,7 +56,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [_suggestTextField resignFirstResponder];    //主要是[receiver resignFirstResponder]在哪调用就能把receiver对应的键盘往下收
+    [_suggestTextField resignFirstResponder];   
     return YES;
 }
 /*
