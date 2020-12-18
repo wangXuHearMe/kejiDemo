@@ -15,9 +15,9 @@
         self.mainTextField = [[UITextField alloc] init];
         self.mainImageView = [[UIImageView alloc] init];
         
-        [self addSubview:self.mainImageView];
-        [self addSubview:self.mainTextField];
-        [self addSubview:self.mainLabel];
+        [self.contentView addSubview:self.mainImageView];
+        [self.contentView addSubview:self.mainTextField];
+        [self.contentView addSubview:self.mainLabel];
     }
     return self;
 }

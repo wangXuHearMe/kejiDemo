@@ -32,6 +32,9 @@
     [self.view addSubview:self.sureButton];
     [self setUI];
 }
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+}
 - (void)pressSure {
     
 }
