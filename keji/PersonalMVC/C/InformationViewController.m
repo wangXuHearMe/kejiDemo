@@ -8,6 +8,8 @@
 #import "InformationViewController.h"
 #import "InformationFirstTableViewCell.h"
 #import "InformationSecondTableViewCell.h"
+#import "InformationThirdTableViewCell.h"
+#import "DescriptViewController.h"
 #import "SexViewController.h"
 @interface InformationViewController ()
 
@@ -18,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.isSex = NO;
+    self.isDescr = NO;
+    self.isNation = NO;
     self.navigationItem.title = @"学生信息";
     self.view.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1];
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
@@ -43,6 +48,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 50, self.view.frame.size.width - 20, self.view.frame.size.height * 0.5) style:UITableViewStylePlain];
     [self.tableView registerClass:[InformationFirstTableViewCell class] forCellReuseIdentifier:@"cell1"];
     [self.tableView registerClass:[InformationSecondTableViewCell class] forCellReuseIdentifier:@"cell2"];
+    [self.tableView registerClass:[InformationThirdTableViewCell class] forCellReuseIdentifier:@"cell3"];
     self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 0, CGFLOAT_MIN)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -79,9 +85,15 @@
             cell.mainLabel.text = @"身份证";
             return cell;
         } else if (indexPath.row == 3) {
-            InformationSecondTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2" forIndexPath:indexPath];
+            InformationThirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
             cell.mainLabel.text = @"性别";
-            cell.mainTextField.placeholder = @"男";
+            if (self.isSex == NO) {
+                cell.strLabel.text = @"男";
+                cell.strLabel.textColor = [UIColor colorWithRed:197/255.0 green:197/255.0 blue:197/255.0 alpha:1];
+            } else {
+                cell.strLabel.text = self.sexStr;
+                cell.strLabel.textColor = [UIColor blackColor];
+            }
             [cell.mainImageView setImage:[UIImage imageNamed:@"youjiantou.png"]];
             return cell;
         } else if (indexPath.row == 4) {
@@ -90,14 +102,20 @@
             cell.mainTextField.placeholder = @"请输入专业名称";
             return cell;
         } else if (indexPath.row == 5) {
-            InformationSecondTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2" forIndexPath:indexPath];
+            InformationThirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
             cell.mainLabel.text = @"描述";
             [cell.mainImageView setImage:[UIImage imageNamed:@"youjiantou.png"]];
             return cell;
         } else if (indexPath.row == 6) {
-            InformationSecondTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2" forIndexPath:indexPath];
+            InformationThirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
             cell.mainLabel.text = @"民族";
-            cell.mainTextField.placeholder = @"汉族";
+            if (self.isNation == NO) {
+                cell.strLabel.text = @"汉族";
+                cell.strLabel.textColor = [UIColor colorWithRed:197/255.0 green:197/255.0 blue:197/255.0 alpha:1];
+            } else {
+                cell.strLabel.text = self.nationStr;
+                cell.strLabel.textColor = [UIColor blackColor];
+            }
             [cell.mainImageView setImage:[UIImage imageNamed:@"youjiantou.png"]];
             return cell;
         }
@@ -108,11 +126,39 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 3) {
             SexViewController *viewController = [[SexViewController alloc] init];
-            self.view.alpha = 0.7;
+            viewController.delegate = self;
+            viewController.modalPresentationStyle = UIModalPresentationCustom;
+            [self presentViewController:viewController animated:YES completion:nil];
+        } else if (indexPath.row == 5) {
+            DescriptViewController *viewController = [[DescriptViewController alloc] init];
+            viewController.delegate = self;
+            viewController.modalPresentationStyle = UIModalPresentationCustom;
+            [self presentViewController:viewController animated:YES completion:nil];
+        } else if (indexPath.row == 6) {
+            NationViewController *viewController = [[NationViewController alloc] init];
+            viewController.delegate = self;
             viewController.modalPresentationStyle = UIModalPresentationCustom;
             [self presentViewController:viewController animated:YES completion:nil];
         }
     }
+}
+- (void)pass:(BOOL)isBegin andlabel:(NSString *)sex {
+    self.isSex = isBegin;
+    self.sexStr = sex;
+    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:0];
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+- (void)pass:(BOOL)isgan andstr:(NSString *)decriptLabel {
+    self.isDescr = isgan;
+    self.descriStr = decriptLabel;
+    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:0];
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+- (void)pass:(BOOL)isgan ansNationText:(NSString *)nationText {
+    self.isNation = isgan;
+    self.nationStr = nationText;
+    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:0];
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 /*
 #pragma mark - Navigation

@@ -22,6 +22,10 @@
 		FB95C9C0258C58E9005B7BF3 /* 详情 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9BF258C58E9005B7BF3 /* 详情 (1).png */; };
 		FB95C9C5258C5916005B7BF3 /* shizhong (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9C4258C5916005B7BF3 /* shizhong (1).png */; };
 		FB95C9CF259049D2005B7BF3 /* SexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9CE259049D2005B7BF3 /* SexViewController.m */; };
+		FB95C9D625905FF2005B7BF3 /* SexTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9D525905FF2005B7BF3 /* SexTableViewCell.m */; };
+		FB95C9DF25906E6B005B7BF3 /* DescriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9DE25906E6B005B7BF3 /* DescriptViewController.m */; };
+		FB95C9E525906FE8005B7BF3 /* InformationThirdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9E425906FE8005B7BF3 /* InformationThirdTableViewCell.m */; };
+		FB95C9EB259078CD005B7BF3 /* NationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9EA259078CD005B7BF3 /* NationViewController.m */; };
 		FBA038222586156C003DD507 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038212586156C003DD507 /* PersonalViewController.m */; };
 		FBA038282586157F003DD507 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038272586157F003DD507 /* PersonalView.m */; };
 		FBA0382E25861596003DD507 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0382D25861596003DD507 /* PersonalModel.m */; };
@@ -100,6 +104,14 @@
 		FB95C9C4258C5916005B7BF3 /* shizhong (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shizhong (1).png"; sourceTree = "<group>"; };
 		FB95C9CD259049D2005B7BF3 /* SexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SexViewController.h; sourceTree = "<group>"; };
 		FB95C9CE259049D2005B7BF3 /* SexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SexViewController.m; sourceTree = "<group>"; };
+		FB95C9D425905FF2005B7BF3 /* SexTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SexTableViewCell.h; sourceTree = "<group>"; };
+		FB95C9D525905FF2005B7BF3 /* SexTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SexTableViewCell.m; sourceTree = "<group>"; };
+		FB95C9DD25906E6B005B7BF3 /* DescriptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DescriptViewController.h; sourceTree = "<group>"; };
+		FB95C9DE25906E6B005B7BF3 /* DescriptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescriptViewController.m; sourceTree = "<group>"; };
+		FB95C9E325906FE8005B7BF3 /* InformationThirdTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InformationThirdTableViewCell.h; sourceTree = "<group>"; };
+		FB95C9E425906FE8005B7BF3 /* InformationThirdTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InformationThirdTableViewCell.m; sourceTree = "<group>"; };
+		FB95C9E9259078CD005B7BF3 /* NationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NationViewController.h; sourceTree = "<group>"; };
+		FB95C9EA259078CD005B7BF3 /* NationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NationViewController.m; sourceTree = "<group>"; };
 		FBA038202586156C003DD507 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		FBA038212586156C003DD507 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		FBA038262586157F003DD507 /* PersonalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalView.h; sourceTree = "<group>"; };
@@ -212,8 +224,23 @@
 			children = (
 				FB95C9CD259049D2005B7BF3 /* SexViewController.h */,
 				FB95C9CE259049D2005B7BF3 /* SexViewController.m */,
+				FBF5F73D258B658C005A3CFC /* SuggestViewController.h */,
+				FBF5F73E258B658C005A3CFC /* SuggestViewController.m */,
+				FB95C9DD25906E6B005B7BF3 /* DescriptViewController.h */,
+				FB95C9DE25906E6B005B7BF3 /* DescriptViewController.m */,
+				FB95C9E9259078CD005B7BF3 /* NationViewController.h */,
+				FB95C9EA259078CD005B7BF3 /* NationViewController.m */,
 			);
 			path = C;
+			sourceTree = "<group>";
+		};
+		FB95C9D325905FDF005B7BF3 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				FB95C9D425905FF2005B7BF3 /* SexTableViewCell.h */,
+				FB95C9D525905FF2005B7BF3 /* SexTableViewCell.m */,
+			);
+			path = M;
 			sourceTree = "<group>";
 		};
 		FBA0383E2586162B003DD507 /* M */ = {
@@ -266,6 +293,8 @@
 				FB95C99B258B9DEF005B7BF3 /* InformationFirstTableViewCell.m */,
 				FB95C9A0258BA0F6005B7BF3 /* InformationSecondTableViewCell.h */,
 				FB95C9A1258BA0F6005B7BF3 /* InformationSecondTableViewCell.m */,
+				FB95C9E325906FE8005B7BF3 /* InformationThirdTableViewCell.h */,
+				FB95C9E425906FE8005B7BF3 /* InformationThirdTableViewCell.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -288,8 +317,7 @@
 				FB95C992258B9A6F005B7BF3 /* InformationViewController.m */,
 				FBA0387B25878C2C003DD507 /* AboutTableViewController.h */,
 				FBA0387C25878C2C003DD507 /* AboutTableViewController.m */,
-				FBF5F73D258B658C005A3CFC /* SuggestViewController.h */,
-				FBF5F73E258B658C005A3CFC /* SuggestViewController.m */,
+				FB95C9D325905FDF005B7BF3 /* M */,
 				FB95C9CC25904517005B7BF3 /* C */,
 			);
 			path = C;
@@ -588,6 +616,8 @@
 				FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */,
 				FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */,
 				FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */,
+				FB95C9EB259078CD005B7BF3 /* NationViewController.m in Sources */,
+				FB95C9DF25906E6B005B7BF3 /* DescriptViewController.m in Sources */,
 				FBA03837258615B5003DD507 /* PersonalFirstTableViewCell.m in Sources */,
 				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
 				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
@@ -598,9 +628,11 @@
 				FBAC12292577926B00C64F6B /* AppDelegate.m in Sources */,
 				FBA0382E25861596003DD507 /* PersonalModel.m in Sources */,
 				FB95C9A2258BA0F6005B7BF3 /* InformationSecondTableViewCell.m in Sources */,
+				FB95C9E525906FE8005B7BF3 /* InformationThirdTableViewCell.m in Sources */,
 				FB95C993258B9A6F005B7BF3 /* InformationViewController.m in Sources */,
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
+				FB95C9D625905FF2005B7BF3 /* SexTableViewCell.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
 				FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */,
 				FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */,

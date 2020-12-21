@@ -6,14 +6,21 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SexViewController.h"
+#import "NationViewController.h"
+#import "DescriptViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface InformationViewController : UIViewController
-<UITableViewDelegate, UITableViewDataSource>
+<UITableViewDelegate, UITableViewDataSource, sexDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIButton *sureButton;
-@property bool isBegan;
+@property (nonatomic, strong) NSString *sexStr;
+@property (nonatomic, strong) NSString *descriStr;
+@property (nonatomic, strong) NSString *nationStr;
+@property bool isSex;
+@property bool isDescr;
+@property bool isNation;
 @end
 
 NS_ASSUME_NONNULL_END

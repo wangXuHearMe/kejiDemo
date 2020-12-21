@@ -1,18 +1,18 @@
 //
-//  SexViewController.m
+//  NationViewController.m
 //  keji
 //
 //  Created by 王旭 on 2020/12/21.
 //
 
-#import "SexViewController.h"
+#import "NationViewController.h"
 #import "InformationViewController.h"
 #import "SexTableViewCell.h"
-@interface SexViewController ()
+@interface NationViewController ()
 
 @end
 
-@implementation SexViewController
+@implementation NationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +25,6 @@
     [self.view addSubview:self.tableView];
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    self.isbegin = YES;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -56,10 +55,10 @@
     if (indexPath.section == 0) {
         SexTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
         if (indexPath.row == 0) {
-            cell.tatLabel.text = @"男";
+            cell.tatLabel.text = @"汉族";
             return cell;
         } else if (indexPath.row == 1) {
-            cell.tatLabel.text = @"女";
+            cell.tatLabel.text = @"其他";
             return cell;
         }
     } else if (indexPath.section == 1) {
@@ -72,11 +71,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            [self.delegate pass:YES andlabel:@"男"];
+            [self.delegate pass:YES ansNationText:@"汉族"];
             [self dismissViewControllerAnimated:YES completion:nil];
         } else {
-            [self.delegate pass:YES andlabel:@"女"];
-            [self dismissViewControllerAnimated:YES completion:nil];
+            [self.delegate pass:YES ansNationText:@"其他"];
         }
     } else {
         [self dismissViewControllerAnimated:YES completion:nil];
