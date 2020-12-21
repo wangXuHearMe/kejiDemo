@@ -21,6 +21,7 @@
 		FB95C9BB258C58E0005B7BF3 /* 签到 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9B9258C58E0005B7BF3 /* 签到 (2).png */; };
 		FB95C9C0258C58E9005B7BF3 /* 详情 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9BF258C58E9005B7BF3 /* 详情 (1).png */; };
 		FB95C9C5258C5916005B7BF3 /* shizhong (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9C4258C5916005B7BF3 /* shizhong (1).png */; };
+		FB95C9CF259049D2005B7BF3 /* SexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9CE259049D2005B7BF3 /* SexViewController.m */; };
 		FBA038222586156C003DD507 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038212586156C003DD507 /* PersonalViewController.m */; };
 		FBA038282586157F003DD507 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038272586157F003DD507 /* PersonalView.m */; };
 		FBA0382E25861596003DD507 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0382D25861596003DD507 /* PersonalModel.m */; };
@@ -97,6 +98,8 @@
 		FB95C9B9258C58E0005B7BF3 /* 签到 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "签到 (2).png"; sourceTree = "<group>"; };
 		FB95C9BF258C58E9005B7BF3 /* 详情 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "详情 (1).png"; sourceTree = "<group>"; };
 		FB95C9C4258C5916005B7BF3 /* shizhong (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shizhong (1).png"; sourceTree = "<group>"; };
+		FB95C9CD259049D2005B7BF3 /* SexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SexViewController.h; sourceTree = "<group>"; };
+		FB95C9CE259049D2005B7BF3 /* SexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SexViewController.m; sourceTree = "<group>"; };
 		FBA038202586156C003DD507 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		FBA038212586156C003DD507 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		FBA038262586157F003DD507 /* PersonalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalView.h; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 		FB95C9CC25904517005B7BF3 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				FB95C9CD259049D2005B7BF3 /* SexViewController.h */,
+				FB95C9CE259049D2005B7BF3 /* SexViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -599,6 +604,7 @@
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
 				FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */,
 				FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */,
+				FB95C9CF259049D2005B7BF3 /* SexViewController.m in Sources */,
 				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
 				FBA038222586156C003DD507 /* PersonalViewController.m in Sources */,
 				FBF5F73F258B658C005A3CFC /* SuggestViewController.m in Sources */,

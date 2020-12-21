@@ -8,6 +8,7 @@
 #import "InformationViewController.h"
 #import "InformationFirstTableViewCell.h"
 #import "InformationSecondTableViewCell.h"
+#import "SexViewController.h"
 @interface InformationViewController ()
 
 @end
@@ -104,7 +105,14 @@
     return 0;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    if (indexPath.section == 0) {
+        if (indexPath.row == 3) {
+            SexViewController *viewController = [[SexViewController alloc] init];
+            self.view.alpha = 0.7;
+            viewController.modalPresentationStyle = UIModalPresentationCustom;
+            [self presentViewController:viewController animated:YES completion:nil];
+        }
+    }
 }
 /*
 #pragma mark - Navigation

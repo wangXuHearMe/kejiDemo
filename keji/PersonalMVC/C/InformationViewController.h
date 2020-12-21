@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIButton *sureButton;
+@property bool isBegan;
 @end
 
 NS_ASSUME_NONNULL_END
