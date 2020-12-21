@@ -15,7 +15,6 @@
 		FB95C9A7258C58C6005B7BF3 /* 圆形.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9A6258C58C6005B7BF3 /* 圆形.png */; };
 		FB95C9B0258C58D6005B7BF3 /* 结束时间.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9AB258C58D5005B7BF3 /* 结束时间.png */; };
 		FB95C9B1258C58D6005B7BF3 /* 标签 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9AC258C58D5005B7BF3 /* 标签 (2).png */; };
-		FB95C9B2258C58D6005B7BF3 /* 更多.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9AD258C58D6005B7BF3 /* 更多.png */; };
 		FB95C9B3258C58D6005B7BF3 /* 开始时间.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9AE258C58D6005B7BF3 /* 开始时间.png */; };
 		FB95C9B4258C58D6005B7BF3 /* 结束时间1.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9AF258C58D6005B7BF3 /* 结束时间1.png */; };
 		FB95C9BA258C58E0005B7BF3 /* 开始时间1.png in Resources */ = {isa = PBXBuildFile; fileRef = FB95C9B8258C58E0005B7BF3 /* 开始时间1.png */; };
@@ -92,7 +91,6 @@
 		FB95C9A6258C58C6005B7BF3 /* 圆形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆形.png"; sourceTree = "<group>"; };
 		FB95C9AB258C58D5005B7BF3 /* 结束时间.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "结束时间.png"; sourceTree = "<group>"; };
 		FB95C9AC258C58D5005B7BF3 /* 标签 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标签 (2).png"; sourceTree = "<group>"; };
-		FB95C9AD258C58D6005B7BF3 /* 更多.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "更多.png"; path = "../../课记用到的图标/更多.png"; sourceTree = "<group>"; };
 		FB95C9AE258C58D6005B7BF3 /* 开始时间.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开始时间.png"; sourceTree = "<group>"; };
 		FB95C9AF258C58D6005B7BF3 /* 结束时间1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "结束时间1.png"; sourceTree = "<group>"; };
 		FB95C9B8258C58E0005B7BF3 /* 开始时间1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开始时间1.png"; sourceTree = "<group>"; };
@@ -206,6 +204,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FB95C9CC25904517005B7BF3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		FBA0383E2586162B003DD507 /* M */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +285,7 @@
 				FBA0387C25878C2C003DD507 /* AboutTableViewController.m */,
 				FBF5F73D258B658C005A3CFC /* SuggestViewController.h */,
 				FBF5F73E258B658C005A3CFC /* SuggestViewController.m */,
+				FB95C9CC25904517005B7BF3 /* C */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -323,7 +329,6 @@
 				FBA117E3257F9E30008C3920 /* B5EF1C3FD90C49A7706DF3C6C1C73031.png */,
 				FB95C9A6258C58C6005B7BF3 /* 圆形.png */,
 				FB95C9AC258C58D5005B7BF3 /* 标签 (2).png */,
-				FB95C9AD258C58D6005B7BF3 /* 更多.png */,
 				FB95C9AB258C58D5005B7BF3 /* 结束时间.png */,
 				FB95C9AF258C58D6005B7BF3 /* 结束时间1.png */,
 				FB95C9AE258C58D6005B7BF3 /* 开始时间.png */,
@@ -506,7 +511,6 @@
 				FB95C98D258B6C33005B7BF3 /* jiahao.png in Resources */,
 				FB95C9B3258C58D6005B7BF3 /* 开始时间.png in Resources */,
 				FBA117FA2580BE0E008C3920 /* jia.png in Resources */,
-				FB95C9B2258C58D6005B7BF3 /* 更多.png in Resources */,
 				FBA118212581031C008C3920 /* 头视图.jpg in Resources */,
 				FBA1183625825D44008C3920 /* 关于.png in Resources */,
 				FB95C9B1258C58D6005B7BF3 /* 标签 (2).png in Resources */,
