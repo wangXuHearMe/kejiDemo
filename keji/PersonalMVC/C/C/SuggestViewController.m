@@ -6,7 +6,7 @@
 //
 
 #import "SuggestViewController.h"
-
+#import "PictureViewController.h"
 @interface SuggestViewController ()
 
 @end
@@ -50,7 +50,9 @@
     
 }
 - (void)pressAdd {
-    
+    PictureViewController *viewController = [[PictureViewController alloc] init];
+    viewController.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 - (void)pressBack {
     [self dismissViewControllerAnimated:YES completion:nil];

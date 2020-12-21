@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *sexStr;
 @property (nonatomic, strong) NSString *descriStr;
 @property (nonatomic, strong) NSString *nationStr;
+@property (nonatomic, strong) NSString *nameStr;
+@property (nonatomic, strong) NSString *IDStr;
+@property (nonatomic, strong) NSString *majorStr;
 @property bool isSex;
 @property bool isDescr;
 @property bool isNation;

@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.IDStr = @"61052820010623001X";
+    self.nameStr = @"王旭";
     // Do any additional setup after loading the view.
     self.isSex = NO;
     self.isDescr = NO;
@@ -76,13 +78,14 @@
             InformationFirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
             return cell;
         } else if (indexPath.row == 1) {
-            InformationSecondTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2" forIndexPath:indexPath];
+            InformationThirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
             cell.mainLabel.text = @"姓名";
-            cell.mainTextField.placeholder = @"你的名字";
+            cell.strLabel.text = self.nameStr;
             return cell;
         } else if (indexPath.row == 2) {
-            InformationSecondTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2" forIndexPath:indexPath];
+            InformationThirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
             cell.mainLabel.text = @"身份证";
+            cell.strLabel.text = self.IDStr;
             return cell;
         } else if (indexPath.row == 3) {
             InformationThirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
@@ -104,6 +107,7 @@
         } else if (indexPath.row == 5) {
             InformationThirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
             cell.mainLabel.text = @"描述";
+            cell.strLabel.text = self.descriStr;
             [cell.mainImageView setImage:[UIImage imageNamed:@"youjiantou.png"]];
             return cell;
         } else if (indexPath.row == 6) {

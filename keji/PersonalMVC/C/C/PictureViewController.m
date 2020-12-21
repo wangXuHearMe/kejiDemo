@@ -1,18 +1,17 @@
 //
-//  SexViewController.m
+//  PictureViewController.m
 //  keji
 //
 //  Created by 王旭 on 2020/12/21.
 //
 
-#import "SexViewController.h"
-#import "InformationViewController.h"
+#import "PictureViewController.h"
 #import "SexTableViewCell.h"
-@interface SexViewController ()
+@interface PictureViewController ()
 
 @end
 
-@implementation SexViewController
+@implementation PictureViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,7 +25,6 @@
     self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 0, CGFLOAT_MIN)];
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    self.isbegin = YES;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -57,10 +55,10 @@
     if (indexPath.section == 0) {
         SexTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
         if (indexPath.row == 0) {
-            cell.tatLabel.text = @"男";
+            cell.tatLabel.text = @"上传照片";
             return cell;
         } else if (indexPath.row == 1) {
-            cell.tatLabel.text = @"女";
+            cell.tatLabel.text = @"上传视频";
             return cell;
         }
     } else if (indexPath.section == 1) {
@@ -73,16 +71,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            [self.delegate pass:YES andlabel:@"男"];
-            [self dismissViewControllerAnimated:YES completion:nil];
+            
         } else {
-            [self.delegate pass:YES andlabel:@"女"];
-            [self dismissViewControllerAnimated:YES completion:nil];
+            
         }
     } else {
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
+
 /*
 #pragma mark - Navigation
 
