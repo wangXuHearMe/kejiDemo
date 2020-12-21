@@ -222,10 +222,10 @@
 		FB95C9CC25904517005B7BF3 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				FB95C9CD259049D2005B7BF3 /* SexViewController.h */,
-				FB95C9CE259049D2005B7BF3 /* SexViewController.m */,
 				FBF5F73D258B658C005A3CFC /* SuggestViewController.h */,
 				FBF5F73E258B658C005A3CFC /* SuggestViewController.m */,
+				FB95C9CD259049D2005B7BF3 /* SexViewController.h */,
+				FB95C9CE259049D2005B7BF3 /* SexViewController.m */,
 				FB95C9DD25906E6B005B7BF3 /* DescriptViewController.h */,
 				FB95C9DE25906E6B005B7BF3 /* DescriptViewController.m */,
 				FB95C9E9259078CD005B7BF3 /* NationViewController.h */,
