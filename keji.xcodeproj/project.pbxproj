@@ -28,6 +28,8 @@
 		FB95C9EB259078CD005B7BF3 /* NationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9EA259078CD005B7BF3 /* NationViewController.m */; };
 		FB95C9F425908CF8005B7BF3 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9F325908CF8005B7BF3 /* PictureViewController.m */; };
 		FB95C9FA2591AA41005B7BF3 /* SignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9F92591AA41005B7BF3 /* SignTableViewCell.m */; };
+		FB95CA002591E7F3005B7BF3 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9FF2591E7F3005B7BF3 /* DetailsViewController.m */; };
+		FB95CA062591E8EE005B7BF3 /* InViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95CA052591E8EE005B7BF3 /* InViewController.m */; };
 		FBA038222586156C003DD507 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038212586156C003DD507 /* PersonalViewController.m */; };
 		FBA038282586157F003DD507 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038272586157F003DD507 /* PersonalView.m */; };
 		FBA0382E25861596003DD507 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0382D25861596003DD507 /* PersonalModel.m */; };
@@ -118,6 +120,10 @@
 		FB95C9F325908CF8005B7BF3 /* PictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
 		FB95C9F82591AA41005B7BF3 /* SignTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignTableViewCell.h; sourceTree = "<group>"; };
 		FB95C9F92591AA41005B7BF3 /* SignTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignTableViewCell.m; sourceTree = "<group>"; };
+		FB95C9FE2591E7F3005B7BF3 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		FB95C9FF2591E7F3005B7BF3 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		FB95CA042591E8EE005B7BF3 /* InViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InViewController.h; sourceTree = "<group>"; };
+		FB95CA052591E8EE005B7BF3 /* InViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InViewController.m; sourceTree = "<group>"; };
 		FBA038202586156C003DD507 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		FBA038212586156C003DD507 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		FBA038262586157F003DD507 /* PersonalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalView.h; sourceTree = "<group>"; };
@@ -338,6 +344,10 @@
 				FBA117D8257F9B1F008C3920 /* MidViewController.m */,
 				FB95C9F82591AA41005B7BF3 /* SignTableViewCell.h */,
 				FB95C9F92591AA41005B7BF3 /* SignTableViewCell.m */,
+				FB95C9FE2591E7F3005B7BF3 /* DetailsViewController.h */,
+				FB95C9FF2591E7F3005B7BF3 /* DetailsViewController.m */,
+				FB95CA042591E8EE005B7BF3 /* InViewController.h */,
+				FB95CA052591E8EE005B7BF3 /* InViewController.m */,
 			);
 			path = MidMVC;
 			sourceTree = "<group>";
@@ -644,11 +654,13 @@
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
 				FB95C9FA2591AA41005B7BF3 /* SignTableViewCell.m in Sources */,
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
+				FB95CA002591E7F3005B7BF3 /* DetailsViewController.m in Sources */,
 				FB95C9D625905FF2005B7BF3 /* SexTableViewCell.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
 				FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */,
 				FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */,
 				FB95C9CF259049D2005B7BF3 /* SexViewController.m in Sources */,
+				FB95CA062591E8EE005B7BF3 /* InViewController.m in Sources */,
 				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
 				FBA038222586156C003DD507 /* PersonalViewController.m in Sources */,
 				FBF5F73F258B658C005A3CFC /* SuggestViewController.m in Sources */,
