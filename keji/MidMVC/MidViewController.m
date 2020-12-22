@@ -21,6 +21,8 @@
     tabBarItem.title = @"签到";
     self.tabBarItem = tabBarItem;
     self.navigationItem.title = @"签到";
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
+    [self.view addSubview:self.tableView];
     // Do any additional setup after loading the view.
 }
 
