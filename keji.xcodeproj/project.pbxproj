@@ -30,6 +30,10 @@
 		FB95C9FA2591AA41005B7BF3 /* SignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9F92591AA41005B7BF3 /* SignTableViewCell.m */; };
 		FB95CA002591E7F3005B7BF3 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95C9FF2591E7F3005B7BF3 /* DetailsViewController.m */; };
 		FB95CA062591E8EE005B7BF3 /* InViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95CA052591E8EE005B7BF3 /* InViewController.m */; };
+		FB95CA0F2591ECC8005B7BF3 /* MypictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95CA0E2591ECC8005B7BF3 /* MypictureViewController.m */; };
+		FB95CA5025931EA0005B7BF3 /* hh2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB95CA4F25931EA0005B7BF3 /* hh2.jpeg */; };
+		FB95CA6025931FEB005B7BF3 /* hh.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB95CA5F25931FEB005B7BF3 /* hh.jpeg */; };
+		FB95CA6D25932055005B7BF3 /* xiangqing.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB95CA6C25932055005B7BF3 /* xiangqing.jpeg */; };
 		FBA038222586156C003DD507 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038212586156C003DD507 /* PersonalViewController.m */; };
 		FBA038282586157F003DD507 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038272586157F003DD507 /* PersonalView.m */; };
 		FBA0382E25861596003DD507 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0382D25861596003DD507 /* PersonalModel.m */; };
@@ -124,6 +128,11 @@
 		FB95C9FF2591E7F3005B7BF3 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		FB95CA042591E8EE005B7BF3 /* InViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InViewController.h; sourceTree = "<group>"; };
 		FB95CA052591E8EE005B7BF3 /* InViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InViewController.m; sourceTree = "<group>"; };
+		FB95CA0D2591ECC8005B7BF3 /* MypictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MypictureViewController.h; sourceTree = "<group>"; };
+		FB95CA0E2591ECC8005B7BF3 /* MypictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MypictureViewController.m; sourceTree = "<group>"; };
+		FB95CA4F25931EA0005B7BF3 /* hh2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hh2.jpeg; sourceTree = "<group>"; };
+		FB95CA5F25931FEB005B7BF3 /* hh.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hh.jpeg; sourceTree = "<group>"; };
+		FB95CA6C25932055005B7BF3 /* xiangqing.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xiangqing.jpeg; sourceTree = "<group>"; };
 		FBA038202586156C003DD507 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		FBA038212586156C003DD507 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		FBA038262586157F003DD507 /* PersonalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalView.h; sourceTree = "<group>"; };
@@ -244,6 +253,8 @@
 				FB95C9EA259078CD005B7BF3 /* NationViewController.m */,
 				FB95C9F225908CF8005B7BF3 /* PictureViewController.h */,
 				FB95C9F325908CF8005B7BF3 /* PictureViewController.m */,
+				FB95CA0D2591ECC8005B7BF3 /* MypictureViewController.h */,
+				FB95CA0E2591ECC8005B7BF3 /* MypictureViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -253,6 +264,28 @@
 			children = (
 				FB95C9D425905FF2005B7BF3 /* SexTableViewCell.h */,
 				FB95C9D525905FF2005B7BF3 /* SexTableViewCell.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		FB95CA0A2591E94A005B7BF3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FBA117D7257F9B1F008C3920 /* MidViewController.h */,
+				FBA117D8257F9B1F008C3920 /* MidViewController.m */,
+				FB95C9FE2591E7F3005B7BF3 /* DetailsViewController.h */,
+				FB95C9FF2591E7F3005B7BF3 /* DetailsViewController.m */,
+				FB95CA042591E8EE005B7BF3 /* InViewController.h */,
+				FB95CA052591E8EE005B7BF3 /* InViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		FB95CA0C2591E96D005B7BF3 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				FB95C9F82591AA41005B7BF3 /* SignTableViewCell.h */,
+				FB95C9F92591AA41005B7BF3 /* SignTableViewCell.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -340,14 +373,8 @@
 		FBA117D6257F9B09008C3920 /* MidMVC */ = {
 			isa = PBXGroup;
 			children = (
-				FBA117D7257F9B1F008C3920 /* MidViewController.h */,
-				FBA117D8257F9B1F008C3920 /* MidViewController.m */,
-				FB95C9F82591AA41005B7BF3 /* SignTableViewCell.h */,
-				FB95C9F92591AA41005B7BF3 /* SignTableViewCell.m */,
-				FB95C9FE2591E7F3005B7BF3 /* DetailsViewController.h */,
-				FB95C9FF2591E7F3005B7BF3 /* DetailsViewController.m */,
-				FB95CA042591E8EE005B7BF3 /* InViewController.h */,
-				FB95CA052591E8EE005B7BF3 /* InViewController.m */,
+				FB95CA0C2591E96D005B7BF3 /* M */,
+				FB95CA0A2591E94A005B7BF3 /* C */,
 			);
 			path = MidMVC;
 			sourceTree = "<group>";
@@ -365,6 +392,9 @@
 		FBAC121B2577926B00C64F6B = {
 			isa = PBXGroup;
 			children = (
+				FB95CA4F25931EA0005B7BF3 /* hh2.jpeg */,
+				FB95CA5F25931FEB005B7BF3 /* hh.jpeg */,
+				FB95CA6C25932055005B7BF3 /* xiangqing.jpeg */,
 				FB95C98C258B6C33005B7BF3 /* jiahao.png */,
 				FBF5F723258A0D34005A3CFC /* zuojiantou.png */,
 				FBA0385E2587849F003DD507 /* youjiantou.png */,
@@ -560,6 +590,8 @@
 			files = (
 				FB95C9C0258C58E9005B7BF3 /* 详情 (1).png in Resources */,
 				FB95C9C5258C5916005B7BF3 /* shizhong (1).png in Resources */,
+				FB95CA5025931EA0005B7BF3 /* hh2.jpeg in Resources */,
+				FB95CA6D25932055005B7BF3 /* xiangqing.jpeg in Resources */,
 				FBA1183725825D44008C3920 /* 描述.png in Resources */,
 				FB95C98D258B6C33005B7BF3 /* jiahao.png in Resources */,
 				FB95C9B3258C58D6005B7BF3 /* 开始时间.png in Resources */,
@@ -584,6 +616,7 @@
 				FBA117F92580BE0E008C3920 /* share_icon.png in Resources */,
 				FBA117F62580BE0E008C3920 /* xiazai.png in Resources */,
 				FBA117F82580BE0E008C3920 /* gengduo.png in Resources */,
+				FB95CA6025931FEB005B7BF3 /* hh.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +687,7 @@
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
 				FB95C9FA2591AA41005B7BF3 /* SignTableViewCell.m in Sources */,
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
+				FB95CA0F2591ECC8005B7BF3 /* MypictureViewController.m in Sources */,
 				FB95CA002591E7F3005B7BF3 /* DetailsViewController.m in Sources */,
 				FB95C9D625905FF2005B7BF3 /* SexTableViewCell.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,

@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *timeLabel;
 @property (nonatomic, strong) UIImageView *typeImageView;
 @property (nonatomic, strong) UIImageView *timeImageView;
+@property (nonatomic, strong) UIButton *typeButton; //点不了的Button
+@property (nonatomic, strong) UIButton *detailButton;
+@property (nonatomic, strong) UIButton *signButton;
 @end
 
 NS_ASSUME_NONNULL_END

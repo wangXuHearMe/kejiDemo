@@ -10,6 +10,7 @@
 #import "InformationSecondTableViewCell.h"
 #import "InformationThirdTableViewCell.h"
 #import "DescriptViewController.h"
+#import "MypictureViewController.h"
 #import "SexViewController.h"
 @interface InformationViewController ()
 
@@ -128,6 +129,11 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            MypictureViewController *viewController = [[MypictureViewController alloc] init];
+            viewController.modalPresentationStyle = UIModalPresentationCustom;
+            [self presentViewController:viewController animated:YES completion:nil];
+        }
         if (indexPath.row == 3) {
             SexViewController *viewController = [[SexViewController alloc] init];
             viewController.delegate = self;
