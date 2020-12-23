@@ -19,6 +19,8 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
     backButton.tintColor = [UIColor blackColor];
     [self.navigationItem setLeftBarButtonItem:backButton];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
+    [self.view addSubview:self.tableView];
 }
 - (void)pressBack {
     [self dismissViewControllerAnimated:YES completion:nil];
