@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SignTableViewCell : UITableViewCell
+@property (nonatomic, strong) UIButton *colorButton;
 @property (nonatomic, strong) UILabel *signLabel;
 @property (nonatomic, strong) UILabel *typeLabel;
 @property (nonatomic, strong) UILabel *timeLabel;

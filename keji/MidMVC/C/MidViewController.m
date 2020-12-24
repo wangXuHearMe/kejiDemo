@@ -61,6 +61,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         SignTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"sign" forIndexPath:indexPath];
+        cell.colorButton.backgroundColor = [UIColor colorWithRed:235/255.0 green:147/255.0 blue:41/255.0 alpha:1];
+        
         cell.signLabel.text = self.shangkeStr;
         cell.typeLabel.text = self.typeStr;
         cell.timeLabel.text = self.connectStr;
