@@ -33,21 +33,21 @@
     return self;
 }
 - (void)layoutSubviews {
-    self.signLabel.frame = CGRectMake(20, 10, 200, 40);
+    self.signLabel.frame = CGRectMake(20, 5, 200, 40);
     self.signLabel.font = [UIFont systemFontOfSize:20];
     self.signLabel.textColor = [UIColor blackColor];
     
     [self.typeImageView setImage:[UIImage imageNamed:@"标签 (2)"]];
-    self.typeImageView.frame = CGRectMake(20, 55, 20, 20);
+    self.typeImageView.frame = CGRectMake(20, 50, 20, 20);
     
-    self.typeLabel.frame = CGRectMake(50, 55, 100, 20);
+    self.typeLabel.frame = CGRectMake(50, 50, 100, 20);
     self.typeLabel.font = [UIFont systemFontOfSize:15];
     self.typeLabel.textColor = [UIColor colorWithRed:119/255.0 green:119/255.0 blue:119/255.0 alpha:1];
     
-    self.typeButton.frame = CGRectMake(250, 60, 80, 20);
+    self.typeButton.frame = CGRectMake(250, 50, 70, 20);
     
     [self.timeImageView setImage:[UIImage imageNamed:@"shizhong (1)"]];
-    self.timeImageView.frame = CGRectMake(20, 75, 20, 20);
+    self.timeImageView.frame = CGRectMake(20, 80, 20, 20);
     
     self.timeLabel.frame = CGRectMake(50, 80, self.frame.size.width * 0.8, 20);
     self.timeLabel.font = [UIFont systemFontOfSize:15];
