@@ -4,7 +4,9 @@
 //
 //  Created by 王旭 on 2020/12/8.
 //
-
+#define ingColor [UIColor colorWithRed:235/255.0 green:147/255.0 blue:41/255.0 alpha:1];
+#define doneColor [UIColor colorWithRed:110/255.0 green:112/255.0 blue:125/255.0 alpha:1];
+#define okColor [UIColor colorWithRed:107/255.0 green:175/255.0 blue:23/255.0 alpha:1];
 #import "MidViewController.h"
 #import "SignTableViewCell.h"
 #import "DetailsViewController.h"
@@ -18,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.startTimeStr = @"2020-12-22 23:00:00";
-    self.stopTimeStr = @"2020-12-24 23:00:00";
+    self.stopTimeStr = @"2020-12-24 23:18:00";
     self.midTimeStr = @"至";
     self.connectStr = [[NSString alloc] init];
     self.connectStr = [_connectStr stringByAppendingFormat:@"%@%@%@",self.startTimeStr,self.midTimeStr,self.stopTimeStr];
@@ -61,7 +63,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         SignTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"sign" forIndexPath:indexPath];
-        cell.colorButton.backgroundColor = [UIColor colorWithRed:235/255.0 green:147/255.0 blue:41/255.0 alpha:1];
+        
+        cell.colorButton.backgroundColor = ingColor;
+        cell.typeButton.backgroundColor = ingColor;
         
         cell.signLabel.text = self.shangkeStr;
         cell.typeLabel.text = self.typeStr;
@@ -70,7 +74,7 @@
         [cell.typeButton setTitle:@"进行中" forState:UIControlStateNormal];
         cell.typeButton.titleLabel.textColor = [UIColor whiteColor];
         cell.typeButton.titleLabel.font = [UIFont systemFontOfSize:15];
-        cell.typeButton.backgroundColor = [UIColor colorWithRed:235/255.0 green:147/255.0 blue:41/255.0 alpha:1];
+ 
         
         [cell.detailButton setImage:[UIImage imageNamed:@"xiangqing.jpeg"] forState:UIControlStateNormal];
         [cell.signButton setImage:[UIImage imageNamed:@"hh2.jpeg"] forState:UIControlStateNormal];

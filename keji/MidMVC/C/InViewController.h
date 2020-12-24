@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSTimer *activeTimer;
 @property (nonatomic, strong) UILabel *timeLabel;
 @property (nonatomic, strong) UILabel *textLabel;
+@property (nonatomic, strong) UIButton *signButton;
 @property NSInteger secondsCountDown;
 
 @end

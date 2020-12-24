@@ -48,13 +48,13 @@
     self.typeLabel.font = [UIFont systemFontOfSize:15];
     self.typeLabel.textColor = [UIColor colorWithRed:119/255.0 green:119/255.0 blue:119/255.0 alpha:1];
     
-    self.typeButton.frame = CGRectMake(255, 50, 70, 20);
+    self.typeButton.frame = CGRectMake(255, 50, 65, 20);
     
     [self.timeImageView setImage:[UIImage imageNamed:@"shizhong (1)"]];
     self.timeImageView.frame = CGRectMake(25, 80, 20, 20);
     
     self.timeLabel.frame = CGRectMake(55, 80, self.frame.size.width * 0.8, 20);
-    self.timeLabel.font = [UIFont systemFontOfSize:15];
+    self.timeLabel.font = [UIFont systemFontOfSize:14];
     self.timeLabel.textColor = [UIColor colorWithRed:119/255.0 green:119/255.0 blue:119/255.0 alpha:1];
     
     self.detailButton.frame = CGRectMake(15, 110, 155, 30);
