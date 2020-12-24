@@ -11,6 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface InViewController : UIViewController
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSString *startStr;
+@property (nonatomic, strong) NSString *stopStr;
+@property (nonatomic, strong) NSTimer *activeTimer;
+@property (nonatomic, strong) UILabel *timeLabel;
+@property (nonatomic, strong) UILabel *textLabel;
+@property NSInteger secondsCountDown;
+
 @end
 
 NS_ASSUME_NONNULL_END

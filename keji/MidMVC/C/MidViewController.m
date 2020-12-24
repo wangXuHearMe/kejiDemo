@@ -17,8 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.startTimeStr = @"2020-12-22 23:00";
-    self.stopTimeStr = @"2020-12-23-23:00";
+    self.startTimeStr = @"2020-12-22 23:00:00";
+    self.stopTimeStr = @"2020-12-24 23:00:00";
     self.midTimeStr = @"至";
     self.connectStr = [[NSString alloc] init];
     self.connectStr = [_connectStr stringByAppendingFormat:@"%@%@%@",self.startTimeStr,self.midTimeStr,self.stopTimeStr];
@@ -99,6 +99,7 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
     nav.title = @"签到";
     nav.modalPresentationStyle = 0;
+    viewController.stopStr = self.stopTimeStr;
     [self presentViewController:nav animated:YES completion:nil];
 }
 //235 147 41
