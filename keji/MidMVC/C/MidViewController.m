@@ -7,6 +7,7 @@
 #define ingColor [UIColor colorWithRed:235/255.0 green:147/255.0 blue:41/255.0 alpha:1];
 #define doneColor [UIColor colorWithRed:110/255.0 green:112/255.0 blue:125/255.0 alpha:1];
 #define okColor [UIColor colorWithRed:107/255.0 green:175/255.0 blue:23/255.0 alpha:1];
+
 #import "MidViewController.h"
 #import "SignTableViewCell.h"
 #import "DetailsViewController.h"
@@ -19,6 +20,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:246/255.0 alpha:1];
+    [self setStr];
+    [self setNav];
+    [self setUI];
+}
+- (void)setUI {
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 15, self.view.frame.size.height) style:UITableViewStyleGrouped];
+    [self.tableView registerClass:[SignTableViewCell class] forCellReuseIdentifier:@"sign"];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+}
+- (void)setNav {
+    UITabBarItem* tabBarItem = [UITabBarItem new];
+//    tabBarItem.image = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    tabBarItem.selectedImage = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabBarItem.title = @"签到";
+    self.tabBarItem = tabBarItem;
+    self.navigationItem.title = @"签到";
+}
+- (void)setStr {
     self.startTimeStr = @"2020-12-22 23:00:00";
     self.stopTimeStr = @"2020-12-24 23:18:00";
     self.midTimeStr = @"至";
@@ -26,19 +48,6 @@
     self.connectStr = [_connectStr stringByAppendingFormat:@"%@%@%@",self.startTimeStr,self.midTimeStr,self.stopTimeStr];
     self.shangkeStr = @"上课签到";
     self.typeStr = @"普通签到";
-    UITabBarItem* tabBarItem = [UITabBarItem new];
-//    tabBarItem.image = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    tabBarItem.selectedImage = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    tabBarItem.title = @"签到";
-    self.tabBarItem = tabBarItem;
-    self.navigationItem.title = @"签到";
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
-    [self.tableView registerClass:[SignTableViewCell class] forCellReuseIdentifier:@"sign"];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    [self.view addSubview:self.tableView];
-    
-    // Do any additional setup after loading the view.
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -75,7 +84,6 @@
         cell.typeButton.titleLabel.textColor = [UIColor whiteColor];
         cell.typeButton.titleLabel.font = [UIFont systemFontOfSize:15];
  
-        
         [cell.detailButton setImage:[UIImage imageNamed:@"xiangqing.jpeg"] forState:UIControlStateNormal];
         [cell.signButton setImage:[UIImage imageNamed:@"hh2.jpeg"] forState:UIControlStateNormal];
         

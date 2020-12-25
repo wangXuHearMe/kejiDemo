@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setNav];
+    self.mainView = [[MainView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:self.mainView];
+    [self.mainView.leftMoreButton addTarget:self action:@selector(pressLeft) forControlEvents:UIControlEventTouchUpInside];
+    [self.mainView.rightMoreButton addTarget:self action:@selector(pressRight) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void)setNav {
     UITabBarItem* tabBarItem = [UITabBarItem new];
 //    tabBarItem.image = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 //    tabBarItem.selectedImage = [[UIImage imageNamed:@"xiazai.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -24,10 +31,6 @@
     self.tabBarItem = tabBarItem;
     
     self.navigationItem.title = @"主界面";
-    self.mainView = [[MainView alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:self.mainView];
-    [self.mainView.leftMoreButton addTarget:self action:@selector(pressLeft) forControlEvents:UIControlEventTouchUpInside];
-    [self.mainView.rightMoreButton addTarget:self action:@selector(pressRight) forControlEvents:UIControlEventTouchUpInside];
 }
 - (void)pressLeft {
     MoreViewController *moreViewController = [[MoreViewController alloc] init];

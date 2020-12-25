@@ -26,13 +26,9 @@
     MidViewController *mid = [MidViewController new];
     PersonalViewController *personal = [PersonalViewController new];
             
-    main.view.backgroundColor = [UIColor whiteColor];
-    mid.view.backgroundColor = [UIColor whiteColor];
-    personal.view.backgroundColor = [UIColor whiteColor];
-            
-    main.view.backgroundColor = [UIColor whiteColor];
-    mid.view.backgroundColor = [UIColor whiteColor];
-    personal.view.backgroundColor = [UIColor whiteColor];
+//    main.view.backgroundColor = [UIColor whiteColor];
+//    mid.view.backgroundColor = [UIColor whiteColor];
+//    personal.view.backgroundColor = [UIColor whiteColor];
        
     //创建导航栏
     UINavigationController* nav1 = [[UINavigationController alloc] initWithRootViewController:main];

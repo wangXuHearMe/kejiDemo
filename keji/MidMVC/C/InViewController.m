@@ -15,16 +15,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setNav];
+    [self setNowTime];
+    [self setUI];
+    [self setTimer];
+}
+- (void)setNav {
     self.navigationItem.title = @"签到";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
     backButton.tintColor = [UIColor blackColor];
     [self.navigationItem setLeftBarButtonItem:backButton];
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
-    [self.view addSubview:self.tableView];
-    [self setNowTime];
-    [self setUI];
-    [self setTimer];
-} 
+}
 - (void)pressBack {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -48,6 +49,8 @@
     self.secondsCountDown = [self getDateDifferenceWithNowDateStr:self.startStr deadlineStr:self.stopStr];
 }
 - (void)setUI {
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
+    [self.view addSubview:self.tableView];
     self.textLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 140, 200, 30)];
     self.textLabel.font = [UIFont systemFontOfSize:26];
     [self.tableView addSubview:self.textLabel];

@@ -15,6 +15,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setUI];
+}
+- (void)setUI {
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * 0.74, self.view.frame.size.height - 90) style:UITableViewStyleGrouped];
     [self.tableView registerClass:[MoreTableViewCell class] forCellReuseIdentifier:@"cell1"];
