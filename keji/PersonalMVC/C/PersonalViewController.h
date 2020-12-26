@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PersonalViewController : UIViewController
 <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 @property PersonalView *personalView;
+@property UIImageView *touxiangImageView;
 @end
 
 NS_ASSUME_NONNULL_END

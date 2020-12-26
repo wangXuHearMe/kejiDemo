@@ -34,6 +34,7 @@
 		FB95CA5025931EA0005B7BF3 /* hh2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB95CA4F25931EA0005B7BF3 /* hh2.jpeg */; };
 		FB95CA6025931FEB005B7BF3 /* hh.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB95CA5F25931FEB005B7BF3 /* hh.jpeg */; };
 		FB95CA6D25932055005B7BF3 /* xiangqing.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB95CA6C25932055005B7BF3 /* xiangqing.jpeg */; };
+		FB95CA7325973F71005B7BF3 /* BigPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB95CA7225973F70005B7BF3 /* BigPictureViewController.m */; };
 		FBA038222586156C003DD507 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038212586156C003DD507 /* PersonalViewController.m */; };
 		FBA038282586157F003DD507 /* PersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA038272586157F003DD507 /* PersonalView.m */; };
 		FBA0382E25861596003DD507 /* PersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA0382D25861596003DD507 /* PersonalModel.m */; };
@@ -133,6 +134,8 @@
 		FB95CA4F25931EA0005B7BF3 /* hh2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hh2.jpeg; sourceTree = "<group>"; };
 		FB95CA5F25931FEB005B7BF3 /* hh.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hh.jpeg; sourceTree = "<group>"; };
 		FB95CA6C25932055005B7BF3 /* xiangqing.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xiangqing.jpeg; sourceTree = "<group>"; };
+		FB95CA7125973F70005B7BF3 /* BigPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigPictureViewController.h; sourceTree = "<group>"; };
+		FB95CA7225973F70005B7BF3 /* BigPictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BigPictureViewController.m; sourceTree = "<group>"; };
 		FBA038202586156C003DD507 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
 		FBA038212586156C003DD507 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		FBA038262586157F003DD507 /* PersonalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalView.h; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 				FB95C9F325908CF8005B7BF3 /* PictureViewController.m */,
 				FB95CA0D2591ECC8005B7BF3 /* MypictureViewController.h */,
 				FB95CA0E2591ECC8005B7BF3 /* MypictureViewController.m */,
+				FB95CA7125973F70005B7BF3 /* BigPictureViewController.h */,
+				FB95CA7225973F70005B7BF3 /* BigPictureViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -685,6 +690,7 @@
 				FB95C993258B9A6F005B7BF3 /* InformationViewController.m in Sources */,
 				FB95C9F425908CF8005B7BF3 /* PictureViewController.m in Sources */,
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
+				FB95CA7325973F71005B7BF3 /* BigPictureViewController.m in Sources */,
 				FB95C9FA2591AA41005B7BF3 /* SignTableViewCell.m in Sources */,
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
 				FB95CA0F2591ECC8005B7BF3 /* MypictureViewController.m in Sources */,

@@ -32,7 +32,8 @@
     self.personalView.tableView.dataSource = self;
     self.personalView.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 0, CGFLOAT_MIN)];
     self.navigationController.delegate = self;
-    
+    self.touxiangImageView = [[UIImageView alloc] init];
+    self.touxiangImageView.image = [UIImage imageNamed:@"tx.jpg"];
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
@@ -76,7 +77,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         PersonalFirstTableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
-        [cell1.headImgaeView setImage:[UIImage imageNamed:@"tx.jpg"]];
+        cell1.headImgaeView = self.touxiangImageView;
         cell1.nameLabel.text = @"马六";
         cell1.nameLabel.textColor = [UIColor blackColor];
         cell1.collegeLabel.text = @"计算机学院";
