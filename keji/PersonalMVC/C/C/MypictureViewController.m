@@ -84,6 +84,7 @@
             BigPictureViewController *viewController = [[BigPictureViewController alloc] init];
             UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
             nav.modalPresentationStyle = 0;
+            viewController.imageStr = self.imageStr;
             [self presentViewController:nav animated:YES completion:nil];
         }
     }

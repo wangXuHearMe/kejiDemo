@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BigPictureViewController : UIViewController
 @property (nonatomic, strong) NSString *imageStr;
+@property (nonatomic, strong) UIImageView *touxiangImage;
 @end
 
 NS_ASSUME_NONNULL_END
