@@ -132,6 +132,7 @@
         if (indexPath.row == 0) {
             MypictureViewController *viewController = [[MypictureViewController alloc] init];
             viewController.modalPresentationStyle = UIModalPresentationCustom;
+            viewController.imageStr = self.imageStr;
             [self presentViewController:viewController animated:YES completion:nil];
         }
         if (indexPath.row == 3) {
@@ -142,7 +143,6 @@
         } else if (indexPath.row == 5) {
             DescriptViewController *viewController = [[DescriptViewController alloc] init];
             UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-            nav.title = @"修改描述";
             viewController.delegate = self;
             nav.modalPresentationStyle = UIModalPresentationCustom;
             [self presentViewController:nav animated:YES completion:nil];

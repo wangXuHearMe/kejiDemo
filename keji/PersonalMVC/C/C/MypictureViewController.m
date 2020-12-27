@@ -7,6 +7,7 @@
 
 #import "MypictureViewController.h"
 #import "SexTableViewCell.h"
+#import "BigPictureViewController.h"
 @interface MypictureViewController ()
 
 @end
@@ -80,7 +81,10 @@
         } else if (indexPath.row == 1) {
             
         } else if (indexPath.row == 2) {
-            
+            BigPictureViewController *viewController = [[BigPictureViewController alloc] init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+            nav.modalPresentationStyle = 0;
+            [self presentViewController:nav animated:YES completion:nil];
         }
     }
 }

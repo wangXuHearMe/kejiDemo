@@ -16,8 +16,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"查看大图";
+//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
+//    backButton.tintColor = [UIColor blackColor];
+//    [self.navigationItem setLeftBarButtonItem:backButton];
 }
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self dismissViewControllerAnimated:NO completion:nil];
+}
 /*
 #pragma mark - Navigation
 

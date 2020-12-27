@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MypictureViewController : UIViewController
 <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSString *imageStr;
 @end
 
 NS_ASSUME_NONNULL_END
