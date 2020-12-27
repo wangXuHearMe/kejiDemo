@@ -32,23 +32,12 @@
     self.personalView.tableView.dataSource = self;
     self.personalView.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 0, CGFLOAT_MIN)];
     self.navigationController.delegate = self;
-    self.touxiangImageView = [[UIImageView alloc] init];
-    self.touxiangImageView.image = [UIImage imageNamed:@"tx.jpg"];
+    [self setStr];
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        InformationViewController *viewController = [[InformationViewController alloc] init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-        nav.title = @"学生信息";
-        nav.modalPresentationStyle = 0;
-        [self presentViewController:nav animated:YES completion:nil];
-    } else {
-        AboutTableViewController *viewController = [[AboutTableViewController alloc] init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-        nav.title = @"关于";
-        nav.modalPresentationStyle = 0;
-        [self presentViewController:nav animated:YES completion:nil];
-    }
+- (void)setStr {
+    self.imageStr = @"tx.jpg";
+    self.nameStr = @"王旭";
+    self.majorStr = @"计算机学院";
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
@@ -77,10 +66,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         PersonalFirstTableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
-        cell1.headImgaeView = self.touxiangImageView;
-        cell1.nameLabel.text = @"马六";
+        [cell1.headImgaeView setImage:[UIImage imageNamed:self.imageStr]];
+        cell1.nameLabel.text = self.nameStr;
         cell1.nameLabel.textColor = [UIColor blackColor];
-        cell1.collegeLabel.text = @"计算机学院";
+        cell1.collegeLabel.text = self.majorStr;
         cell1.collegeLabel.textColor = [UIColor grayColor];
         cell1.backgroundColor = [UIColor whiteColor];
         cell1.selectionStyle = 0;
@@ -92,6 +81,24 @@
         return cell2;
     }
     return 0;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        InformationViewController *viewController = [[InformationViewController alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+        nav.title = @"学生信息";
+        nav.modalPresentationStyle = 0;
+        viewController.nameStr = self.nameStr;
+        viewController.majorStr = self.majorStr;
+        viewController.imageStr = self.imageStr;
+        [self presentViewController:nav animated:YES completion:nil];
+    } else {
+        AboutTableViewController *viewController = [[AboutTableViewController alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+        nav.title = @"关于";
+        nav.modalPresentationStyle = 0;
+        [self presentViewController:nav animated:YES completion:nil];
+    }
 }
 /*
 #pragma mark - Navigation

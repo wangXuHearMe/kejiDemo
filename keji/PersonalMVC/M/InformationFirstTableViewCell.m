@@ -25,7 +25,6 @@
     self.mainLabel.frame = CGRectMake(10, 15, 100, 30);
     self.mainLabel.textColor = [UIColor blackColor];
     
-    [self.mainImageview setImage:[UIImage imageNamed:@"tx.jpg"]];
     self.mainImageview.frame = CGRectMake(self.frame.size.width * 0.8, 10, 50, 50);
 }
 @end

@@ -21,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.IDStr = @"61052820010623001X";
-    self.nameStr = @"王旭";
     // Do any additional setup after loading the view.
     self.isSex = NO;
     self.isDescr = NO;
@@ -77,6 +76,7 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             InformationFirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
+            cell.mainImageview.image = [UIImage imageNamed:self.imageStr];
             return cell;
         } else if (indexPath.row == 1) {
             InformationThirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
