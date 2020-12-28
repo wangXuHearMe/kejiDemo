@@ -41,7 +41,6 @@
     return timeDifference;
 }
 - (void)setNowTime {
-    self.startStr = [[NSString alloc] init];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
     NSDate *datenow = [NSDate date];
