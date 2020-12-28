@@ -35,7 +35,7 @@
     [self setStr];
 }
 - (void)setStr {
-    self.imageStr = @"tx.jpg";
+    self.imageStr = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tx.jpg"]];
     self.nameStr = @"王旭";
     self.majorStr = @"计算机学院";
 }
@@ -66,7 +66,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         PersonalFirstTableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
-        [cell1.headImgaeView setImage:[UIImage imageNamed:self.imageStr]];
+        cell1.headImgaeView.image = self.imageStr.image;
         cell1.nameLabel.text = self.nameStr;
         cell1.nameLabel.textColor = [UIColor blackColor];
         cell1.collegeLabel.text = self.majorStr;
@@ -91,6 +91,7 @@
         viewController.nameStr = self.nameStr;
         viewController.majorStr = self.majorStr;
         viewController.imageStr = self.imageStr;
+        viewController.delegate = self;
         [self presentViewController:nav animated:YES completion:nil];
     } else {
         AboutTableViewController *viewController = [[AboutTableViewController alloc] init];
@@ -99,6 +100,10 @@
         nav.modalPresentationStyle = 0;
         [self presentViewController:nav animated:YES completion:nil];
     }
+}
+- (void)pass:(UIImageView *)imageStr {
+    self.imageStr = imageStr;
+    [self.personalView.tableView reloadData];
 }
 /*
 #pragma mark - Navigation

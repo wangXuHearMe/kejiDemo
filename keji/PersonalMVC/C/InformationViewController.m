@@ -57,6 +57,7 @@
     [self.view addSubview:self.tableView];
 }
 - (void)pressBack {
+    [self.delegate pass:self.imageStr];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -76,7 +77,7 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             InformationFirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
-            cell.mainImageview.image = [UIImage imageNamed:self.imageStr];
+            cell.mainImageview.image = self.imageStr.image;
             return cell;
         } else if (indexPath.row == 1) {
             InformationThirdTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
@@ -133,6 +134,7 @@
             MypictureViewController *viewController = [[MypictureViewController alloc] init];
             viewController.modalPresentationStyle = UIModalPresentationCustom;
             viewController.imageStr = self.imageStr;
+            viewController.delegate = self;
             [self presentViewController:viewController animated:YES completion:nil];
         }
         if (indexPath.row == 3) {
@@ -171,6 +173,10 @@
     self.nationStr = nationText;
     NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:0];
     [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+- (void)pass:(UIImageView *)imageStr {
+    self.imageStr = imageStr;
+    [self.tableView reloadData];
 }
 /*
 #pragma mark - Navigation

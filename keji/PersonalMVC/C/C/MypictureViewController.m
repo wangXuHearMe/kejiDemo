@@ -24,8 +24,12 @@
     [self.tableView registerClass:[SexTableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:self.tableView];
     self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 0, CGFLOAT_MIN)];
+    self.pickerController = [[UIImagePickerController alloc] init];
+    self.pickerController.delegate = self;
+    self.pickerController.allowsEditing = YES;
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.delegate pass:self.imageStr];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -79,7 +83,9 @@
         if (indexPath.row == 0) {
             
         } else if (indexPath.row == 1) {
-            
+            self.pickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            self.pickerController.modalPresentationStyle = 0;
+            [self presentViewController:self.pickerController animated:YES completion:nil];
         } else if (indexPath.row == 2) {
             BigPictureViewController *viewController = [[BigPictureViewController alloc] init];
             UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
@@ -89,7 +95,12 @@
         }
     }
 }
-
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    self.imageStr.image = image;
+    [self.tableView reloadData];
+}
 /*
 #pragma mark - Navigation
 
