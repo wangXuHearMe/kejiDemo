@@ -22,11 +22,17 @@
     [self.navigationItem setLeftBarButtonItem:backButton];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
+    [self setStr];
 }
 - (void)pressBack {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+- (void)setStr {
+    self.teacherImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tx.jpg"]];
+    self.teacherNameStr = @"马六";
+    self.teacherTypeStr = @"物理老师";
+    self.teacherPostStr = @"上课签到，不要迟到";
+}
 /*
 #pragma mark - Navigation
 

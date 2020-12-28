@@ -104,6 +104,10 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
     nav.title = @"详情";
     nav.modalPresentationStyle = 0;
+    viewController.startStr = self.startTimeStr;
+    viewController.stopStr = self.stopTimeStr;
+    viewController.typeStr = self.typeStr;
+    viewController.shangkeStr = self.shangkeStr;
     [self presentViewController:nav animated:YES completion:nil];
 }
 - (void)pressSign {
