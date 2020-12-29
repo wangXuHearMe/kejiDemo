@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailsViewController : UIViewController
+<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSString *startStr;
 @property (nonatomic, strong) NSString *stopStr;

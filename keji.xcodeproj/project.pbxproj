@@ -68,6 +68,7 @@
 		FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACE6257BE1A500DCF19C /* MainModel.m */; };
 		FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACEC257BE1B800DCF19C /* MainView.m */; };
 		FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACF2257BE1C700DCF19C /* MainViewController.m */; };
+		FBF33F3F259AF0FB00DCB8AE /* TeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F3E259AF0FB00DCB8AE /* TeacherTableViewCell.m */; };
 		FBF5F724258A0D34005A3CFC /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5F723258A0D34005A3CFC /* zuojiantou.png */; };
 		FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */; };
 		FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */; };
@@ -191,6 +192,8 @@
 		FBC8ACEC257BE1B800DCF19C /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		FBC8ACF1257BE1C700DCF19C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		FBC8ACF2257BE1C700DCF19C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FBF33F3D259AF0FB00DCB8AE /* TeacherTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeacherTableViewCell.h; sourceTree = "<group>"; };
+		FBF33F3E259AF0FB00DCB8AE /* TeacherTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeacherTableViewCell.m; sourceTree = "<group>"; };
 		FBF5F723258A0D34005A3CFC /* zuojiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuojiantou.png; sourceTree = "<group>"; };
 		FBF5F728258A4AFD005A3CFC /* AboutFirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutFirstTableViewCell.h; sourceTree = "<group>"; };
 		FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutFirstTableViewCell.m; sourceTree = "<group>"; };
@@ -291,6 +294,8 @@
 			children = (
 				FB95C9F82591AA41005B7BF3 /* SignTableViewCell.h */,
 				FB95C9F92591AA41005B7BF3 /* SignTableViewCell.m */,
+				FBF33F3D259AF0FB00DCB8AE /* TeacherTableViewCell.h */,
+				FBF33F3E259AF0FB00DCB8AE /* TeacherTableViewCell.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -673,6 +678,7 @@
 			files = (
 				FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */,
 				FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */,
+				FBF33F3F259AF0FB00DCB8AE /* TeacherTableViewCell.m in Sources */,
 				FBA118132580FCEB008C3920 /* MoreViewController.m in Sources */,
 				FB95C9EB259078CD005B7BF3 /* NationViewController.m in Sources */,
 				FB95C9DF25906E6B005B7BF3 /* DescriptViewController.m in Sources */,
