@@ -7,6 +7,8 @@
 
 #import "DetailsViewController.h"
 #import "TeacherTableViewCell.h"
+#import "TimeTableViewCell.h"
+#import "PosterTableViewCell.h"
 @interface DetailsViewController ()
 
 @end
@@ -20,8 +22,10 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
     backButton.tintColor = [UIColor blackColor];
     [self.navigationItem setLeftBarButtonItem:backButton];
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     [self.tableView registerClass:[TeacherTableViewCell class] forCellReuseIdentifier:@"cell1"];
+    [self.tableView registerClass:[TimeTableViewCell class] forCellReuseIdentifier:@"cell2"];
+    [self.tableView registerClass:[PosterTableViewCell class] forCellReuseIdentifier:@"cell3"];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
@@ -39,13 +43,20 @@
     self.teacherPostStr = @"上课签到，不要迟到";
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 3;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 70;
+    if (indexPath.section == 0) {
+        return 80;
+    } else if (indexPath.section == 1) {
+        return 100;
+    } else if (indexPath.section == 2) {
+        return 500;
+    }
+    return 0;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0.005;
@@ -64,6 +75,17 @@
         cell.touxiangImageView.image = self.teacherImageView.image;
         cell.teacherNameLabel.text = self.teacherNameStr;
         cell.teacherTypeLabel.text = self.teacherTypeStr;
+        return cell;
+    } else if (indexPath.section == 1) {
+        TimeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2" forIndexPath:indexPath];
+        cell.typeLabel.text = self.typeStr;
+        cell.startTimeLabel.text = self.startStr;
+        cell.stopTimeLabel.text = self.stopStr;
+        return cell;
+    } else if (indexPath.section == 2) {
+        PosterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell3" forIndexPath:indexPath];
+        cell.shangkeLabel.text = self.shangkeStr;
+        cell.posterLabel.text = self.teacherPostStr;
         return cell;
     }
     return 0;

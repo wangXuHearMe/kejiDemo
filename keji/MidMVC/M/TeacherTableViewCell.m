@@ -23,14 +23,14 @@
     return self;
 }
 - (void)layoutSubviews {
-    self.touxiangImageView.frame = CGRectMake(20, 10, 50, 50);
+    self.touxiangImageView.frame = CGRectMake(20, 15, 50, 50);
     
     self.teacherNameLabel.textColor = [UIColor blackColor];
     self.teacherNameLabel.font = [UIFont systemFontOfSize:18];
-    self.teacherNameLabel.frame = CGRectMake(85, 10, 100, 20);
+    self.teacherNameLabel.frame = CGRectMake(85, 15, 100, 20);
     
     self.teacherTypeLabel.textColor = [UIColor colorWithRed:119/255.0 green:119/255.0 blue:119/255.0 alpha:1];
     self.teacherTypeLabel.font = [UIFont systemFontOfSize:16];
-    self.teacherTypeLabel.frame = CGRectMake(85, 40, 100, 15);
+    self.teacherTypeLabel.frame = CGRectMake(85, 45, 100, 15);
 }
 @end
