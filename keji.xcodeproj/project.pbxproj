@@ -71,6 +71,8 @@
 		FBF33F3F259AF0FB00DCB8AE /* TeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F3E259AF0FB00DCB8AE /* TeacherTableViewCell.m */; };
 		FBF33F45259B177800DCB8AE /* TimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F44259B177800DCB8AE /* TimeTableViewCell.m */; };
 		FBF33F4B259B1EFE00DCB8AE /* PosterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F4A259B1EFE00DCB8AE /* PosterTableViewCell.m */; };
+		FBF33F53259C421A00DCB8AE /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F52259C421A00DCB8AE /* LaunchViewController.m */; };
+		FBF33F59259C458400DCB8AE /* LaunchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F58259C458400DCB8AE /* LaunchTableViewCell.m */; };
 		FBF5F724258A0D34005A3CFC /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5F723258A0D34005A3CFC /* zuojiantou.png */; };
 		FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */; };
 		FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */; };
@@ -200,6 +202,10 @@
 		FBF33F44259B177800DCB8AE /* TimeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewCell.m; sourceTree = "<group>"; };
 		FBF33F49259B1EFE00DCB8AE /* PosterTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PosterTableViewCell.h; sourceTree = "<group>"; };
 		FBF33F4A259B1EFE00DCB8AE /* PosterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PosterTableViewCell.m; sourceTree = "<group>"; };
+		FBF33F51259C421A00DCB8AE /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		FBF33F52259C421A00DCB8AE /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		FBF33F57259C458400DCB8AE /* LaunchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchTableViewCell.h; sourceTree = "<group>"; };
+		FBF33F58259C458400DCB8AE /* LaunchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchTableViewCell.m; sourceTree = "<group>"; };
 		FBF5F723258A0D34005A3CFC /* zuojiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuojiantou.png; sourceTree = "<group>"; };
 		FBF5F728258A4AFD005A3CFC /* AboutFirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutFirstTableViewCell.h; sourceTree = "<group>"; };
 		FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutFirstTableViewCell.m; sourceTree = "<group>"; };
@@ -517,6 +523,10 @@
 		FBF33F50259B21DB00DCB8AE /* TEACHER */ = {
 			isa = PBXGroup;
 			children = (
+				FBF33F51259C421A00DCB8AE /* LaunchViewController.h */,
+				FBF33F52259C421A00DCB8AE /* LaunchViewController.m */,
+				FBF33F57259C458400DCB8AE /* LaunchTableViewCell.h */,
+				FBF33F58259C458400DCB8AE /* LaunchTableViewCell.m */,
 			);
 			path = TEACHER;
 			sourceTree = "<group>";
@@ -714,6 +724,7 @@
 				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
 				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
 				FBA03865258784CD003DD507 /* PersonalSecondTableViewCell.m in Sources */,
+				FBF33F59259C458400DCB8AE /* LaunchTableViewCell.m in Sources */,
 				FBA1182D258208DB008C3920 /* WeekViewController.m in Sources */,
 				FB95C99C258B9DEF005B7BF3 /* InformationFirstTableViewCell.m in Sources */,
 				FBA1182725810742008C3920 /* MoreTableViewCell.m in Sources */,
@@ -732,6 +743,7 @@
 				FB95C9D625905FF2005B7BF3 /* SexTableViewCell.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
 				FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */,
+				FBF33F53259C421A00DCB8AE /* LaunchViewController.m in Sources */,
 				FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */,
 				FB95C9CF259049D2005B7BF3 /* SexViewController.m in Sources */,
 				FB95CA062591E8EE005B7BF3 /* InViewController.m in Sources */,

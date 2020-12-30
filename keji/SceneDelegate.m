@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "MidViewController.h"
 #import "PersonalViewController.h"
+#import "LaunchViewController.h"
 @interface SceneDelegate ()
 
 @end
@@ -25,15 +26,13 @@
     MainViewController *main = [MainViewController new];
     MidViewController *mid = [MidViewController new];
     PersonalViewController *personal = [PersonalViewController new];
-            
-//    main.view.backgroundColor = [UIColor whiteColor];
-//    mid.view.backgroundColor = [UIColor whiteColor];
-//    personal.view.backgroundColor = [UIColor whiteColor];
+    LaunchViewController *launch = [LaunchViewController new];
        
     //创建导航栏
     UINavigationController* nav1 = [[UINavigationController alloc] initWithRootViewController:main];
     UINavigationController* nav2 = [[UINavigationController alloc] initWithRootViewController:mid];
     UINavigationController* nav3 = [[UINavigationController alloc] initWithRootViewController:personal];
+    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:launch];
     //调色
     nav1.navigationBar.barTintColor = [UIColor colorWithRed:0.05 green:0.1 blue:0.7 alpha:1.0];
     [nav1.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18], NSForegroundColorAttributeName:[UIColor whiteColor]}];
@@ -41,12 +40,14 @@
     [nav2.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18], NSForegroundColorAttributeName:[UIColor whiteColor]}];
     nav3.navigationBar.barTintColor = [UIColor colorWithRed:0.05 green:0.1 blue:0.7 alpha:1.0];
     [nav3.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18], NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    nav4.navigationBar.barTintColor = [UIColor colorWithRed:0.05 green:0.1 blue:0.7 alpha:1.0];
+    [nav4.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18], NSForegroundColorAttributeName:[UIColor whiteColor]}];
             
     nav1.navigationBarHidden = YES;
     //创建分栏控制器
     UITabBarController* tbController = [UITabBarController new];
     tbController.tabBar.barTintColor = [UIColor whiteColor];
-    NSArray* arrayVc = [NSArray arrayWithObjects: nav1, nav2, nav3, nil];
+    NSArray* arrayVc = [NSArray arrayWithObjects: nav1, nav2, nav3, nav4, nil];
             
     tbController.viewControllers = arrayVc;
     self.window.rootViewController = tbController;
