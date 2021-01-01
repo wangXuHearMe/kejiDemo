@@ -24,6 +24,6 @@
 }
 - (void)layoutSubviews {
     self.firstLabel.textColor = [UIColor blackColor];
-    self.firstLabel.frame = CGRectMake(0, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+    self.firstLabel.frame = CGRectMake(0, 10, <#CGFloat width#>, <#CGFloat height#>);
 }
 @end
