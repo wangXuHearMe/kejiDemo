@@ -24,6 +24,8 @@
 }
 - (void)layoutSubviews {
     self.firstLabel.textColor = [UIColor blackColor];
-    self.firstLabel.frame = CGRectMake(0, 10, <#CGFloat width#>, <#CGFloat height#>);
+//    self.firstLabel.frame = CGRectMake(0, 10, <#CGFloat width#>, <#CGFloat height#>);
+    char ha[i];
+    ha[i] = {' ',',', '"', '"', '<', '>', '?', '/', '{', '}', '[', ']', ';', ':'};
 }
 @end

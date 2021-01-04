@@ -42,7 +42,7 @@
 }
 - (void)setNowTime {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSDate *datenow = [NSDate date];
     self.startStr = [formatter stringFromDate:datenow];
     self.secondsCountDown = [self getDateDifferenceWithNowDateStr:self.startStr deadlineStr:self.stopStr];

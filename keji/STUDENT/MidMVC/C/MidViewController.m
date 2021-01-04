@@ -41,8 +41,8 @@
     self.navigationItem.title = @"签到";
 }
 - (void)setStr {
-    self.startTimeStr = @"2020-12-22 23:00:00";
-    self.stopTimeStr = @"2020-12-28 23:18:00";
+    self.startTimeStr = @"2020-12-28 23:00:00";
+    self.stopTimeStr = @"2021-1-08 23:18:00";
     self.midTimeStr = @"至";
     self.connectStr = [[NSString alloc] init];
     self.connectStr = [_connectStr stringByAppendingFormat:@"%@%@%@",self.startTimeStr,self.midTimeStr,self.stopTimeStr];
