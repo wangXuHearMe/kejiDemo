@@ -24,6 +24,8 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.aboutImageView.frame = CGRectMake(10, 12, 25, 25);
     [self.aboutImageView setImage:[UIImage imageNamed:@"关于.png"]];
     self.aboutLabel.frame = CGRectMake(55, 10, 100, 30);

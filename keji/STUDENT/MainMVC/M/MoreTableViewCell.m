@@ -19,6 +19,8 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.labelone.font = [UIFont systemFontOfSize:14];
     self.labelone.textColor = [UIColor blackColor];
     self.labelone.frame = CGRectMake(20, 10, 200, 40);

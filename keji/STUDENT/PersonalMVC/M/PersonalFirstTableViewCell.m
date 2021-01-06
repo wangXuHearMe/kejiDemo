@@ -27,6 +27,8 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.headImgaeView.frame = CGRectMake(10, 10, 50, 50);
     self.nameLabel.frame = CGRectMake(70, 10, 100, 30);
     self.nameLabel.font = [UIFont systemFontOfSize:16];

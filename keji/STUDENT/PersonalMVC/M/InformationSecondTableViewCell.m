@@ -22,6 +22,8 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.mainLabel.frame = CGRectMake(10, 10, 60, 30);
     self.mainLabel.font = [UIFont systemFontOfSize:17];
     self.mainLabel.textColor = [UIColor blackColor];

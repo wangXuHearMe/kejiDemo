@@ -35,6 +35,7 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
     self.colorButton.frame = CGRectMake(5, 0, 10, 140);
     
     self.signLabel.frame = CGRectMake(25, 5, 200, 40);

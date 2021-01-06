@@ -29,6 +29,7 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
     [self.typeImageView setImage:[UIImage imageNamed:@"标签 (2)"]];
     [self.startImageView setImage:[UIImage imageNamed:@"开始时间1"]];
     [self.stopImageView setImage:[UIImage imageNamed:@"结束时间1"]];

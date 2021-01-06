@@ -21,6 +21,8 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.shangkeLabel.font = [UIFont systemFontOfSize:20];
     self.shangkeLabel.textColor = [UIColor blackColor];
     self.shangkeLabel.frame = CGRectMake(20, 10, 100, 30);

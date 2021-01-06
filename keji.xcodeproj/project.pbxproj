@@ -73,6 +73,7 @@
 		FBF33F4B259B1EFE00DCB8AE /* PosterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F4A259B1EFE00DCB8AE /* PosterTableViewCell.m */; };
 		FBF33F53259C421A00DCB8AE /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F52259C421A00DCB8AE /* LaunchViewController.m */; };
 		FBF33F59259C458400DCB8AE /* LaunchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F58259C458400DCB8AE /* LaunchTableViewCell.m */; };
+		FBF33F5F25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F5E25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m */; };
 		FBF5F724258A0D34005A3CFC /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5F723258A0D34005A3CFC /* zuojiantou.png */; };
 		FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */; };
 		FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */; };
@@ -206,6 +207,8 @@
 		FBF33F52259C421A00DCB8AE /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		FBF33F57259C458400DCB8AE /* LaunchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchTableViewCell.h; sourceTree = "<group>"; };
 		FBF33F58259C458400DCB8AE /* LaunchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchTableViewCell.m; sourceTree = "<group>"; };
+		FBF33F5D25A5EEA600DCB8AE /* LaunchTwoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchTwoTableViewCell.h; sourceTree = "<group>"; };
+		FBF33F5E25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchTwoTableViewCell.m; sourceTree = "<group>"; };
 		FBF5F723258A0D34005A3CFC /* zuojiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuojiantou.png; sourceTree = "<group>"; };
 		FBF5F728258A4AFD005A3CFC /* AboutFirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutFirstTableViewCell.h; sourceTree = "<group>"; };
 		FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutFirstTableViewCell.m; sourceTree = "<group>"; };
@@ -527,6 +530,8 @@
 				FBF33F52259C421A00DCB8AE /* LaunchViewController.m */,
 				FBF33F57259C458400DCB8AE /* LaunchTableViewCell.h */,
 				FBF33F58259C458400DCB8AE /* LaunchTableViewCell.m */,
+				FBF33F5D25A5EEA600DCB8AE /* LaunchTwoTableViewCell.h */,
+				FBF33F5E25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m */,
 			);
 			path = TEACHER;
 			sourceTree = "<group>";
@@ -737,6 +742,7 @@
 				FBA117D9257F9B1F008C3920 /* MidViewController.m in Sources */,
 				FB95CA7325973F71005B7BF3 /* BigPictureViewController.m in Sources */,
 				FB95C9FA2591AA41005B7BF3 /* SignTableViewCell.m in Sources */,
+				FBF33F5F25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m in Sources */,
 				FBA038282586157F003DD507 /* PersonalView.m in Sources */,
 				FB95CA0F2591ECC8005B7BF3 /* MypictureViewController.m in Sources */,
 				FB95CA002591E7F3005B7BF3 /* DetailsViewController.m in Sources */,

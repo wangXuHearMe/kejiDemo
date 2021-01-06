@@ -21,6 +21,8 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.sugLabel.text = @"建议与反馈";
     self.sugLabel.textColor = [UIColor blackColor];
     self.sugLabel.font = [UIFont systemFontOfSize:14];

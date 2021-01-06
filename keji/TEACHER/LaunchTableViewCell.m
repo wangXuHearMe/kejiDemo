@@ -23,8 +23,17 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.firstLabel.textColor = [UIColor blackColor];
-    self.firstLabel.frame = CGRectMake(0, 10, 100, 100);
+    self.firstLabel.frame = CGRectMake(10, 10, 100, 30);
+    self.firstLabel.font = [UIFont systemFontOfSize:17];
+    
+    self.secondLabel.frame = CGRectMake(270, 10, 40, 30);
+    self.secondLabel.font = [UIFont systemFontOfSize:17];
+    
+    self.jumpImageView.frame = CGRectMake(310, 10, 25, 25);
+    [self.jumpImageView setImage:[UIImage imageNamed:@"youjiantou.png"]];
 }
 @end
 //图是由顶点的非空集合跟顶点之间边的集合

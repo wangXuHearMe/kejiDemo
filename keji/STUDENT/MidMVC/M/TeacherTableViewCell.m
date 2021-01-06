@@ -23,6 +23,7 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
     self.touxiangImageView.frame = CGRectMake(20, 15, 50, 50);
     
     self.teacherNameLabel.textColor = [UIColor blackColor];

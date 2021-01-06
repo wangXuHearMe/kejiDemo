@@ -20,6 +20,8 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.mainLabel.text = @"头像";
     self.mainLabel.font = [UIFont systemFontOfSize:17];
     self.mainLabel.frame = CGRectMake(10, 15, 100, 30);

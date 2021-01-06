@@ -22,7 +22,7 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
     backButton.tintColor = [UIColor blackColor];
     [self.navigationItem setLeftBarButtonItem:backButton];
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
     [self.tableView registerClass:[TeacherTableViewCell class] forCellReuseIdentifier:@"cell1"];
     [self.tableView registerClass:[TimeTableViewCell class] forCellReuseIdentifier:@"cell2"];
     [self.tableView registerClass:[PosterTableViewCell class] forCellReuseIdentifier:@"cell3"];

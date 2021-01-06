@@ -21,6 +21,8 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.selfLabel.frame = CGRectMake(10, 5, 200, 25);
     self.selfLabel.font = [UIFont systemFontOfSize:14];
     self.selfLabel.text = @"本机版本";

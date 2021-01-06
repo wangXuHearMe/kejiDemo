@@ -18,6 +18,8 @@
     return self;
 }
 - (void)layoutSubviews {
+    [super layoutSubviews];
+    
     self.tatLabel.font = [UIFont systemFontOfSize:20];
     self.tatLabel.frame = CGRectMake(110, 10, 150, 25);
     self.tatLabel.textAlignment = NSTextAlignmentCenter;
