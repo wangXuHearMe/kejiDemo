@@ -27,3 +27,5 @@
     self.firstLabel.frame = CGRectMake(0, 10, 100, 100);
 }
 @end
+//图
+
