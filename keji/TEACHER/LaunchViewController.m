@@ -18,8 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setNav];
-    [self setUI];
     [self setString];
+    [self setUI];
 }
 - (void)setNav {
     UITabBarItem* tabBarItem = [UITabBarItem new];
@@ -57,19 +57,45 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+    
     self.timeLimitButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.startTimeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.launchSignButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.timeLimitButton.frame = CGRectMake(15, 115 + self.view.frame.size.height * 0.4 + 30, self.view.frame.size.width - 30, 50);
+    
+    self.timeLimitButton.frame = CGRectMake(15, 100 + self.view.frame.size.height * 0.4, self.view.frame.size.width - 30, 50);
     self.timeLimitButton.backgroundColor = [UIColor colorWithRed:80/255.0 green:173/255.0 blue:87/255.0 alpha:1];
-//    [self.timeLimitButton setTitle:@"1" forState:UIControlStateNormal];
+    [self.timeLimitButton setTitle:self.limitTimeString forState:UIControlStateNormal];
     [self.timeLimitButton addTarget:self action:@selector(timeLimit) forControlEvents:UIControlEventTouchUpInside];
-    self.timeLimitButton.titleLabel.text = self.limitTimeString;
-    self.timeLimitButton.titleLabel.font = [UIFont systemFontOfSize:16];
+    self.timeLimitButton.titleLabel.font = [UIFont systemFontOfSize:17];
     self.timeLimitButton.titleLabel.tintColor = [UIColor whiteColor];
+    self.timeLimitButton.layer.cornerRadius = 25;
     [self.view addSubview:self.timeLimitButton];
+    
+    self.startTimeButton.frame = CGRectMake(15, 170 + self.view.frame.size.height * 0.4, self.view.frame.size.width - 30, 50);
+    self.startTimeButton.backgroundColor = [UIColor colorWithRed:80/255.0 green:173/255.0 blue:87/255.0 alpha:1];
+    [self.startTimeButton setTitle:self.startTimeString forState:UIControlStateNormal];
+    [self.startTimeButton addTarget:self action:@selector(startTime) forControlEvents:UIControlEventTouchUpInside];
+    self.startTimeButton.titleLabel.font = [UIFont systemFontOfSize:17];
+    self.startTimeButton.titleLabel.tintColor = [UIColor whiteColor];
+    self.startTimeButton.layer.cornerRadius = 25;
+    [self.view addSubview:self.startTimeButton];
+    
+    self.launchSignButton.frame = CGRectMake(140, 250 + self.view.frame.size.height * 0.4, 90, 90);
+    self.launchSignButton.backgroundColor = [UIColor redColor];
+    [self.launchSignButton setTitle:@"发起签到" forState:UIControlStateNormal];
+    [self.launchSignButton addTarget:self action:@selector(sign) forControlEvents:UIControlEventTouchUpInside];
+    self.launchSignButton.titleLabel.font = [UIFont systemFontOfSize:17];
+    self.launchSignButton.titleLabel.tintColor = [UIColor whiteColor];
+    self.launchSignButton.layer.cornerRadius = 45;
+    [self.view addSubview:self.launchSignButton];
 }
 - (void)timeLimit {
+    
+}
+- (void)startTime {
+    
+}
+- (void)sign {
     
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
