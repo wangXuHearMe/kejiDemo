@@ -19,6 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *shuomingString;
 @property (nonatomic, strong) NSString *mingdanString;
 @property (nonatomic, strong) NSString *weizhiString;
+@property (nonatomic, strong) NSString *limitString;
+@property (nonatomic, strong) NSString *startSrting;
+@property (nonatomic, strong) NSString *limitTimeString;
+@property (nonatomic, strong) NSString *startTimeString;
+@property (nonatomic, strong) NSString *shijianxianzhi;
+@property (nonatomic, strong) NSString *kaishishijian;
 @property bool isZhuti;
 @property bool isShuoming;
 @property bool isMingdan;

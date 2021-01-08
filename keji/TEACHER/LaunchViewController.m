@@ -39,11 +39,16 @@
     self.isMingdan = NO;
     self.isShuoming = NO;
     self.isWeizhi = NO;
+    self.limitString = @"五分钟";
+    self.startSrting = @"现在";
+    self.shijianxianzhi = @"时间限制:";
+    self.kaishishijian = @"开始时间";
+    self.limitTimeString = [self.shijianxianzhi stringByAppendingString:self.limitString];
+    self.startTimeString = [self.kaishishijian stringByAppendingString:self.startSrting];
 }
 - (void)setUI {
     self.view.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:246/255.0 alpha:1];
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(15, 50, self.view.frame.size.width - 30, self.view.frame.size.height * 0.4) style:UITableViewStyleGrouped];
-//    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(15, 115, self.view.frame.size.width - 30, self.view.frame.size.height * 0.4) style:UITableViewStyleGrouped];
     self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, 0, CGFLOAT_MIN)];
     [self.tableView registerClass:[LaunchTableViewCell class] forCellReuseIdentifier:@"cell1"];
     [self.tableView registerClass:[LaunchTwoTableViewCell class] forCellReuseIdentifier:@"cell2"];
@@ -55,6 +60,17 @@
     self.timeLimitButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.startTimeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.launchSignButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.timeLimitButton.frame = CGRectMake(15, 115 + self.view.frame.size.height * 0.4 + 30, self.view.frame.size.width - 30, 50);
+    self.timeLimitButton.backgroundColor = [UIColor colorWithRed:80/255.0 green:173/255.0 blue:87/255.0 alpha:1];
+//    [self.timeLimitButton setTitle:@"1" forState:UIControlStateNormal];
+    [self.timeLimitButton addTarget:self action:@selector(timeLimit) forControlEvents:UIControlEventTouchUpInside];
+    self.timeLimitButton.titleLabel.text = self.limitTimeString;
+    self.timeLimitButton.titleLabel.font = [UIFont systemFontOfSize:16];
+    self.timeLimitButton.titleLabel.tintColor = [UIColor whiteColor];
+    [self.view addSubview:self.timeLimitButton];
+}
+- (void)timeLimit {
+    
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
