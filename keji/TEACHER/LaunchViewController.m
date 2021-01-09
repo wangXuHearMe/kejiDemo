@@ -8,6 +8,7 @@
 #import "LaunchViewController.h"
 #import "LaunchTableViewCell.h"
 #import "LaunchTwoTableViewCell.h"
+#import "ThemeViewController.h"
 @interface LaunchViewController ()
 
 @end
@@ -42,7 +43,7 @@
     self.limitString = @"五分钟";
     self.startSrting = @"现在";
     self.shijianxianzhi = @"时间限制:";
-    self.kaishishijian = @"开始时间";
+    self.kaishishijian = @"开始时间:";
     self.limitTimeString = [self.shijianxianzhi stringByAppendingString:self.limitString];
     self.startTimeString = [self.kaishishijian stringByAppendingString:self.startSrting];
 }
@@ -180,6 +181,15 @@
 }
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     cell.backgroundColor = [UIColor clearColor];
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            ThemeViewController *viewController = [[ThemeViewController alloc] init];
+            viewController.modalPresentationStyle = UIModalPresentationCustom;
+            [self presentViewController:viewController animated:YES completion:nil];
+        }
+    }
 }
 /*
 #pragma mark - Navigation
