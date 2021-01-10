@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIPickerView *pickerView;
 @property (nonatomic, strong) UIButton *cancelButton;
-@property (nonatomic, strong) UIButton *sureButton;1
+@property (nonatomic, strong) UIButton *sureButton;
 @property NSArray *signArray;
 @end
 
