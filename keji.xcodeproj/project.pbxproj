@@ -75,6 +75,7 @@
 		FBF33F59259C458400DCB8AE /* LaunchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F58259C458400DCB8AE /* LaunchTableViewCell.m */; };
 		FBF33F5F25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F5E25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m */; };
 		FBF33F6525A983A100DCB8AE /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F6425A983A100DCB8AE /* ThemeViewController.m */; };
+		FBF33F6B25AC3F7000DCB8AE /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF33F6A25AC3F7000DCB8AE /* ListViewController.m */; };
 		FBF5F724258A0D34005A3CFC /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5F723258A0D34005A3CFC /* zuojiantou.png */; };
 		FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */; };
 		FBF5F730258A4FBA005A3CFC /* AboutSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5F72F258A4FBA005A3CFC /* AboutSecondTableViewCell.m */; };
@@ -212,6 +213,8 @@
 		FBF33F5E25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchTwoTableViewCell.m; sourceTree = "<group>"; };
 		FBF33F6325A983A100DCB8AE /* ThemeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeViewController.h; sourceTree = "<group>"; };
 		FBF33F6425A983A100DCB8AE /* ThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeViewController.m; sourceTree = "<group>"; };
+		FBF33F6925AC3F7000DCB8AE /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		FBF33F6A25AC3F7000DCB8AE /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		FBF5F723258A0D34005A3CFC /* zuojiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuojiantou.png; sourceTree = "<group>"; };
 		FBF5F728258A4AFD005A3CFC /* AboutFirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutFirstTableViewCell.h; sourceTree = "<group>"; };
 		FBF5F729258A4AFD005A3CFC /* AboutFirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutFirstTableViewCell.m; sourceTree = "<group>"; };
@@ -537,6 +540,8 @@
 				FBF33F5E25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m */,
 				FBF33F6325A983A100DCB8AE /* ThemeViewController.h */,
 				FBF33F6425A983A100DCB8AE /* ThemeViewController.m */,
+				FBF33F6925AC3F7000DCB8AE /* ListViewController.h */,
+				FBF33F6A25AC3F7000DCB8AE /* ListViewController.m */,
 			);
 			path = TEACHER;
 			sourceTree = "<group>";
@@ -761,6 +766,7 @@
 				FB95CA062591E8EE005B7BF3 /* InViewController.m in Sources */,
 				FBAC122C2577926B00C64F6B /* SceneDelegate.m in Sources */,
 				FBA038222586156C003DD507 /* PersonalViewController.m in Sources */,
+				FBF33F6B25AC3F7000DCB8AE /* ListViewController.m in Sources */,
 				FBF5F73F258B658C005A3CFC /* SuggestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

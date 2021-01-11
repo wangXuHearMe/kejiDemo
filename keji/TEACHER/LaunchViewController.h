@@ -6,11 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ThemeViewController.h"
+#import "ListViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LaunchViewController : UIViewController
-<UITableViewDelegate, UITableViewDataSource>
+<UITableViewDelegate, UITableViewDataSource, themeDelegate, listDelegate>
 @property (nonatomic, strong) UIButton *timeLimitButton;
 @property (nonatomic, strong) UIButton *startTimeButton;
 @property (nonatomic, strong) UIButton *launchSignButton;

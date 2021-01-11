@@ -1,19 +1,19 @@
 //
-//  ThemeViewController.h
+//  ListViewController.h
 //  keji
 //
-//  Created by 王旭 on 2021/1/9.
+//  Created by 王旭 on 2021/1/11.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@protocol themeDelegate <NSObject>
+@protocol listDelegate <NSObject>
 
-- (void)pass:(BOOL)isOK andZhuti:(NSString *)zhutiString;
+- (void)pass:(BOOL)isOk andMingdan:(NSString *)mingdanString;
 
 @end
-@interface ThemeViewController : UIViewController
+@interface ListViewController : UIViewController
 <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIPickerView *pickerView;
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIButton *sureButton;
 @property NSArray *signArray;
 @property NSInteger answerRow;
-@property (nonatomic, assign) id<themeDelegate>delegate;
+@property (nonatomic, assign) id<listDelegate>delegate;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,17 +1,17 @@
 //
-//  ThemeViewController.m
+//  ListViewController.m
 //  keji
 //
-//  Created by 王旭 on 2021/1/9.
+//  Created by 王旭 on 2021/1/11.
 //
 
-#import "ThemeViewController.h"
+#import "ListViewController.h"
 
-@interface ThemeViewController ()
+@interface ListViewController ()
 
 @end
 
-@implementation ThemeViewController
+@implementation ListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -19,7 +19,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height * 0.7, self.view.frame.size.width, self.view.frame.size.height * 0.3)];
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.separatorStyle = 0;
-    self.signArray = [[NSArray alloc] initWithObjects:@"上课签到",@"早操签到",@"自习签到",@"到校签到",@"放假签到",@"随意签", nil];
+    self.signArray = [[NSArray alloc] initWithObjects:@"1班",@"2班",@"3班",@"4班",@"5班",@"6班", nil];
     [self.view addSubview:self.tableView];
     self.pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, self.tableView.frame.size.height - 50)];
     self.pickerView.delegate = self;
@@ -56,7 +56,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)pressSure {
-    [self.delegate pass:YES andZhuti:self.signArray[_answerRow]];
+    [self.delegate pass:YES andMingdan:self.signArray[_answerRow]];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -75,7 +75,6 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     self.answerRow = row;
 }
-
 /*
 #pragma mark - Navigation
 

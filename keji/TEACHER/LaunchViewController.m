@@ -9,6 +9,7 @@
 #import "LaunchTableViewCell.h"
 #import "LaunchTwoTableViewCell.h"
 #import "ThemeViewController.h"
+#import "ListViewController.h"
 @interface LaunchViewController ()
 
 @end
@@ -187,9 +188,27 @@
         if (indexPath.row == 0) {
             ThemeViewController *viewController = [[ThemeViewController alloc] init];
             viewController.modalPresentationStyle = UIModalPresentationCustom;
+            viewController.delegate = self;
+            [self presentViewController:viewController animated:YES completion:nil];
+        } else if (indexPath.row == 2) {
+            ListViewController *viewController = [[ListViewController alloc] init];
+            viewController.modalPresentationStyle = UIModalPresentationCustom;
+            viewController.delegate = self;
             [self presentViewController:viewController animated:YES completion:nil];
         }
     }
+}
+- (void)pass:(BOOL)isOK andZhuti:(NSString *)zhutiString {
+    self.isZhuti = isOK;
+    self.zhutiString = zhutiString;
+    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:0];
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+- (void)pass:(BOOL)isOk andMingdan:(NSString *)mingdanString {
+    self.isMingdan = isOk;
+    self.mingdanString = mingdanString;
+    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:0];
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 /*
 #pragma mark - Navigation
