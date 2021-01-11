@@ -10,6 +10,7 @@
 #import "LaunchTwoTableViewCell.h"
 #import "ThemeViewController.h"
 #import "ListViewController.h"
+#import "ExplainViewController.h"
 @interface LaunchViewController ()
 
 @end
@@ -195,6 +196,12 @@
             viewController.modalPresentationStyle = UIModalPresentationCustom;
             viewController.delegate = self;
             [self presentViewController:viewController animated:YES completion:nil];
+        } else if (indexPath.row == 1) {
+            ExplainViewController *viewController = [[ExplainViewController alloc] init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+            nav.title = nil;
+            nav.modalPresentationStyle = 0;
+            [self presentViewController:nav animated:YES completion:nil];
         }
     }
 }
