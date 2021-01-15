@@ -65,6 +65,8 @@
 		FBAC123A2577926E00C64F6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC12392577926E00C64F6B /* main.m */; };
 		FBAC12442577926E00C64F6B /* kejiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC12432577926E00C64F6B /* kejiTests.m */; };
 		FBAC124F2577926E00C64F6B /* kejiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC124E2577926E00C64F6B /* kejiUITests.m */; };
+		FBC3572B25B1B5CA009F0A4D /* TimeLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC3572A25B1B5CA009F0A4D /* TimeLimitViewController.m */; };
+		FBC3573125B1B5DF009F0A4D /* StartTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */; };
 		FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACE6257BE1A500DCF19C /* MainModel.m */; };
 		FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACEC257BE1B800DCF19C /* MainView.m */; };
 		FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACF2257BE1C700DCF19C /* MainViewController.m */; };
@@ -194,6 +196,10 @@
 		FBAC124A2577926E00C64F6B /* kejiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kejiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAC124E2577926E00C64F6B /* kejiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kejiUITests.m; sourceTree = "<group>"; };
 		FBAC12502577926E00C64F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC3572925B1B5CA009F0A4D /* TimeLimitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeLimitViewController.h; sourceTree = "<group>"; };
+		FBC3572A25B1B5CA009F0A4D /* TimeLimitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeLimitViewController.m; sourceTree = "<group>"; };
+		FBC3572F25B1B5DF009F0A4D /* StartTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartTimeViewController.h; sourceTree = "<group>"; };
+		FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartTimeViewController.m; sourceTree = "<group>"; };
 		FBC8ACE5257BE1A500DCF19C /* MainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
 		FBC8ACE6257BE1A500DCF19C /* MainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		FBC8ACEB257BE1B800DCF19C /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
@@ -547,6 +553,10 @@
 				FBF33F7325AC422600DCB8AE /* ExplainViewController.m */,
 				FBF33F6925AC3F7000DCB8AE /* ListViewController.h */,
 				FBF33F6A25AC3F7000DCB8AE /* ListViewController.m */,
+				FBC3572925B1B5CA009F0A4D /* TimeLimitViewController.h */,
+				FBC3572A25B1B5CA009F0A4D /* TimeLimitViewController.m */,
+				FBC3572F25B1B5DF009F0A4D /* StartTimeViewController.h */,
+				FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */,
 			);
 			path = TEACHER;
 			sourceTree = "<group>";
@@ -765,8 +775,10 @@
 				FB95CA002591E7F3005B7BF3 /* DetailsViewController.m in Sources */,
 				FB95C9D625905FF2005B7BF3 /* SexTableViewCell.m in Sources */,
 				FBAC123A2577926E00C64F6B /* main.m in Sources */,
+				FBC3572B25B1B5CA009F0A4D /* TimeLimitViewController.m in Sources */,
 				FBF5F72A258A4AFD005A3CFC /* AboutFirstTableViewCell.m in Sources */,
 				FBF33F53259C421A00DCB8AE /* LaunchViewController.m in Sources */,
+				FBC3573125B1B5DF009F0A4D /* StartTimeViewController.m in Sources */,
 				FBA0387D25878C2C003DD507 /* AboutTableViewController.m in Sources */,
 				FB95C9CF259049D2005B7BF3 /* SexViewController.m in Sources */,
 				FB95CA062591E8EE005B7BF3 /* InViewController.m in Sources */,

@@ -1,32 +1,26 @@
 //
-//  ExplainViewController.m
+//  TimeLimitViewController.m
 //  keji
 //
-//  Created by 王旭 on 2021/1/11.
+//  Created by 王旭 on 2021/1/15.
 //
 
-#import "ExplainViewController.h"
+#import "TimeLimitViewController.h"
 
-@interface ExplainViewController ()
+@interface TimeLimitViewController ()
 
 @end
 
-@implementation ExplainViewController
+@implementation TimeLimitViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = nil;
+    self.navigationItem.title = @"持续时间";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
     backButton.tintColor = [UIColor blackColor];
     [self.navigationItem setLeftBarButtonItem:backButton];
     self.view.backgroundColor = [UIColor whiteColor];
-    UILabel *bianjishuomingLabel = [[UILabel alloc] init];
-    bianjishuomingLabel.text = @"编辑说明";
-    bianjishuomingLabel.frame = CGRectMake(150, 170, 100, 30);
-    bianjishuomingLabel.font = [UIFont systemFontOfSize:19];
-    [self.view addSubview:bianjishuomingLabel];
-//    self.textField = [UITextField alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
 }
 - (void)pressBack {
     [self dismissViewControllerAnimated:YES completion:nil];

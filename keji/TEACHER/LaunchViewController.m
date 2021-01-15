@@ -11,6 +11,8 @@
 #import "ThemeViewController.h"
 #import "ListViewController.h"
 #import "ExplainViewController.h"
+#import "TimeLimitViewController.h"
+#import "StartTimeViewController.h"
 @interface LaunchViewController ()
 
 @end
@@ -93,10 +95,20 @@
     [self.view addSubview:self.launchSignButton];
 }
 - (void)timeLimit {
-    
+    TimeLimitViewController *viewController = [[TimeLimitViewController alloc] init];
+    viewController.delegate = self;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    nav.title = @"持续时间";
+    nav.modalPresentationStyle = 0;
+    [self presentViewController:nav animated:YES completion:nil];
 }
 - (void)startTime {
-    
+    StartTimeViewController *viewController = [[StartTimeViewController alloc] init];
+    viewController.delegate = self;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    nav.title = @"开始时间";
+    nav.modalPresentationStyle = 0;
+    [self presentViewController:nav animated:YES completion:nil];
 }
 - (void)sign {
     
@@ -203,7 +215,16 @@
             nav.modalPresentationStyle = 0;
             [self presentViewController:nav animated:YES completion:nil];
         }
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"当前仅支持这两种方法" preferredStyle:UIAlertControllerStyleAlert];
+             [self presentViewController:alert animated:YES completion:nil];
+             [self performSelector:@selector(dismiss:) withObject:alert afterDelay:2.0];
+        }
     }
+}
+- (void)dismiss:(UIAlertController *)alert {
+    [alert dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)pass:(BOOL)isOK andZhuti:(NSString *)zhutiString {
     self.isZhuti = isOK;
@@ -217,6 +238,14 @@
     NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:0];
     [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
+//- (void)pass:(NSString *)timeLimitString {
+//    self.limitTimeString = timeLimitString;
+//    [self.tableView reloadData];
+//}
+//- (void)pass:(NSString *)startTimeString {
+//    self.startTimeString = startTimeString;
+//    [self.tableView reloadData];
+//}
 /*
 #pragma mark - Navigation
 
