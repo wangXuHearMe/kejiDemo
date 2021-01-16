@@ -67,6 +67,7 @@
 		FBAC124F2577926E00C64F6B /* kejiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC124E2577926E00C64F6B /* kejiUITests.m */; };
 		FBC3572B25B1B5CA009F0A4D /* TimeLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC3572A25B1B5CA009F0A4D /* TimeLimitViewController.m */; };
 		FBC3573125B1B5DF009F0A4D /* StartTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */; };
+		FBC3573625B2E84F009F0A4D /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = FBC3573525B2E84F009F0A4D /* right.png */; };
 		FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACE6257BE1A500DCF19C /* MainModel.m */; };
 		FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACEC257BE1B800DCF19C /* MainView.m */; };
 		FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACF2257BE1C700DCF19C /* MainViewController.m */; };
@@ -200,6 +201,7 @@
 		FBC3572A25B1B5CA009F0A4D /* TimeLimitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeLimitViewController.m; sourceTree = "<group>"; };
 		FBC3572F25B1B5DF009F0A4D /* StartTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartTimeViewController.h; sourceTree = "<group>"; };
 		FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartTimeViewController.m; sourceTree = "<group>"; };
+		FBC3573525B2E84F009F0A4D /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		FBC8ACE5257BE1A500DCF19C /* MainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
 		FBC8ACE6257BE1A500DCF19C /* MainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		FBC8ACEB257BE1B800DCF19C /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 		FBAC121B2577926B00C64F6B = {
 			isa = PBXGroup;
 			children = (
+				FBC3573525B2E84F009F0A4D /* right.png */,
 				FB95CA4F25931EA0005B7BF3 /* hh2.jpeg */,
 				FB95CA5F25931FEB005B7BF3 /* hh.jpeg */,
 				FB95CA6C25932055005B7BF3 /* xiangqing.jpeg */,
@@ -664,6 +667,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC3573625B2E84F009F0A4D /* right.png in Resources */,
 				FB95C9C0258C58E9005B7BF3 /* 详情 (1).png in Resources */,
 				FB95C9C5258C5916005B7BF3 /* shizhong (1).png in Resources */,
 				FB95CA5025931EA0005B7BF3 /* hh2.jpeg in Resources */,
