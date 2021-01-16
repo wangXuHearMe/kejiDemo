@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 @interface TimeLimitViewController : UIViewController
+@property (nonatomic, strong) NSString *timeString;
+@property (nonatomic, strong) UILabel *timeLabel;
 @property (nonatomic, strong) UIButton *twoMinuteButton;
 @property (nonatomic, strong) UIButton *fiveMinuteButton;
 @property (nonatomic, strong) UIButton *tenMinuteButton;
