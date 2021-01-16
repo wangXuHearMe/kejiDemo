@@ -27,13 +27,13 @@
     [self setUI];
 }
 - (void)setUI {
-    self.timeString = @"两分钟";
+//    self.timeString = [[NSString alloc] init];
     
     self.timeLabel = [[UILabel alloc] init];
     self.timeLabel.frame = CGRectMake((self.view.frame.size.width - 200)/2, 100, 200, 25);
+    [self setText];
     self.timeLabel.font = [UIFont systemFontOfSize:20];
     self.timeLabel.textColor = [UIColor blackColor];
-    self.timeLabel.text = self.timeString;
     self.timeLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.timeLabel];
     
@@ -112,12 +112,96 @@
     self.threeHourButton.layer.masksToBounds = YES;
     self.threeHourButton.layer.borderWidth = 0.2f;
     [self.view addSubview:_threeHourButton];
+    
+    self.oneDayButton.frame = CGRectMake(15, 150 + 23 + 30 + 23 + 30, (self.view.frame.size.width - 70)/3, 33);
+    self.oneDayButton.backgroundColor = [UIColor whiteColor];
+    [self.oneDayButton setTitle:@"一天" forState:UIControlStateNormal];
+    [self.oneDayButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    self.oneDayButton.titleLabel.font = [UIFont systemFontOfSize:17];
+    self.oneDayButton.layer.cornerRadius = 5;
+    self.oneDayButton.layer.borderColor = [[UIColor grayColor] CGColor];
+    self.oneDayButton.layer.masksToBounds = YES;
+    self.oneDayButton.layer.borderWidth = 0.2f;
+    [self.view addSubview:_oneDayButton];
+    
+    self.twoDayButton.frame = CGRectMake(15+(self.view.frame.size.width - 70)/3+20, 150 + 23 + 30 + 23 + 30, (self.view.frame.size.width - 70)/3, 33);
+    self.twoDayButton.backgroundColor = [UIColor whiteColor];
+    [self.twoDayButton setTitle:@"两天" forState:UIControlStateNormal];
+    [self.twoDayButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    self.twoDayButton.titleLabel.font = [UIFont systemFontOfSize:17];
+    self.twoDayButton.layer.cornerRadius = 5;
+    self.twoDayButton.layer.borderColor = [[UIColor grayColor] CGColor];
+    self.twoDayButton.layer.masksToBounds = YES;
+    self.twoDayButton.layer.borderWidth = 0.2f;
+    [self.view addSubview:_twoDayButton];
+    
+    self.sevenDayButton.frame = CGRectMake(55 + (self.view.frame.size.width - 70)/3 * 2 , 150 + 23 + 30 + 23 + 30, (self.view.frame.size.width - 70)/3, 33);
+    self.sevenDayButton.backgroundColor = [UIColor whiteColor];
+    [self.sevenDayButton setTitle:@"七天" forState:UIControlStateNormal];
+    [self.sevenDayButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    self.sevenDayButton.titleLabel.font = [UIFont systemFontOfSize:17];
+    self.sevenDayButton.layer.cornerRadius = 5;
+    self.sevenDayButton.layer.borderColor = [[UIColor grayColor] CGColor];
+    self.sevenDayButton.layer.masksToBounds = YES;
+    self.sevenDayButton.layer.borderWidth = 0.2f;
+    [self.view addSubview:_sevenDayButton];
+    
+    [self.twoMinuteButton addTarget:self action:@selector(pressTwoMinute) forControlEvents:UIControlEventTouchUpInside];
+    [self.fiveMinuteButton addTarget:self action:@selector(pressFiveMinute) forControlEvents:UIControlEventTouchUpInside];
+    [self.tenMinuteButton addTarget:self action:@selector(pressTenMinute) forControlEvents:UIControlEventTouchUpInside];
+    [self.thirtyMinuteButton addTarget:self action:@selector(pressTenMinute) forControlEvents:UIControlEventTouchUpInside];
+    [self.oneHourButton addTarget:self action:@selector(pressOneHour) forControlEvents:UIControlEventTouchUpInside];
+    [self.threeHourButton addTarget:self action:@selector(pressThreeHour) forControlEvents:UIControlEventTouchUpInside];
+    [self.oneDayButton addTarget:self action:@selector(pressOneDay) forControlEvents:UIControlEventTouchUpInside];
+    [self.twoDayButton addTarget:self action:@selector(pressTwoDay) forControlEvents:UIControlEventTouchUpInside];
+    [self.sevenDayButton addTarget:self action:@selector(pressSevenDay) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void)setText {
+    self.timeLabel.text = self.timeString;
 }
 - (void)pressBack {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)pressRight {
-    
+    [self.delegate passTimeLimit:self.timeString];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+#pragma pressTag
+- (void)pressTwoMinute {
+    self.timeString = @"两分钟";
+    [self setText];
+}
+- (void)pressFiveMinute {
+    self.timeString = @"五分钟";
+    [self setText];
+}
+- (void)pressTenMinute {
+    self.timeString = @"十分钟";
+    [self setText];
+}
+- (void)pressThirtyMinute {
+    self.timeString = @"三十分钟";
+    [self setText];
+}
+- (void)pressOneHour {
+    self.timeString = @"一小时";
+    [self setText];
+}
+- (void)pressThreeHour {
+    self.timeString = @"三小时";
+    [self setText];
+}
+- (void)pressOneDay {
+    self.timeString = @"一天";
+    [self setText];
+}
+- (void)pressTwoDay {
+    self.timeString = @"两天";
+    [self setText];
+}
+- (void)pressSevenDay {
+    self.timeString = @"七天";
+    [self setText];
 }
 /*
 #pragma mark - Navigation

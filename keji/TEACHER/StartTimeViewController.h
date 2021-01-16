@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol startTimeDelegate <NSObject>
 
-- (void)pass:(NSString *)startTimeString;
+- (void)passStartTime:(NSString *)startTimeString;
 
 @end
 @interface StartTimeViewController : UIViewController

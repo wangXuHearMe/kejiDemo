@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol timeLimitDelegate <NSObject>
 
-- (void)pass:(NSString *)timeLimitString;
+- (void)passTimeLimit:(NSString *)timeLimitString;
 
 @end
 @interface TimeLimitViewController : UIViewController

@@ -48,8 +48,7 @@
     self.startSrting = @"现在";
     self.shijianxianzhi = @"时间限制:";
     self.kaishishijian = @"开始时间:";
-    self.limitTimeString = [self.shijianxianzhi stringByAppendingString:self.limitString];
-    self.startTimeString = [self.kaishishijian stringByAppendingString:self.startSrting];
+    [self moreTwo];
 }
 - (void)setUI {
     self.view.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:246/255.0 alpha:1];
@@ -69,7 +68,7 @@
     
     self.timeLimitButton.frame = CGRectMake(15, 100 + self.view.frame.size.height * 0.4, self.view.frame.size.width - 30, 50);
     self.timeLimitButton.backgroundColor = [UIColor colorWithRed:80/255.0 green:173/255.0 blue:87/255.0 alpha:1];
-    [self.timeLimitButton setTitle:self.limitTimeString forState:UIControlStateNormal];
+    [self more];
     [self.timeLimitButton addTarget:self action:@selector(timeLimit) forControlEvents:UIControlEventTouchUpInside];
     self.timeLimitButton.titleLabel.font = [UIFont systemFontOfSize:17];
     self.timeLimitButton.titleLabel.tintColor = [UIColor whiteColor];
@@ -78,7 +77,7 @@
     
     self.startTimeButton.frame = CGRectMake(15, 170 + self.view.frame.size.height * 0.4, self.view.frame.size.width - 30, 50);
     self.startTimeButton.backgroundColor = [UIColor colorWithRed:80/255.0 green:173/255.0 blue:87/255.0 alpha:1];
-    [self.startTimeButton setTitle:self.startTimeString forState:UIControlStateNormal];
+    [self more];
     [self.startTimeButton addTarget:self action:@selector(startTime) forControlEvents:UIControlEventTouchUpInside];
     self.startTimeButton.titleLabel.font = [UIFont systemFontOfSize:17];
     self.startTimeButton.titleLabel.tintColor = [UIColor whiteColor];
@@ -94,9 +93,18 @@
     self.launchSignButton.layer.cornerRadius = 45;
     [self.view addSubview:self.launchSignButton];
 }
+- (void)more {
+    [self.timeLimitButton setTitle:self.limitTimeString forState:UIControlStateNormal];
+    [self.startTimeButton setTitle:self.startTimeString forState:UIControlStateNormal];
+}
+- (void)moreTwo {
+    self.limitTimeString = [self.shijianxianzhi stringByAppendingString:self.limitString];
+    self.startTimeString = [self.kaishishijian stringByAppendingString:self.startSrting];
+}
 - (void)timeLimit {
     TimeLimitViewController *viewController = [[TimeLimitViewController alloc] init];
     viewController.delegate = self;
+    viewController.timeString = self.limitString;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
     nav.title = @"持续时间";
     nav.modalPresentationStyle = 0;
@@ -238,14 +246,11 @@
     NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:0];
     [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
-//- (void)pass:(NSString *)timeLimitString {
-//    self.limitTimeString = timeLimitString;
-//    [self.tableView reloadData];
-//}
-//- (void)pass:(NSString *)startTimeString {
-//    self.startTimeString = startTimeString;
-//    [self.tableView reloadData];
-//}
+- (void)passTimeLimit:(NSString *)timeLimitString {
+    self.limitString = timeLimitString;
+    [self moreTwo];
+    [self more];
+}
 /*
 #pragma mark - Navigation
 
