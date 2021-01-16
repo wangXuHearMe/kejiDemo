@@ -251,6 +251,11 @@
     [self moreTwo];
     [self more];
 }
+- (void)passStartTime:(NSString *)startTimeString {
+    self.startSrting = startTimeString;
+    [self moreTwo];
+    [self more];
+}
 /*
 #pragma mark - Navigation
 

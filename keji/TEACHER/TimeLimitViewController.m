@@ -24,6 +24,12 @@
     [self.navigationItem setLeftBarButtonItem:backButton];
     [self.navigationItem setRightBarButtonItem:rightButton];
     self.view.backgroundColor = [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1];
+    self.dayArray = [[NSArray alloc] initWithObjects:@"00",@"01",@"02",@"03",@"04",@"05",@"06",@"07",@"08",@"09",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29",@"30", nil];
+    self.hourArray = [[NSArray alloc] initWithObjects:@"00",@"01",@"02",@"03",@"04",@"05",@"06",@"07",@"08",@"09",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23", nil];
+    self.minuteArray = [[NSArray alloc] initWithObjects:@"00",@"01",@"02",@"03",@"04",@"05",@"06",@"07",@"08",@"09",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29",@"30",@"31",@"32",@"33",@"34",@"35",@"36",@"37",@"38",@"39",@"40",@"41",@"42",@"43",@"44",@"45",@"46",@"47",@"48",@"49",@"50",@"51",@"52",@"53",@"54",@"55",@"56",@"57",@"58",@"59", nil];
+    self.dayString = @"00";
+    self.hourString = @"00";
+    self.minuteString = @"00";
     [self setUI];
 }
 - (void)setUI {
@@ -36,6 +42,13 @@
     self.timeLabel.textColor = [UIColor blackColor];
     self.timeLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.timeLabel];
+    
+    self.customLabel = [[UILabel alloc] init];
+    self.customLabel.frame = CGRectMake(10, 330, 200, 35);
+    self.customLabel.text = @"自定义持续时间";
+    self.customLabel.textColor = [UIColor blackColor];
+    self.customLabel.font = [UIFont systemFontOfSize:19];
+    [self.view addSubview:self.customLabel];
     
     self.twoMinuteButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.fiveMinuteButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -155,6 +168,50 @@
     [self.oneDayButton addTarget:self action:@selector(pressOneDay) forControlEvents:UIControlEventTouchUpInside];
     [self.twoDayButton addTarget:self action:@selector(pressTwoDay) forControlEvents:UIControlEventTouchUpInside];
     [self.sevenDayButton addTarget:self action:@selector(pressSevenDay) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 360, self.view.frame.size.width, 300)];
+    self.pickerView.backgroundColor = [UIColor clearColor];
+    self.pickerView.delegate = self;
+    self.pickerView.dataSource = self;
+    [self.view addSubview:self.pickerView];
+}
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 3;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    if (component == 0) {
+        return 31;
+    } else if (component == 1) {
+        return 24;
+    } else if (component == 2) {
+        return 60;
+    }
+    return 0;
+}
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    if (component == 0) {
+        return [_dayArray objectAtIndex:row];
+    } else if (component == 1) {
+        return [_hourArray objectAtIndex:row];
+    } else {
+        return [_minuteArray objectAtIndex:row];
+    }
+}
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
+    return 35;
+}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    if (component == 0) {
+        self.dayString = [_dayArray objectAtIndex:row];
+    } else if (component == 1) {
+        self.hourString = [_hourArray objectAtIndex:row];
+    } else {
+        self.minuteString = [_minuteArray objectAtIndex:row];
+    }
+    self.combineString = [[NSString alloc] initWithFormat:@"%@天%@时%@分",_dayString,_hourString,_minuteString];
+    self.timeString = _combineString;
+    [self setText];
 }
 - (void)setText {
     self.timeLabel.text = self.timeString;
