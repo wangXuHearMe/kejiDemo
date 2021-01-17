@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *minuteString;
 @property (nonatomic, strong) NSArray *hourArray;
 @property (nonatomic, strong) NSArray *minuteArray;
+@property (nonatomic, strong) NSString *combineString;
 @property (nonatomic, assign) id<startTimeDelegate>delegate;
 @end
 

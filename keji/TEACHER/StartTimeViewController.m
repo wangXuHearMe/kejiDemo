@@ -241,7 +241,14 @@
     return 45;
 }
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    
+    if (component == 0) {
+        self.hourString = [_hourArray objectAtIndex:row];
+    } else {
+        self.minuteString = [_minuteArray objectAtIndex:row];
+    }
+    self.combineString = [[NSString alloc] initWithFormat:@"%@时%@分",_hourString,_minuteString];
+    self.timeString = self.combineString;
+    [self setText];
 }
 /*
 #pragma mark - Navigation
