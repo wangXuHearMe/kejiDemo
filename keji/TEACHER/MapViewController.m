@@ -48,13 +48,11 @@
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear: animated];
-    //当mapView即将被显示的时候调用，恢复之前存储的mapView状态
     [_mapView viewWillAppear];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear: animated];
-    //当mapView即将被隐藏的时候调用，存储当前mapView的状态
     [_mapView viewWillDisappear];
 }
 /*
