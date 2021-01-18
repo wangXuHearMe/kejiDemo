@@ -13,6 +13,7 @@
 #import "ExplainViewController.h"
 #import "TimeLimitViewController.h"
 #import "StartTimeViewController.h"
+#import "MapViewController.h"
 @interface LaunchViewController ()
 
 @end
@@ -228,6 +229,12 @@
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"当前仅支持这两种方法" preferredStyle:UIAlertControllerStyleAlert];
              [self presentViewController:alert animated:YES completion:nil];
              [self performSelector:@selector(dismiss:) withObject:alert afterDelay:2.0];
+        } else if (indexPath.row == 1) {
+            MapViewController *viewController = [[MapViewController alloc] init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+            nav.title = @"签到位置";
+            nav.modalPresentationStyle = 0;
+            [self presentViewController:nav animated:YES completion:nil];
         }
     }
 }

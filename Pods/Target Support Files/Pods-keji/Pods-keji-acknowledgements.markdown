@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## BaiduMapKit
+
+Copyright (c) 2015 BaiduLBS
+
 ## Masonry
 
 Copyright (c) 2011-2012 Masonry Team - https://github.com/Masonry

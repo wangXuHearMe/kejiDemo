@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
 @interface AppDelegate ()
 
 @end
@@ -16,6 +16,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    BMKMapManager *mapManager = [[BMKMapManager alloc] init];
+    // 如果要关注网络及授权验证事件，请设定generalDelegate参数
+    BOOL ret = [mapManager start:@"bR747ZK8VSv3eGCai8v3n3QszyiO0mgy"  generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"启动引擎失败");
+    }
     return YES;
 }
 

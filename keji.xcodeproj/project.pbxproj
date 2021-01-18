@@ -68,6 +68,7 @@
 		FBC3572B25B1B5CA009F0A4D /* TimeLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC3572A25B1B5CA009F0A4D /* TimeLimitViewController.m */; };
 		FBC3573125B1B5DF009F0A4D /* StartTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */; };
 		FBC3573625B2E84F009F0A4D /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = FBC3573525B2E84F009F0A4D /* right.png */; };
+		FBC3573C25B5C76C009F0A4D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC3573B25B5C76C009F0A4D /* MapViewController.m */; };
 		FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACE6257BE1A500DCF19C /* MainModel.m */; };
 		FBC8ACED257BE1B800DCF19C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACEC257BE1B800DCF19C /* MainView.m */; };
 		FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC8ACF2257BE1C700DCF19C /* MainViewController.m */; };
@@ -202,6 +203,8 @@
 		FBC3572F25B1B5DF009F0A4D /* StartTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartTimeViewController.h; sourceTree = "<group>"; };
 		FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartTimeViewController.m; sourceTree = "<group>"; };
 		FBC3573525B2E84F009F0A4D /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		FBC3573A25B5C76C009F0A4D /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		FBC3573B25B5C76C009F0A4D /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		FBC8ACE5257BE1A500DCF19C /* MainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
 		FBC8ACE6257BE1A500DCF19C /* MainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		FBC8ACEB257BE1B800DCF19C /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
@@ -560,6 +563,8 @@
 				FBC3572A25B1B5CA009F0A4D /* TimeLimitViewController.m */,
 				FBC3572F25B1B5DF009F0A4D /* StartTimeViewController.h */,
 				FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */,
+				FBC3573A25B5C76C009F0A4D /* MapViewController.h */,
+				FBC3573B25B5C76C009F0A4D /* MapViewController.m */,
 			);
 			path = TEACHER;
 			sourceTree = "<group>";
@@ -575,6 +580,7 @@
 				FBAC12202577926B00C64F6B /* Sources */,
 				FBAC12212577926B00C64F6B /* Frameworks */,
 				FBAC12222577926B00C64F6B /* Resources */,
+				F00B752EC74C68F2DF835F61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -739,6 +745,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F00B752EC74C68F2DF835F61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-keji/Pods-keji-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-keji/Pods-keji-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-keji/Pods-keji-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -758,6 +781,7 @@
 				FBF33F4B259B1EFE00DCB8AE /* PosterTableViewCell.m in Sources */,
 				FBC8ACF3257BE1C700DCF19C /* MainViewController.m in Sources */,
 				FBC8ACE7257BE1A500DCF19C /* MainModel.m in Sources */,
+				FBC3573C25B5C76C009F0A4D /* MapViewController.m in Sources */,
 				FBF33F7425AC422600DCB8AE /* ExplainViewController.m in Sources */,
 				FBA03865258784CD003DD507 /* PersonalSecondTableViewCell.m in Sources */,
 				FBF33F59259C458400DCB8AE /* LaunchTableViewCell.m in Sources */,
