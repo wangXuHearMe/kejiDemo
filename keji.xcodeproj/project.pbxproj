@@ -554,6 +554,16 @@
 			path = M;
 			sourceTree = "<group>";
 		};
+		FBC3574F25B6F749009F0A4D /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FBF33F51259C421A00DCB8AE /* LaunchViewController.h */,
+				FBF33F52259C421A00DCB8AE /* LaunchViewController.m */,
+				FBC3574D25B6F6DA009F0A4D /* C */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		FBC8ACF7257BE1CB00DCF19C /* MainMVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,10 +587,8 @@
 		FBF33F50259B21DB00DCB8AE /* TEACHER */ = {
 			isa = PBXGroup;
 			children = (
-				FBF33F51259C421A00DCB8AE /* LaunchViewController.h */,
-				FBF33F52259C421A00DCB8AE /* LaunchViewController.m */,
 				FBC3574E25B6F70D009F0A4D /* M */,
-				FBC3574D25B6F6DA009F0A4D /* C */,
+				FBC3574F25B6F749009F0A4D /* C */,
 			);
 			path = TEACHER;
 			sourceTree = "<group>";
