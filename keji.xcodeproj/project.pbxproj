@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -524,6 +524,36 @@
 			path = kejiUITests;
 			sourceTree = "<group>";
 		};
+		FBC3574D25B6F6DA009F0A4D /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FBF33F6325A983A100DCB8AE /* ThemeViewController.h */,
+				FBF33F6425A983A100DCB8AE /* ThemeViewController.m */,
+				FBF33F7225AC422600DCB8AE /* ExplainViewController.h */,
+				FBF33F7325AC422600DCB8AE /* ExplainViewController.m */,
+				FBF33F6925AC3F7000DCB8AE /* ListViewController.h */,
+				FBF33F6A25AC3F7000DCB8AE /* ListViewController.m */,
+				FBC3572925B1B5CA009F0A4D /* TimeLimitViewController.h */,
+				FBC3572A25B1B5CA009F0A4D /* TimeLimitViewController.m */,
+				FBC3572F25B1B5DF009F0A4D /* StartTimeViewController.h */,
+				FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */,
+				FBC3573A25B5C76C009F0A4D /* MapViewController.h */,
+				FBC3573B25B5C76C009F0A4D /* MapViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		FBC3574E25B6F70D009F0A4D /* M */ = {
+			isa = PBXGroup;
+			children = (
+				FBF33F57259C458400DCB8AE /* LaunchTableViewCell.h */,
+				FBF33F58259C458400DCB8AE /* LaunchTableViewCell.m */,
+				FBF33F5D25A5EEA600DCB8AE /* LaunchTwoTableViewCell.h */,
+				FBF33F5E25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
 		FBC8ACF7257BE1CB00DCF19C /* MainMVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,22 +579,8 @@
 			children = (
 				FBF33F51259C421A00DCB8AE /* LaunchViewController.h */,
 				FBF33F52259C421A00DCB8AE /* LaunchViewController.m */,
-				FBF33F57259C458400DCB8AE /* LaunchTableViewCell.h */,
-				FBF33F58259C458400DCB8AE /* LaunchTableViewCell.m */,
-				FBF33F5D25A5EEA600DCB8AE /* LaunchTwoTableViewCell.h */,
-				FBF33F5E25A5EEA600DCB8AE /* LaunchTwoTableViewCell.m */,
-				FBF33F6325A983A100DCB8AE /* ThemeViewController.h */,
-				FBF33F6425A983A100DCB8AE /* ThemeViewController.m */,
-				FBF33F7225AC422600DCB8AE /* ExplainViewController.h */,
-				FBF33F7325AC422600DCB8AE /* ExplainViewController.m */,
-				FBF33F6925AC3F7000DCB8AE /* ListViewController.h */,
-				FBF33F6A25AC3F7000DCB8AE /* ListViewController.m */,
-				FBC3572925B1B5CA009F0A4D /* TimeLimitViewController.h */,
-				FBC3572A25B1B5CA009F0A4D /* TimeLimitViewController.m */,
-				FBC3572F25B1B5DF009F0A4D /* StartTimeViewController.h */,
-				FBC3573025B1B5DF009F0A4D /* StartTimeViewController.m */,
-				FBC3573A25B5C76C009F0A4D /* MapViewController.h */,
-				FBC3573B25B5C76C009F0A4D /* MapViewController.m */,
+				FBC3574E25B6F70D009F0A4D /* M */,
+				FBC3574D25B6F6DA009F0A4D /* C */,
 			);
 			path = TEACHER;
 			sourceTree = "<group>";
