@@ -38,8 +38,6 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)setUI {
-//    self.timeString = [[NSString alloc] init];
-    
     self.timeLabel = [[UILabel alloc] init];
     self.timeLabel.frame = CGRectMake((self.view.frame.size.width - 200)/2, 100, 200, 25);
     [self setText];
