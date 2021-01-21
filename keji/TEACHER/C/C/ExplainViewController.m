@@ -28,6 +28,7 @@
     bianjishuomingLabel.font = [UIFont systemFontOfSize:19];
     [self.view addSubview:bianjishuomingLabel];
     self.textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 220, 200, 30)];
+    self.textField.leftView
     [self.view addSubview:self.textField];
 }
 - (void)pressBack {
