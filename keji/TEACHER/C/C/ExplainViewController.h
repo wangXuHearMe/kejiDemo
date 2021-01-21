@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ExplainViewController : UIViewController
 //@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, strong) UITextField *textField;1
 @end
 
 NS_ASSUME_NONNULL_END
