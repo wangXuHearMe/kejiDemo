@@ -15,7 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1];
+    self.view.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:246/255.0 alpha:1];
     // Do any additional setup after loading the view.
     self.navigationItem.title = nil;
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
@@ -27,10 +27,13 @@
     bianjishuomingLabel.frame = CGRectMake(150, 170, 100, 30);
     bianjishuomingLabel.font = [UIFont systemFontOfSize:19];
     [self.view addSubview:bianjishuomingLabel];
-//    UIImageView *leftImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"描述.png"]];
     self.textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 220, 200, 30)];
-    self.textField.leftView = leftImage;
+    self.textField.backgroundColor = [UIColor whiteColor];
+    self.textField.placeholder = @"说明";
     [self.view addSubview:self.textField];
+    UIImageView *leftImage = [[UIImageView alloc] initWithFrame:CGRectMake(45, 220, 20, 20)];
+    leftImage.image = [UIImage imageNamed:@"描述.png"];
+    [self.view addSubview:leftImage];
 }
 - (void)pressBack {
     [self dismissViewControllerAnimated:YES completion:nil];
