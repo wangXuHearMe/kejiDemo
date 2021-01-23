@@ -27,8 +27,9 @@
     bianjishuomingLabel.frame = CGRectMake(150, 170, 100, 30);
     bianjishuomingLabel.font = [UIFont systemFontOfSize:19];
     [self.view addSubview:bianjishuomingLabel];
+//    UIImageView *leftImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"描述.png"]];
     self.textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 220, 200, 30)];
-    self.textField.leftView = UIImageView;
+    self.textField.leftView = leftImage;
     [self.view addSubview:self.textField];
 }
 - (void)pressBack {
