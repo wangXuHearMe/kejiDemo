@@ -10,10 +10,11 @@
 #import "ListViewController.h"
 #import "TimeLimitViewController.h"
 #import "StartTimeViewController.h"
+#import "ExplainViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LaunchViewController : UIViewController
-<UITableViewDelegate, UITableViewDataSource, themeDelegate, listDelegate, timeLimitDelegate, startTimeDelegate>
+<UITableViewDelegate, UITableViewDataSource, themeDelegate, listDelegate, timeLimitDelegate, startTimeDelegate, explainDelegate>
 @property (nonatomic, strong) UIButton *timeLimitButton;
 @property (nonatomic, strong) UIButton *startTimeButton;
 @property (nonatomic, strong) UIButton *launchSignButton;

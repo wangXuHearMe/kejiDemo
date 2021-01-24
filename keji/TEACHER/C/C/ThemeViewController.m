@@ -75,7 +75,6 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     self.answerRow = row;
 }
-
 /*
 #pragma mark - Navigation
 

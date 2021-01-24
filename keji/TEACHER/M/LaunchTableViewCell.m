@@ -29,11 +29,11 @@
     self.firstLabel.frame = CGRectMake(10, 10, 100, 30);
     self.firstLabel.font = [UIFont systemFontOfSize:17];
     
-    self.secondLabel.frame = CGRectMake(230, 10, 80, 30);
+    self.secondLabel.frame = CGRectMake(120, 10, 190, 30);
     self.secondLabel.textAlignment = NSTextAlignmentRight;
     self.secondLabel.font = [UIFont systemFontOfSize:17];
     
-    self.jumpImageView.frame = CGRectMake(310, 10, 25, 25);
+    self.jumpImageView.frame = CGRectMake(310, 13, 25, 25);
     [self.jumpImageView setImage:[UIImage imageNamed:@"youjiantou.png"]];
 }
 @end

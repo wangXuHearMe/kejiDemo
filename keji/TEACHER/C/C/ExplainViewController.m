@@ -15,12 +15,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:246/255.0 alpha:1];
+    self.view.backgroundColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:236/255.0 alpha:1];
     // Do any additional setup after loading the view.
     self.navigationItem.title = nil;
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"zuojiantou.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressBack)];
     backButton.tintColor = [UIColor blackColor];
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"right.png"] style:UIBarButtonItemStyleDone target:self action:@selector(pressRight)];
+    rightButton.tintColor = [UIColor blackColor];
     [self.navigationItem setLeftBarButtonItem:backButton];
+    [self.navigationItem setRightBarButtonItem:rightButton];
     self.view.backgroundColor = [UIColor whiteColor];
     UILabel *bianjishuomingLabel = [[UILabel alloc] init];
     bianjishuomingLabel.text = @"编辑说明";
@@ -31,11 +34,15 @@
     self.textField.backgroundColor = [UIColor whiteColor];
     self.textField.placeholder = @"说明";
     [self.view addSubview:self.textField];
-    UIImageView *leftImage = [[UIImageView alloc] initWithFrame:CGRectMake(45, 220, 20, 20)];
+    UIImageView *leftImage = [[UIImageView alloc] initWithFrame:CGRectMake(45, 220, 26, 26)];
     leftImage.image = [UIImage imageNamed:@"描述.png"];
     [self.view addSubview:leftImage];
 }
 - (void)pressBack {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (void)pressRight {
+    [self.delegate passExplainText:self.textField.text andBool:YES];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 /*

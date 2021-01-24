@@ -219,6 +219,8 @@
             [self presentViewController:viewController animated:YES completion:nil];
         } else if (indexPath.row == 1) {
             ExplainViewController *viewController = [[ExplainViewController alloc] init];
+            viewController.delegate = self;
+//            viewController.textField.text = self.shuomingString;
             UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
             nav.title = nil;
             nav.modalPresentationStyle = 0;
@@ -262,6 +264,12 @@
     self.startSrting = startTimeString;
     [self moreTwo];
     [self more];
+}
+- (void)passExplainText:(NSString *)explainText andBool:(BOOL)isExplain {
+    self.isShuoming = isExplain;
+    self.shuomingString = explainText;
+    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:0];
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 /*
 #pragma mark - Navigation
